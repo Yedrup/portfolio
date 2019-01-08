@@ -1,0 +1,20 @@
+.c-jobs,.c-missions {
+    list-style: none;
+}
+.c-jobs {
+    margin: 0;
+}
+.c-job {
+    /* background: rgb(81, 159, 148); */
+    /* color: white; */
+    padding:  1rem;
+}
+
+.c-job__year {
+    margin-right: .5rem;
+}
+
+.c-mission:before {
+    content: "•"; 
+    color: rgb(81, 159, 148)
+}

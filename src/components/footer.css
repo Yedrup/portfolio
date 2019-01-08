@@ -1,0 +1,16 @@
+.c-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 0 1rem;
+    background: var(--footerBackground);
+    color: var(--footerTextColor);
+    font-family: "Alegreya";
+    border-top: 2px solid rgba(18, 37, 34, 0.14);
+}
+
+.c-footer_links {
+    color: white;
+    text-decoration: none
+}

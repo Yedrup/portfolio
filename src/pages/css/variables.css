@@ -1,0 +1,27 @@
+:root {
+    --primary-color:rgb(81, 159, 148);/*#519f94*/
+    --secondary-color:rgb(54, 87, 115) ;/*#365773*/
+    /* --active-color:rgb(226, 188, 116);#e2bc74 */
+    /* --active-color:#d64d55;#e2bc74 */
+    --active-color:#012e33;
+
+
+    --color-text-on-dark: rgb(250, 250,250);
+    --color-text-on-light: var(--secondary-color);
+   --linkActiveColor: var(--active-color);
+    --linkActiveColorShadow: #04373c;
+    --linkActiveColorBackground: #ab4267;
+
+    --logoWrittenColor: var(--color-text-on-dark);
+    --logoWrittenShadow: #505a5a;
+
+    /* --headerBackground:  -webkit-linear-gradient(45deg, #365773 1%,#519f94 93%); */
+    --headerBackground:  -webkit-linear-gradient(45deg, #365773 1%,#519f94 63%,#e2bc74 100%);
+    /* --headerBackground: -webkit-linear-gradient(45deg, #ab4267 1%,#519f94 80%,#e2bc74 100%);    */
+    --headerTextColor: var(--color-text-on-dark);
+
+    --footerBackground:  -webkit-linear-gradient(45deg,#e2bc74 1%, #519f94 63%,#365773 100%);
+    --footerTextColor: var(--color-text-on-dark);
+
+    --titleTextColor : #ab4267;
+}
