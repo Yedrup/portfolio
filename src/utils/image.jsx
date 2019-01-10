@@ -29,13 +29,6 @@ const Image = props => {
                 }
               }
             }
-            workplace2: file(relativePath: { eq: "workplace2.jpg" }) {
-              childImageSharp {
-                fluid(maxWidth: 300) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
             logoExplosion: file(relativePath: { eq: "explosion-purdey-smaller.png" }) {
               childImageSharp {
                 fluid(maxWidth: 300) {
@@ -51,6 +44,13 @@ const Image = props => {
               }
             }
             logo: file(relativePath: { eq: "favicon.png" }) {
+              childImageSharp {
+                fluid(maxWidth: 300) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            trexNoBg: file(relativePath: { eq: "trex-no-bg.png" }) {
               childImageSharp {
                 fluid(maxWidth: 300) {
                   ...GatsbyImageSharpFluid
@@ -78,6 +78,8 @@ const Image = props => {
             return (<Img fluid={data.logoExplosion.childImageSharp.fluid} />)
           } else if(props.imageName === "logoExplosionNoBg") {
             return (<Img fluid={data.logoExplosionNoBg.childImageSharp.fluid} />)
+          } else if(props.imageName === "trexNoBg") {
+            return (<Img fluid={data.trexNoBg.childImageSharp.fluid} />)
           }
            else {
             return (<Img fluid={data.astronaut.childImageSharp.fluid} />)

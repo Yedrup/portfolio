@@ -4,7 +4,7 @@ import {
 } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
+import Image from '../utils/image'
 import {
   StaticQuery,
   graphql

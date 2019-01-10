@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
+import Image from '../utils/image'
 import { StaticQuery, graphql } from 'gatsby'
 
 import "../pages/css/about.css"
@@ -28,7 +28,7 @@ const aboutPage = () => {
             <div className="myPhoto" style={{ maxWidth: '190px' }}>
               <Image imageName="purdey" />
             </div>
-              <Image imageName="miaou" />
+              {/* <Image imageName="miaou" /> */}
             <h1 className="c-page__title">{title}</h1>
             <p>{intro}</p>
             <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Image from '../components/image'
+import Image from '../utils/image'
 
 import Layout from '../components/layout'
 import { StaticQuery, graphql } from 'gatsby'

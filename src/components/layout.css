@@ -629,6 +629,12 @@ pre tt:after {
   flex-direction: column
 }
 
+button:focus,
+.gatsby-image-wrapper:focus,
+.c-menu-logo:focus
+{outline:0;}
+
+
 .c-page__title {
   font-family: "Alegreya";
   font-size: 1.5rem;

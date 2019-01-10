@@ -1,12 +1,12 @@
 .c-header {
     background: var(--headerBackground);
     margin-bottom: 1.45rem;
-    height: 6rem;
+    height: var(--headerHeight);
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: "Alegreya";
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     font-size: 1.2rem;
     border-bottom: 2px solid rgba(18, 37, 34, 0.14);
 }
@@ -78,4 +78,8 @@
     .c-header__links {
         display: none;
     }
+    .c-header_written-logo {
+        font-size:1rem;
+     }
+    
 }
