@@ -33,9 +33,10 @@
     /* Menu */
     --menuWidth: 20%;
     /*fixed large*/
-    --menuBackgroundColor: var(--hightlight-color);
+    --menuBackgroundColor: rgba(171, 66, 103,.9);
     --menuButtonCloseColor: var(--primary-color);
     --menuButtonBurgerColor: var(--hightlight-color);
     --menuTextColor: white;
     --menuActiveLinkColor: var(--tercery-color);
+    --sectionHomeTitleTextColor: var(--hightlight-color);
 }

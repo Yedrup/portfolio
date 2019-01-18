@@ -8,7 +8,7 @@ div.bm-overlay[class] {
 .bm-menu-wrap {
     /* background: var(--menuBackgroundColor); */
     top: 0px;
-    width: 250px !important;
+    /* width: 250px !important; */
 }
 
 .bm-menu {
@@ -54,6 +54,27 @@ div.bm-overlay[class] {
     font-size: 1rem;
     color: var(--menuTextColor);
 }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.c-menu-openned::after {
+    content: url('../../images/dust4.png');
+    position: relative;
+    top: -6rem;
+    left: -17rem;
+    z-index: -1;
+    animation: fadeIn .4s ease-out;
+}
+
+
 
 .c-menu-logo {
     margin-bottom: 1rem;

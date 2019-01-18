@@ -34,10 +34,10 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle="Purdey Chambraud" />
-        <div style={{ margin: `0`, maxWidth: 650,minHeight: "70vh", padding: `0 1rem`, flex:"1",display:"flex", flexDirection:"column" }}>
+        <Header siteTitle={  data.site.siteMetadata.title } />
+        <main style={{ margin: `0`,minHeight: "70vh", padding: `.5rem .5rem`, flex:"1",display:"flex", flexDirection:"column" }}>
           {children}
-        </div>
+        </main>
         <Footer/>
       </>
     )}

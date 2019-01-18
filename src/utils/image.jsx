@@ -14,10 +14,16 @@ import Img from 'gatsby-image'
  */
 
 const Image = props => {
-  // let test = "purdey_photo.jpg";
-  console.log(props)
-  // if(props.imageName === "purdey") {
-  //   console.log("photo purdey asked")
+  // console.log(props)
+  let backgroungSectionStyle= {
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    right:0,
+    bottom:0,
+    width: '100%',
+    height: '100%'
+  }
     return (
       <StaticQuery
         query={graphql`
@@ -43,6 +49,34 @@ const Image = props => {
                 }
               }
             }
+            forestSnowFilter: file(relativePath: { eq: "forest.jpg" }) {
+              childImageSharp {
+                fluid(maxWidth: 1024) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            workplace: file(relativePath: { eq: "workplace.jpg" }) {
+              childImageSharp {
+                fluid(maxWidth: 1024) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            forestPlaceholder: file(relativePath: { eq: "forestPlaceholder.jpg" }) {
+              childImageSharp {
+                fluid(maxWidth: 1024) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            tunnelPlaceholder: file(relativePath: { eq: "tunnelPlaceholder.jpg" }) {
+              childImageSharp {
+                fluid(maxWidth: 1024) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             logo: file(relativePath: { eq: "favicon.png" }) {
               childImageSharp {
                 fluid(maxWidth: 300) {
@@ -57,6 +91,13 @@ const Image = props => {
                 }
               }
             }
+            notFoundLarge: file(relativePath: { eq: "trex-404-large.png" }) {
+              childImageSharp {
+                fluid(maxWidth: 1200) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             astronaut: file(relativePath: { eq: "gatsby-astronaut.png" }) {
               childImageSharp {
                 fluid(maxWidth: 300) {
@@ -67,11 +108,14 @@ const Image = props => {
           }
         `}
         render={data => {
-          console.log(data)
+          // console.log(data)
           if(props.imageName === "purdey") {
             return (<Img fluid={data.purdey.childImageSharp.fluid} />)
-          } else if(props.imageName === "workplace2"){
-            return (<Img fluid={data.workplace2.childImageSharp.fluid} />)
+          } else if(props.imageName === "workplace"){
+            return (<Img fluid={data.workplace.childImageSharp.fluid} 
+              style={{
+               ...backgroungSectionStyle
+                }} />)
           } else if(props.imageName === "logo"){
             return (<Img fluid={data.logo.childImageSharp.fluid} />)
           } else if(props.imageName === "logoExplosion") {
@@ -80,6 +124,29 @@ const Image = props => {
             return (<Img fluid={data.logoExplosionNoBg.childImageSharp.fluid} />)
           } else if(props.imageName === "trexNoBg") {
             return (<Img fluid={data.trexNoBg.childImageSharp.fluid} />)
+          }else if(props.imageName === "forestSnowFilter") {
+            return (<Img fluid={data.forestSnowFilter.childImageSharp.fluid} 
+              style={{
+                ...backgroungSectionStyle
+                 }} 
+              />
+              )
+          }else if(props.imageName === "404Large") {
+            return (<Img fluid={data.notFoundLarge.childImageSharp.fluid} />)
+          }else if(props.imageName === "forestPlaceholder") {
+            return (<Img fluid={data.forestPlaceholder.childImageSharp.fluid} 
+              style={{
+                ...backgroungSectionStyle
+                 }} 
+              />
+              )
+          }else if(props.imageName === "tunnelPlaceholder") {
+            return (<Img fluid={data.tunnelPlaceholder.childImageSharp.fluid} 
+              style={{
+                ...backgroungSectionStyle
+                 }} 
+              />
+              )
           }
            else {
             return (<Img fluid={data.astronaut.childImageSharp.fluid} />)
@@ -88,24 +155,5 @@ const Image = props => {
     }
       />
   )
-  // } else if(props.imageName ==='miaou'){
-  //   console.log("this is another img", props.imageName )
-  //   return (
-  //     <StaticQuery
-  //       query={graphql`
-  //         query { 
-  //           placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-  //             childImageSharp {
-  //               fluid(maxWidth: 300) {
-  //                 ...GatsbyImageSharpFluid
-  //               }
-  //             }
-  //           }
-  //         }
-  //       `}
-  //       render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
-  //     />
-  // )
-  // }
 }
 export default Image

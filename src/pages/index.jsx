@@ -1,81 +1,58 @@
 import React from 'react'
-import {
-  Link
-} from 'gatsby'
+import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import Section from '../components/section/section'
 import Image from '../utils/image'
-import {
-  StaticQuery,
-  graphql
-} from 'gatsby'
-
+import { StaticQuery, graphql } from 'gatsby'
 
 const IndexPage = () => {
-
-  return ( 
-    <StaticQuery 
-    query={graphql `
-    query IndexPage {
-      dataJson {
-        homePage {
-          title,
-          intro
+  return (
+    <StaticQuery
+      query={graphql`
+        query IndexPage {
+          dataJson {
+            homePage {
+              title
+              intro
+              sections {
+                name
+                url
+                description
+                img
+                color
+              }
+            }
+          }
         }
-      }
-    }
-  `}
-
-  render={data => {
-      const { title, intro } = data.dataJson.homePage;   
-      console.log(data)
-     return (
-      <Layout>
-         <h1 className="c-page__title">{title}</h1>
-         <p>{intro}</p>
-         <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-           {/* <Image /> */}
-         </div>
-       </Layout>
-      
-      )
-      
-    }
-  
-  }
-  />
+      `}
+      render={data => {
+        const { title, intro, sections } = data.dataJson.homePage
+        console.log(data)
+        // create page component for page layout
+        return (
+          <Layout>
+            <h1 className="c-page__title">{title}</h1>
+            <p>{intro}</p>
+            <div className="c-sections">
+              {sections.map((section, index) => {
+                return (
+                  <Section
+                    key={index}
+                    name={section.name}
+                    url={section.url}
+                    description={section.description}
+                    color={section.color}
+                    img={section.img}
+                  />
+                )
+              })}
+            </div>
+          </Layout>
+        )
+      }}
+    />
   )
 }
 export default IndexPage
 
-    
-    /*
-      //     render={data => (
-      //       <>
-      //       <p>{JSON.stringify(data)}</p>
-      //       </>
-      //     )
-      // }
-        // const IndexPage = ({data}) => {
-        // const { title } = data.title;
-        // console.log("datajson",dataJson)
-        //   return (
-        //     <Layout>
-        //     <h1>Hi {title}</h1>
-        //     {/* <p>Welcome to your new Gatsby site.{query.allMarkdownRemark.edges.node.frontmatter.title}</p> */
-        //     <p>Now go build something great.</p>
-        //     <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-        //       <Image />
-        //     </div>
-        //   </Layout>
-        //   )
-        // }
-
-        // export default IndexPage
-        // export const IndexQuery = graphql`
-        // query IndexPage {
-        //   dataJson {
-        //         title
-        //         test
-        //   }
-        // }*/
