@@ -7,13 +7,13 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import "./css/work.css"
 
-const workPage = () => {
+const jobsPage = () => {
   return (
     <StaticQuery
       query={graphql`
-        query workPage {
+        query jobsPage {
           dataJson {
-            workPage {
+            jobsPage {
               title
               intro
               jobs {
@@ -31,7 +31,7 @@ const workPage = () => {
         }
       `}
       render={data => {
-        const { title, intro, jobs } = data.dataJson.workPage
+        const { title, intro, jobs } = data.dataJson.jobsPage
         console.log(jobs)
         return (
           <Layout>
@@ -65,4 +65,4 @@ const workPage = () => {
   )
 }
 
-export default workPage
+export default jobsPage

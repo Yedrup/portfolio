@@ -13,7 +13,7 @@ const Section = props => {
         <h2 className="c-section__name">{props.name}</h2>
         <p className="">{props.description}</p>
       </div>
-      <Image imageName={props.img} />
+      <Image className="c-section__image" imageName={props.img} />
     </div>
     </Link>
   )

@@ -27,6 +27,20 @@
     width: 100%; 
     object-position: top!important;
  }
+.c-section--on-image .gatsby-image-wrapper:after {
+    display: flex;
+    content: "";
+    background: rgba(250, 250, 250, 0.19);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+ }
+ .c-section--on-image:hover > .gatsby-image-wrapper:after {
+    background: #519f943d
+
+ }
  .c-section__link {
      position: relative;
      text-decoration: none;
@@ -39,7 +53,7 @@
 .c-section__content{
     position: relative;
     padding: 2rem 1rem;
-    z-index: 10;
+    z-index: 20;
     color:white;
     text-shadow: 1px 1px black;
 }

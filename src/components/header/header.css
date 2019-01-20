@@ -51,6 +51,7 @@
     color: var(--headerTextColor);
     text-decoration: none;
     text-shadow:1px 1px #a8abab;
+    margin-right: .5rem;
 }
 .link_active_path {
     color: var(--linkActiveColor);
