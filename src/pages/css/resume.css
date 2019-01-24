@@ -1,0 +1,75 @@
+.c-jobs,.c-missions,.c-skills {
+    list-style: none;
+}
+.c-jobs {
+    margin: 0;
+}
+.c-job {
+    /* background: rgb(81, 159, 148); */
+    /* color: white; */
+    padding:  1rem;
+}
+
+.c-job__year {
+    margin-right: .5rem;
+}
+
+.c-mission:before {
+    content: "•"; 
+    color: rgb(81, 159, 148)
+}
+
+.c-skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+.c-skill{
+    background: var(--skillBackground);
+    color:var(--color-text-on-dark);
+    padding: .5rem 1rem;
+    border-radius: 2px;
+    margin: 1rem 1rem;
+} 
+
+.c-skill:last-child {
+    margin-bottom: auto;
+}
+
+.c-languages {
+    text-decoration:none;
+    list-style:none;
+}
+
+.c-educations {
+    text-decoration:none;
+    list-style:none;
+}
+
+.c-resume-section--button {
+    display:flex;
+    justify-content:center;
+}
+
+.c-resume-button {
+    padding:1rem;
+    background:var(--primary-color);
+    color:white;
+    display: flex;
+    width: 50%;
+    text-decoration:none;
+    text-align: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.c-resume-button--fullWidth{
+    padding:1rem;
+    background:var(--primary-color);
+    color:white;
+    display: flex;
+    margin-left: 1.45rem;
+
+    text-decoration:none;
+    text-align: center;
+    justify-content: center;
+ }

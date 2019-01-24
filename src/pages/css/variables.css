@@ -39,4 +39,6 @@
     --menuTextColor: white;
     --menuActiveLinkColor: var(--tercery-color);
     --sectionHomeTitleTextColor: var(--hightlight-color);
+
+    --skillBackground: var(--primary-color);
 }
