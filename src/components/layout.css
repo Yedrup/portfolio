@@ -644,3 +644,10 @@ button:focus,
   font-weight: bold;
   color: var(--titleTextColor);
 }
+.c-button {
+  border-radius:var(--buttonBorderRadius);
+}
+
+.c-link {
+  color: var(--linkInlineBgLight)
+}

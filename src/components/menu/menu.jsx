@@ -5,6 +5,8 @@ import cv from '../../document/purdey_chambraud_cv_front_end-en.pdf'
 import { Link, GatsbyLinkProps,StaticQuery, graphql } from 'gatsby'
 import Image from '../../utils/image'
 import IconService from "../../utils/IconService"
+
+
 //TODO create component, see how to manage classes
 const ListLink = props => {
   return (
@@ -31,7 +33,6 @@ class BubbleMenu extends Component {
   }
 
   render() {
-    console.log('moumi tg',this.props)
     let socialLinks = [...this.props.socialLinks]
     return (
       <StaticQuery
@@ -78,7 +79,7 @@ class BubbleMenu extends Component {
               {/* <p>Social Medias</p> */}
               {/* GO TO 404 bexause Link is internal */}
               <ul className="c-menu__socials" >
-                {socialLinks.map((link, index) => {
+                {this.props.socialLinks.map((link, index) => {
                   return (
                     <ListLink to={link.url} key={index}>
                       <IconService nameIcon={link.name} iconStyleContext={{
@@ -88,8 +89,8 @@ class BubbleMenu extends Component {
                   )
                 })}
               </ul>
-              <div className="c-resume-section--button">
-              <a href={cv} target="_blank" className="c-resume-button--fullWidth">
+              <div className="c-resume-section--menu">
+              <a href={cv} target="_blank" className="c-button c-resume-button--menu">
                 {data.dataJson.buttons.buttonDownload}
               </a>
             </div>

@@ -11,7 +11,7 @@ const ListLink = props => {
   return (
     <li className="c-header__li">
       <Link
-        activeClassName="link_active_path"
+        activeClassName="link_active_path c-button"
         className="c-header__link"
         to={props.to}
       >
@@ -23,11 +23,11 @@ const ListLink = props => {
 const LinkHref = props => {
   return (
     <li className="c-header__social">
-      <a href={props.url}>
+      <a href={props.url} target="_blank">
         <IconService
           nameIcon={props.name}
           iconStyleContext={{
-            color: 'var(--hightlight-color)',
+            color: 'var(--headerSocialColor)',
           }}
         />
       </a>

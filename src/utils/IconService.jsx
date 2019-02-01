@@ -4,7 +4,11 @@ import {
   FaHome,
   FaGithub,
   FaLinkedin,
-  FaTwitter
+  FaTwitter,
+  FaBuilding,
+  FaWrench,
+  FaGraduationCap,
+  FaDownload
 } from "react-icons/fa";
 
 class IconService extends React.Component {
@@ -13,7 +17,11 @@ class IconService extends React.Component {
       { title: "Github", nameIcon: FaGithub },
       { title: "home", nameIcon: FaHome },
       { title: "Linkedin", nameIcon: FaLinkedin },
-      { title: "Twitter", nameIcon: FaTwitter}
+      { title: "Twitter", nameIcon: FaTwitter},
+      { title: "Education", nameIcon: FaGraduationCap},
+      { title: "Job", nameIcon: FaBuilding},
+      { title: "Skills", nameIcon: FaWrench},
+      { title: "download", nameIcon: FaDownload}
     ];
     let iconToFind = this.props.nameIcon;
     let iconStyleContext = this.props.iconStyleContext;

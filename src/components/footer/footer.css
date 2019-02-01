@@ -2,12 +2,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3rem;
+    height: var(--footerHeight);
     padding: 0 1rem;
     background: var(--footerBackground);
     color: var(--footerTextColor);
     font-family: "Alegreya";
     border-top: 2px solid rgba(18, 37, 34, 0.14);
+}
+
+.c-footer__socials {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    flex: 1;
+    justify-content: flex-end;
+    color: var(--footerSocialColor)
+}
+
+.c-footer__social {
+    margin: 0 0 0 1rem;
 }
 
 .c-footer_links {

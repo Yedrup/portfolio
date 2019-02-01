@@ -16,6 +16,7 @@
     --linkActiveColor: var(--active-color);
     --linkActiveColorShadow: #04373c;
     --linkActiveColorBackground: var(--hightlight-color);
+    --linkInlineBgLight: var(--hightlight-color);
 
     --logoWrittenColor: var(--color-text-on-dark);
     --logoWrittenShadow: #505a5a;
@@ -23,9 +24,12 @@
     --headerBackground: -webkit-linear-gradient(45deg, #365773 1%, #519f94 63%, #e2bc74 100%);
     --headerTextColor: var(--color-text-on-dark);
     --headerHeight: 6rem;
+    --headerSocialColor: #406e6a;
 
     --footerBackground: -webkit-linear-gradient(45deg, #e2bc74 1%, #519f94 63%, #365773 100%);
     --footerTextColor: var(--color-text-on-dark);
+    --footerSocialColor: var(--tercery-color);
+    --footerHeight: 3rem;
 
     --titleTextColor: var(--hightlight-color);
 
@@ -41,4 +45,12 @@
     --sectionHomeTitleTextColor: var(--hightlight-color);
 
     --skillBackground: var(--primary-color);
+    --pannelScrollBackground: var(--primary-color);
+    --pannelScrollLink: var(--color-text-on-dark);
+    --pannelScrollLinkActive: var(--hightlight-color);
+    
+
+    /* buttons */
+
+    --buttonBorderRadius:3px;
 }

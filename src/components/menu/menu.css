@@ -17,9 +17,6 @@ div.bm-overlay[class] {
     height: 100%;
 }
 
-.bm-item-list {
-    /* margin-top:1rem; */
-}
 
 .bm-morph-shape {
     fill: var(--menuBackgroundColor);
@@ -88,19 +85,7 @@ div.bm-overlay[class] {
     color: var(--menuActiveLinkColor);
 }
 
-.c-resume-button {
-    padding:1rem;
-    background:var(--primary-color);
-    color:white;
-    display: flex;
-    width: 50%;
-    text-decoration:none;
-    text-align: center;
-    justify-content: center;
-    margin: 2rem 0;
-}
-
-.c-resume-button--fullWidth{
+.c-resume-button--menu{
     padding:1rem;
     background:var(--primary-color);
     color:white;

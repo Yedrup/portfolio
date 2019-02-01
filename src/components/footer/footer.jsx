@@ -1,8 +1,24 @@
-import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import './footer.css'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql,Link } from 'gatsby'
+import IconService from "../../utils/IconService"
+
+const LinkHref = props => {
+  return (
+    <li className="c-footer__social">
+      <a href={props.url} target="_blank">
+        <IconService
+          nameIcon={props.name}
+          iconStyleContext={{
+            className: "c-footer_links",
+            color: 'var(--footerSocialColor)',
+          }}
+        />
+      </a>
+    </li>
+  )
+}
 
 const Footer = () => {
   return (
@@ -21,19 +37,12 @@ const Footer = () => {
         // console.log(data)
         return (
           <footer className="c-footer">
+          <ul className="c-footer__socials">
             {data.dataJson.footer.map(link => {
               // console.log(link)
-              return (
-                <a
-                  key={link.name}
-                  className="c-footer_links"
-                  href={link.url}
-                  target="_blank"
-                >
-                  {link.name}
-                </a>
-              )
+                return <LinkHref name={link.name} key={link.name} url={link.url}/>
             })}
+          </ul>
           </footer>
         )
       }}

@@ -5,23 +5,27 @@
     margin: 0;
 }
 .c-job {
-    /* background: rgb(81, 159, 148); */
-    /* color: white; */
-    padding:  1rem;
+    padding:  1rem 0;
 }
 
 .c-job__year {
     margin-right: .5rem;
 }
 
+.c-missions {
+    margin-left: 1rem;
+}
+
 .c-mission:before {
     content: "•"; 
-    color: rgb(81, 159, 148)
+    color: rgb(81, 159, 148);
+    margin-right: .6rem;
 }
 
 .c-skills {
     display: flex;
     flex-wrap: wrap;
+    margin:0;
 }
 .c-skill{
     background: var(--skillBackground);
@@ -48,11 +52,14 @@
 .c-resume-section--button {
     display:flex;
     justify-content:center;
+    margin: 5rem 0;
 }
-
+/* .c-resume__subtitle {
+    margin-left:1.5rem;
+} */
 .c-resume-button {
     padding:1rem;
-    background:var(--primary-color);
+    background:var(--hightlight-color);
     color:white;
     display: flex;
     width: 50%;
@@ -64,7 +71,7 @@
 
 .c-resume-button--fullWidth{
     padding:1rem;
-    background:var(--primary-color);
+    background:var(--hightlight-color);
     color:white;
     display: flex;
     margin-left: 1.45rem;
@@ -73,3 +80,35 @@
     text-align: center;
     justify-content: center;
  }
+ @media only screen and (min-width: 600px) {
+    .c-resume-button {
+        width: 20%;
+    }  
+}
+.c-resume-scrollable {
+    position: relative;
+
+}
+.c-pannel-scoll {
+    background: var(--pannelScrollBackground);
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    max-width:50%;
+    font-size: 1rem; 
+    padding: 1rem;
+    right:0;
+    position: fixed;
+    /* bottom: var(--footerHeight); */
+}
+
+.c-pannel-scroll__link {
+    color: var(--pannelScrollLink);
+}
+
+.c-pannel-scroll__link--active {
+    color: var(--pannelScrollLinkActive);
+}
+.c-resume__download-link {
+    margin-left: .5rem;
+}
