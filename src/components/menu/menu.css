@@ -96,6 +96,10 @@ div.bm-overlay[class] {
     text-align: center;
     justify-content: center;
  }
+
+ ul.bm-item:focus {
+    outline: none;
+ }
 /*BURGER Menu*/
 
 

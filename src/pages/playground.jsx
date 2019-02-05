@@ -1,35 +1,92 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import './css/playground.css'
 import Layout from '../components/layout'
+import { StaticQuery, graphql } from 'gatsby'
+import IconService from '../utils/IconService'
+import Image from '../utils/image'
 
-const playgroundPage = () => (
-  <Layout>
-    <h1 className="c-page__title">Hi from the playground page</h1>
-    <p>Welcome to playground</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, assumenda, natus nisi numquam quibusdam voluptatibus optio soluta enim magnam est corporis in. Eligendi vero corporis laborum itaque ratione possimus error? ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium iste ut tenetur sequi nostrum dolorum reprehenderit provident! Eius temporibus magnam suscipit error nulla labore, pariatur dignissimos facere possimus magni?</p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
+const playgroundPage = () => {
+  return (
+    <StaticQuery
+      query={graphql`
+        query playgroundPage {
+          dataJson {
+            playgroundPage {
+              title
+              intro
+              projects {
+                name
+                shortName
+                purpose
+                GithubUrl
+                url
+                technologies {
+                  name
+                }
+                links {
+                  name
+                  url
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={data => {
+        const { intro, title, projects } = data.dataJson.playgroundPage
+        console.log(data)
+        return (
+          <Layout>
+            <h1 className="c-page__title">{title}</h1>
 
+            <p>{intro}</p>
+
+            <ul className="c-projects">
+              {projects.map((project, index) => {
+                return (
+                  <li key={index} className="c-project">
+                  <div className='c-project__infos--written'>
+                   <a href={project.url} target="_blank" className="c-project__title">
+                   <h2>{project.name}</h2>
+                   </a>
+                    <p>{project.purpose}</p>
+                    <ul className="c-project__links">
+                      <li className='c-project__link'>
+                        <a href={project.GithubUrl} target="_blank">
+                          <IconService
+                            nameIcon="Github"
+                            iconStyleContext={{
+                              color: 'var(--color-text-on-dark)',
+                            }}
+                          />
+                        </a>
+                      </li>
+                      <li className='c-project__link'>
+                        <a href={project.url} target="_blank">
+                          <IconService
+                            nameIcon="link"
+                            iconStyleContext={{
+                              color: 'var(--color-text-on-dark)',
+                            }}
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="c-project__image">
+                  <Image imageName={project.shortName} />
+                  </div>
+                  </li>
+                )
+              })}
+            </ul>
+            <Link to="/">Go back to the homepage</Link>
+          </Layout>
+        )
+      }}
+    />
+  )
+}
 
 export default playgroundPage
