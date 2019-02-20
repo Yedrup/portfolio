@@ -24,6 +24,9 @@ const Image = props => {
     width: '100%',
     height: '100%',
   }
+  let backgroungProjectStyle = {
+    height: 'unset',
+  }
   return (
     <StaticQuery
       query={graphql`
@@ -197,18 +200,27 @@ const Image = props => {
           return (
             <Img
               fluid={data.rockPaperScissors.childImageSharp.fluid}
+              style={{
+                ...backgroungProjectStyle,
+              }}
             />
           )
         } else if (props.imageName === 'kwick') {
           return (
             <Img
               fluid={data.kwick.childImageSharp.fluid}
+              style={{
+                ...backgroungProjectStyle,
+              }}
             />
           )
         } else if (props.imageName === 'HYSAJS') {
           return (
             <Img
               fluid={data.HYSAJS.childImageSharp.fluid}
+              style={{
+                ...backgroungProjectStyle,
+              }}
             />
           )
         } else if (props.imageName === 'colorGame') {
@@ -218,7 +230,9 @@ const Image = props => {
             />
           )
         } else {
-          return <Img fluid={data.logoExplosion.childImageSharp.fluid} />
+          return <Img fluid={data.logoExplosion.childImageSharp.fluid} style={{
+            ...backgroungProjectStyle,
+          }} />
         }
       }}
     />

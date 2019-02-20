@@ -49,6 +49,8 @@
     --pannelScrollLink: var(--color-text-on-dark);
     --pannelScrollLinkActive: var(--hightlight-color);
     
+    --technologiesBackground: var(--secondary-color);
+    --technologiesColorText: var(--color-text-on-dark);
 
     /* buttons */
 
