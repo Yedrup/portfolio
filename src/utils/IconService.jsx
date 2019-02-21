@@ -9,7 +9,9 @@ import {
   FaWrench,
   FaGraduationCap,
   FaDownload,
-  FaLink
+  FaLink,
+  FaEnvelope,
+  FaAngular
 } from "react-icons/fa";
 
 class IconService extends React.Component {
@@ -23,7 +25,8 @@ class IconService extends React.Component {
       { title: "Job", nameIcon: FaBuilding},
       { title: "Skills", nameIcon: FaWrench},
       { title: "download", nameIcon: FaDownload},
-      { title: "link", nameIcon: FaLink}
+      { title: "link", nameIcon: FaLink},
+      { title: "mail", nameIcon: FaEnvelope},
     ];
     let iconToFind = this.props.nameIcon;
     let iconStyleContext = this.props.iconStyleContext;
@@ -36,9 +39,9 @@ class IconService extends React.Component {
 
     return (
       <span>
-      <IconContext.Provider value={iconStyleContext}>
-        <IconName />
-      </IconContext.Provider>
+        <IconContext.Provider value={iconStyleContext}>
+          <IconName />
+        </IconContext.Provider>
       </span>
     );
   }

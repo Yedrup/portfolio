@@ -130,6 +130,13 @@ const Image = props => {
               }
             }
           }
+          map: file(relativePath: { eq: "map.png" }) {
+            childImageSharp {
+              fluid(maxWidth: 1024) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           notFoundLarge: file(relativePath: { eq: "trex-404-large.png" }) {
             childImageSharp {
               fluid(maxWidth: 1200) {
@@ -229,7 +236,13 @@ const Image = props => {
               fluid={data.colorGame.childImageSharp.fluid}
             />
           )
-        } else {
+        } else if (props.imageName === 'map') {
+          return (
+            <Img
+              fluid={data.map.childImageSharp.fluid}
+               />
+          )
+        }  else {
           return <Img fluid={data.logoExplosion.childImageSharp.fluid} style={{
             ...backgroungProjectStyle,
           }} />

@@ -134,20 +134,21 @@ class resumePage extends Component {
           return (
             <Layout>
               <h1 className="c-page__title">{title}</h1>
-              <p>{intro}
-              <a
-                    href={cv}
-                    target="_blank"
-                    className="c-resume__download-link c-link"
-                  >                     
-              <IconService
-                      nameIcon="download"
-                      iconStyleContext={{
-                        color: '',
-                      }}
-                    />
-                    </a>
-                    </p>
+              <p>
+                {intro}
+                <a
+                  href={cv}
+                  target="_blank"
+                  className="c-resume__download-link c-link"
+                >
+                  <IconService
+                    nameIcon="download"
+                    iconStyleContext={{
+                      color: '',
+                    }}
+                  />
+                </a>
+              </p>
               <div className="c-resume-scrollable">
                 <div className="c-pannel-scoll">
                   <LinkScroll
@@ -209,7 +210,9 @@ class resumePage extends Component {
                       return (
                         <li className="c-job" key={job.name}>
                           <span className="c-job__year">{job.years}</span>
-                          <a href={job.url} target="_blank" className="c-link">{job.name}</a>
+                          <a href={job.url} target="_blank" className="c-link">
+                            {job.name}
+                          </a>
                           <ul className="c-missions">
                             {job.missions.map((mission, index) => {
                               console.log(mission.name)

@@ -1,0 +1,28 @@
+
+.c-contact {
+    display: flex;
+    flex-direction: column;
+}
+.c-contact__link__text {
+    /* margin-left: .6rem; */
+}
+.c-contact__link__icon {
+    margin-right: .6rem;
+}
+
+.c-contact__map  {
+    min-width: 40%;
+}
+.c-contact__map .gatsby-image-wrapper {
+    height: 100%;
+    border: 1px solid black;
+}
+
+@media only screen and (min-width: 600px) {
+    .c-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
