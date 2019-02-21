@@ -35,11 +35,11 @@ class resumePage extends Component {
 
   componentDidMount() {
     Events.scrollEvent.register('begin', (to, element) => {
-      console.log('begin', arguments)
+    console.log('begin', arguments)
     })
 
     Events.scrollEvent.register('end', (to, element) => {
-      console.log('end', arguments)
+    console.log('end', arguments)
     })
 
     scrollSpy.update()
@@ -61,9 +61,9 @@ class resumePage extends Component {
     scroll.scrollMore(100)
   }
   handleSetActive = to => {
-    console.log(to)
+  console.log(to)
     this.setState({ currentlyScrolled: to })
-    console.log(this.state)
+  console.log(this.state)
   }
   render() {
     return (
@@ -134,21 +134,20 @@ class resumePage extends Component {
           return (
             <Layout>
               <h1 className="c-page__title">{title}</h1>
-              <p>
-                {intro}
-                <a
-                  href={cv}
-                  target="_blank"
-                  className="c-resume__download-link c-link"
-                >
-                  <IconService
-                    nameIcon="download"
-                    iconStyleContext={{
-                      color: '',
-                    }}
-                  />
-                </a>
-              </p>
+              <p>{intro}
+              <a
+                    href={cv}
+                    target="_blank"
+                    className="c-resume__download-link c-link"
+                  >                     
+              <IconService
+                      nameIcon="download"
+                      iconStyleContext={{
+                        color: '',
+                      }}
+                    />
+                    </a>
+                    </p>
               <div className="c-resume-scrollable">
                 <div className="c-pannel-scoll">
                   <LinkScroll
@@ -210,12 +209,10 @@ class resumePage extends Component {
                       return (
                         <li className="c-job" key={job.name}>
                           <span className="c-job__year">{job.years}</span>
-                          <a href={job.url} target="_blank" className="c-link">
-                            {job.name}
-                          </a>
+                          <a href={job.url} target="_blank" className="c-link">{job.name}</a>
                           <ul className="c-missions">
                             {job.missions.map((mission, index) => {
-                              console.log(mission.name)
+                             console.log(mission.name)
                               return (
                                 <li className="c-mission" key={index}>
                                   {mission.name}
