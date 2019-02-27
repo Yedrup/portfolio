@@ -32,29 +32,29 @@ const contactPage = () => {
             <div className="c-contact">
               <div>
                 <p>
-                  <a className="c-link" href={email}>
+                  <a className="c-contact__link" href={email}>
                     <IconService
                       nameIcon="mail"
                       iconStyleContext={{
-                        color: 'var(--iconContactColor)',
+                        color: 'var(--contactIconColor)',
                         className: 'c-contact__link__icon',
                       }}
                     />
-                    <span className="c-contact__link__text">
+                    <span>
                       send me an email
                     </span>
                   </a>
                 </p>
                 <p>
-                  <a className="c-link" href={Twitter} target="_blank">
+                  <a className="c-contact__link" href={Twitter} target="_blank">
                     <IconService
                       nameIcon="Twitter"
                       iconStyleContext={{
-                        color: 'var(--iconContactColor)',
+                        color: 'var(--contactIconColor)',
                         className: 'c-contact__link__icon',
                       }}
                     />
-                    <span className="c-contact__link__text">Tweet to me!</span>
+                    <span>Tweet to me!</span>
                   </a>
                 </p>
               </div>

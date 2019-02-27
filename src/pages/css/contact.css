@@ -3,9 +3,12 @@
     display: flex;
     flex-direction: column;
 }
-.c-contact__link__text {
-    /* margin-left: .6rem; */
+.c-contact__link {
+    color: var(--contactLinkColor);
+    text-decoration: none;
+    font-size: 1.15rem;
 }
+
 .c-contact__link__icon {
     margin-right: .6rem;
 }
@@ -23,6 +26,9 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    .c-contact__link {
+        font-size: 1.25rem;
     }
 }
 

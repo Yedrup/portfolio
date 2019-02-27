@@ -52,7 +52,8 @@
     --technologiesBackground: var(--secondary-color);
     --technologiesColorText: var(--color-text-on-dark);
 
-    --iconContactColor: var(--primary-color);
+    --contactIconColor: var(--primary-color);
+    --contactLinkColor: var(--secondary-color);
 
     /* buttons */
 
