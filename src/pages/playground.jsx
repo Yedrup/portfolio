@@ -32,7 +32,7 @@ const playgroundPage = () => {
       `}
       render={data => {
         const { intro, title, projects } = data.dataJson.playgroundPage
-        console.log(data)
+        //console.log(data)
         return (
           <Layout>
             <h1 className="c-page__title">{title}</h1>
@@ -95,28 +95,6 @@ const playgroundPage = () => {
                         </span>
                         {project.purposeTech}
                       </p>
-                      {/* <ul className="c-project__links">
-                      <li className='c-project__link'>
-                        <a href={project.GithubUrl} target="_blank">
-                          <IconService
-                            nameIcon="Github"
-                            iconStyleContext={{
-                              color: 'var(--color-text-on-dark)',
-                            }}
-                          />
-                        </a>
-                      </li>
-                      <li className='c-project__link'>
-                        <a href={project.url} target="_blank">
-                          <IconService
-                            nameIcon="link"
-                            iconStyleContext={{
-                              color: 'var(--color-text-on-dark)',
-                            }}
-                          />
-                        </a>
-                      </li>
-                    </ul> */}
                     </div>
                     <div className="c-project__image">
                       <Image imageName={project.shortName} />

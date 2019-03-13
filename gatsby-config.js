@@ -49,7 +49,7 @@ module.exports = {
       options: {
         name: "Purdey's portfolio",
         short_name: 'portfolio',
-        start_url: '/playground/gatsbyPortfolio/',
+        start_url: '/playground/gatsbyreactnewfolio/',
         background_color: '#519f94',
         theme_color: '#519f94',
         display: 'minimal-ui',
@@ -66,5 +66,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
-    pathPrefix: `/playground/gatsbyPortfolio`,
+    pathPrefix: `/playground/gatsbyreactnewfolio`,
 }

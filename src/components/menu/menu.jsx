@@ -50,7 +50,7 @@ class BubbleMenu extends Component {
           }
         `}
         render={data => {
-          console.log(data)
+          //console.log(data)
 
           return (
             <BubbleMenuC

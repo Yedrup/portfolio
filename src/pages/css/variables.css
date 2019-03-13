@@ -55,6 +55,11 @@
     --contactIconColor: var(--primary-color);
     --contactLinkColor: var(--secondary-color);
 
+
+    
+    --aboutTitleColorText: var(--hightlight-color);
+
+
     /* buttons */
 
     --buttonBorderRadius:3px;

@@ -20,7 +20,7 @@ const linksPage = () => {
       `}
       render={data => {
         const { title, intro } = data.dataJson.linksPage
-        console.log(data)
+        //console.log(data)
         return (
           <Layout>
             <h1 className="c-page__title">{title}</h1>

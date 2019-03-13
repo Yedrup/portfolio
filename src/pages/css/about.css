@@ -1,4 +1,29 @@
 .myPhoto .gatsby-image-wrapper {
-    max-width: 4rem;
+    max-width: 6rem;
     border-radius: 25%;
 }
+
+.c-about__title {
+    color: var(--aboutTitleColorText);
+    font-family: "Alegreya";
+
+}
+
+.c-bioParagraph::first-letter {
+    color: var(--hightlight-color);
+    font-style: italic;
+    font-family: "Alegreya";
+    font-weight: bold;
+    font-size: 1rem;
+    padding-right: .15rem;
+}
+
+.c-passions {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.c-passion {
+    margin: 0 .5rem 0 0;
+}
+

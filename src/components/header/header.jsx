@@ -55,7 +55,7 @@ const Header = ({ siteTitle }) => {
         }
       `}
       render={data => {
-        console.log(data);
+        //console.log(data);
         const socialLinks = data.dataJson.socialMedias;
         return (
           <header className="c-header">
