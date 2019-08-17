@@ -18,7 +18,10 @@ const aboutPage = () => {
               intro
               bioTitle
               biography {
-                paragraph
+                periodTitle
+                paragraphs {
+                  paragraph
+                }
               }
               valuesTitle
               values {
@@ -44,30 +47,40 @@ const aboutPage = () => {
           introPassions,
           passions,
           valuesTitle,
-          values 
+          values
         } = data.dataJson.aboutPage
-        //console.log(data)
         return (
           <Layout>
+          <h1 className="c-page__title">{title}</h1>
             <div className="myPhoto" style={{ maxWidth: '190px' }}>
               <Image imageName="purdey" />
             </div>
-            <h1 className="c-page__title">{title}</h1>
             <p>{intro}</p>
+            {/* <h1 className="c-page__title">{title}</h1> */}
             <h2 className="c-about__title">{bioTitle}</h2>
+            {/* <h3 className="c-about__subtitle">period</h3>  */}
             {biography.map((bioParagraph, index) => {
-              return <p className="c-bioParagraph" key={index}>{bioParagraph.paragraph}</p>
+              let paragraphs = bioParagraph.paragraphs;
+              return (
+                <div>
+                  <h3 className="c-about__bio__title" key={index}>{bioParagraph.periodTitle}</h3>
+                  <ul key={index} className="c-about__bio__paragraphs">
+                    {paragraphs.map((value, index) => {
+                      console.log("value", value)
+                      return (
+                        <li key={index}>{value.paragraph}</li>
+                      )
+                    })}
+                  </ul>
+                </div>
+              )
             })}
-            <h2 className="c-about__title">{valuesTitle}</h2>
-            {values.map((value, index) => {
-              return <p key={index}>{value.name}</p>
-            })}
-             <h2 className="c-about__title">{passionTitle}</h2>
-             <div className="c-passions">
+            <h2 className="c-about__title">{passionTitle}</h2>
+            <ul className="c-passions">
               {passions.map((passion, index) => {
-                return <p className="c-passion" key={index}>{passion.name}</p>
+                return <li className="c-passion" key={index}>{passion.name}</li>
               })}
-            </div>  
+            </ul>
             <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
               <Link to="/">Go back to the homepage</Link>
               <Link to="/playground/">Go to the playground</Link>

@@ -4,26 +4,46 @@
 }
 
 .c-about__title {
-    color: var(--aboutTitleColorText);
+    margin: 1rem 0;
+    color: var(--color-text-on-dark);
+    background-color: var(--primary-color);
+    padding: 1rem;
     font-family: "Alegreya";
-
+    font-size: 1.25rem;
+    /* transform: rotate(2deg) scaleX(1); */
+    width: 100%;
 }
 
-.c-bioParagraph::first-letter {
+
+.c-about__subtitle {
+    color: var(--aboutSubtitleColorText);
+    font-family: "Alegreya";
+    font-size: .9rem;
+}
+
+.c-about__bio__title::first-letter {
     color: var(--hightlight-color);
     font-style: italic;
     font-family: "Alegreya";
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding-right: .15rem;
 }
 
-.c-passions {
-    display:flex;
-    flex-wrap: wrap;
+.c-about__bio__title {
+    font-size: .8rem;
 }
 
-.c-passion {
-    margin: 0 .5rem 0 0;
+.c-about__bio__paragraphs {
+    list-style: none;
 }
+
+.c-passions {
+    list-style: none;
+    margin: 0 .5rem 0 0;
+    /* display:flex;
+
+    flex-wrap: wrap; */
+}
+
 
