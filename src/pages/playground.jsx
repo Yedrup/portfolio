@@ -12,6 +12,12 @@ const playgroundPage = () => {
       query={graphql`
         query playgroundPage {
           dataJson {
+            socialMedias {
+              Github {
+                name
+                url
+              }
+            }
             playgroundPage {
               title
               intro
@@ -31,14 +37,22 @@ const playgroundPage = () => {
         }
       `}
       render={data => {
-        const { intro, title, projects } = data.dataJson.playgroundPage
-        //console.log(data)
+        const { intro, title, projects } = data.dataJson.playgroundPage;
+        const github = data.dataJson.socialMedias.Github;
         return (
           <Layout>
             <h1 className="c-page__title">{title}</h1>
-
-            <p>{intro}</p>
-
+            <p>{intro}
+              <a href={github.url} target="_blank">
+                <IconService
+                  nameIcon={github.name}
+                  iconStyleContext={{
+                    color: 'var(--hightlight-color)',
+                    size: '1.5rem'
+                  }}
+                />
+              </a>
+            </p>
             <ul className="c-projects">
               {projects.map((project, index) => {
                 return (
@@ -59,6 +73,7 @@ const playgroundPage = () => {
                                 nameIcon="Github"
                                 iconStyleContext={{
                                   color: 'var(--color-text-on-dark)',
+                                  size: '1.5rem'
                                 }}
                               />
                             </a>
@@ -69,6 +84,7 @@ const playgroundPage = () => {
                                 nameIcon="link"
                                 iconStyleContext={{
                                   color: 'var(--color-text-on-dark)',
+                                  size: '1.5rem'
                                 }}
                               />
                             </a>
@@ -76,12 +92,12 @@ const playgroundPage = () => {
                         </ul>
                       </div>
                       <div className="c-project__technologies">
-                      <span className="c-project__purpose__title">
+                        <span className="c-project__purpose__title">
                           technologies:
                         </span>
-                      {project.technologies.map((technologie, index) => {
-                        return <span className="c-project__technology" key={index}>{technologie.name}</span>
-                      })}
+                        {project.technologies.map((technologie, index) => {
+                          return <span className="c-project__technology" key={index}>{technologie.name}</span>
+                        })}
                       </div>
                       <p className="c-project__purpose">
                         <span className="c-project__purpose__title">

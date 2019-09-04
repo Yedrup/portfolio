@@ -2,7 +2,7 @@ import { bubble as BubbleMenuC } from 'react-burger-menu'
 import React, { Component } from 'react'
 import './menu.css'
 import cv from '../../document/purdey_chambraud_cv_front_end-en.pdf'
-import { Link, GatsbyLinkProps,StaticQuery, graphql } from 'gatsby'
+import { Link, GatsbyLinkProps, StaticQuery, graphql } from 'gatsby'
 import Image from '../../utils/image'
 import IconService from "../../utils/IconService"
 
@@ -22,6 +22,16 @@ const ListLink = props => {
   )
 }
 
+const LinkHref = props => {
+  return (
+    <li className="bm-item">
+      <a href={props.url} target="_blank"  className="c-menu_link_active_path"
+        className="c-menu_link">
+        <IconService nameIcon={props.name} iconStyleContext={{ color: "#FFF" }} />
+      </a>
+    </li>
+  )
+}
 class BubbleMenu extends Component {
   state = {
     menuOpen: false,
@@ -33,7 +43,7 @@ class BubbleMenu extends Component {
   }
 
   render() {
-    let socialLinks = [...this.props.socialLinks]
+    let socialLinks = {...this.props.socialLinks};
     return (
       <StaticQuery
         query={graphql`
@@ -50,50 +60,36 @@ class BubbleMenu extends Component {
           }
         `}
         render={data => {
-          //console.log(data)
-
           return (
             <BubbleMenuC
-              width={250} 
+              width={250}
               right
-              className={
-                this.state.menuOpen ? 'c-menu c-menu-openned' : 'c-menu'
-              }
-              onStateChange={this.isMenuOpen}
-            >
+              className={this.state.menuOpen ? 'c-menu c-menu-openned' : 'c-menu'}
+              onStateChange={this.isMenuOpen}>
               <Link className="c-menu-logo" to={'/'}>
                 <Image imageName="trexNoBg" />
               </Link>
               <ul className="bm-item-list" role="navigation">
                 {data.dataJson.menu.map((link, index) => {
                   return (
-                    <ListLink
-                      to={link.url}
-                      key={index}
-                    >
+                    <ListLink to={link.url} key={index}>
                       {link.name}
                     </ListLink>
                   )
                 })}
               </ul>
-              {/* <p>Social Medias</p> */}
-              {/* GO TO 404 bexause Link is internal */}
               <ul className="c-menu__socials" >
-                {this.props.socialLinks.map((link, index) => {
+                {Object.values(socialLinks).map((link, index) => {
                   return (
-                    <ListLink to={link.url} key={index}>
-                      <IconService nameIcon={link.name} iconStyleContext={{
-                      color: "#FFF"
-                    }}/>
-                    </ListLink>
+                    <LinkHref name={link.name} key={index} url={link.url} />
                   )
                 })}
               </ul>
               <div className="c-resume-section--menu">
-              <a href={cv} target="_blank" className="c-button c-resume-button--menu">
-                {data.dataJson.buttons.buttonDownload}
-              </a>
-            </div>
+                <a href={cv} target="_blank" className="c-button c-resume-button--menu">
+                  {data.dataJson.buttons.buttonDownload}
+                </a>
+              </div>
             </BubbleMenuC>
           )
         }}

@@ -29,6 +29,7 @@ const Layout = ({ children }) => (
           meta={[
             { name: 'description', content: data.site.siteMetadata.description },
             { name: 'keywords', content: 'portfolio, front-End, developer,Paris' },
+            { name: 'google', content: 'notranslate' },
             { [data.site.siteMetadata.httpEquiv]: 'Content-Security-Policy', content: 'upgrade-insecure-requests' },
           ]}
         >

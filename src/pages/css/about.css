@@ -1,17 +1,26 @@
+.c-about__presentation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-about__presentation__text {
+    margin: 0;
+}
+
 .myPhoto .gatsby-image-wrapper {
     max-width: 6rem;
-    border-radius: 25%;
+    border-radius: var(--buttonBorderRadius);
 }
 
 .c-about__title {
     margin: 1rem 0;
+    display: inline;
     color: var(--color-text-on-dark);
-    background-color: var(--primary-color);
-    padding: 1rem;
+    background-color: var(--aboutTitleBackgroundColor);
+    border-radius: var(--buttonBorderRadius);
+    padding: .3rem;
     font-family: "Alegreya";
-    font-size: 1.25rem;
-    /* transform: rotate(2deg) scaleX(1); */
-    width: 100%;
+    font-size: 1.15rem;
 }
 
 
@@ -21,29 +30,70 @@
     font-size: .9rem;
 }
 
+.c-about__bio__section {
+    border-radius: var(--buttonBorderRadius);
+    padding: 1rem;
+    margin-bottom: .8rem;
+}
+
 .c-about__bio__title::first-letter {
     color: var(--hightlight-color);
     font-style: italic;
     font-family: "Alegreya";
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding-right: .15rem;
 }
 
 .c-about__bio__title {
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 .c-about__bio__paragraphs {
     list-style: none;
+    margin: 0.3rem;
 }
 
 .c-passions {
     list-style: none;
+    border-radius: var(--buttonBorderRadius);
     margin: 0 .5rem 0 0;
-    /* display:flex;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    flex-wrap: wrap; */
+.c-passion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--aboutPassionBackgroundColor);
+    border-radius: var(--buttonBorderRadius);
+    margin-right: .5rem;
+    padding: .5rem 1rem;
 }
 
 
+@media screen and (max-width: 640px) {
+
+    .c-passion {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .c-passion {
+        width: 30%;
+    }
+    .c-about__title {
+        font-size: 1.5rem;
+    }
+    .c-about__bio__title {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .c-passion {
+        width: 20%;
+    }
+}

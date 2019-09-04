@@ -13,8 +13,7 @@ const ListLink = props => {
       <Link
         activeClassName="link_active_path c-button"
         className="c-header__link"
-        to={props.to}
-      >
+        to={props.to}>
         {props.children}
       </Link>
     </li>
@@ -47,9 +46,18 @@ const Header = ({ siteTitle }) => {
               url
             }
             socialMedias {
-              name
-              url
-              img
+              Github {
+                name
+                url
+              }
+              Linkedin {
+                name
+                url
+              }
+              Twitter {
+                name
+                url
+              }
             }
           }
         }
@@ -84,7 +92,7 @@ const Header = ({ siteTitle }) => {
 
             <BubbleMenu socialLinks={socialLinks} />
             <ul className="c-header__socials">
-              {socialLinks.map((linkheader, index) => {
+              {Object.values(socialLinks).map((linkheader, index) => {
                 return <LinkHref name={linkheader.name} key={index} url={linkheader.url}/>
               })}
             </ul>

@@ -50,6 +50,7 @@ module.exports = {
         name: "Purdey's portfolio",
         short_name: 'portfolio',
         start_url: '/playground/gatsbyreactnewfolio/',
+        scope: '/playground/gatsbyreactnewfolio',
         background_color: '#519f94',
         theme_color: '#519f94',
         display: 'minimal-ui',

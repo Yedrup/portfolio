@@ -15,6 +15,7 @@ const contactPage = () => {
           dataJson {
             contactPage {
               title
+              contactIntro
               email
               Twitter
               Linkedin
@@ -23,11 +24,12 @@ const contactPage = () => {
         }
       `}
       render={data => {
-        const { title, email, Twitter, Linkedin } = data.dataJson.contactPage
+        const { contactIntro, title, email, Twitter, Linkedin } = data.dataJson.contactPage
         //console.log(data)
         return (
           <Layout>
             <h1 className="c-page__title">{title}</h1>
+            <p>{contactIntro}</p>
             {/* <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}> */}
             <div className="c-contact">
               <div>
@@ -63,9 +65,6 @@ const contactPage = () => {
                 <Image imageName="map" />
               </div>
             </div>
-            {/* <Link to="/">Go back to the homepage</Link>
-            <Link to="/playground/">Go to the playground</Link> */}
-            {/* </div> */}
           </Layout>
         )
       }}

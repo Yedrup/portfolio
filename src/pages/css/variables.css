@@ -1,12 +1,16 @@
 :root {
     --primary-color: rgb(81, 159, 148);
     /*#519f94*/
+    --primary-color-rgba: rgba(81, 159, 149, 0.872);
     --secondary-color: rgb(54, 87, 115);
     /*#365773*/
+    --secondary-color-rgba: rgba(54, 87, 115,0.55);
     --hightlight-color: rgb(171, 66, 103);
     /*#ab4267*/
+    --hightlight-color-rgba: rgba(171, 66, 103,0.32);
     --tercery-color: rgb(226, 188, 116);
     /*#e2bc74*/
+    --tercery-color-rgba: rgba(226, 188, 116,0.55);
     /* --active-color:#d64d55;#e2bc74 */
     --active-color: #012e33;
 
@@ -58,7 +62,10 @@
 
     
     --aboutTitleColorText: var(--hightlight-color);
+    --aboutSectionBackgroundColor: var(--tercery-color-rgba);
     --aboutSubtitleColorText: var(--primary-color);
+    --aboutTitleBackgroundColor: var(--primary-color-rgba);
+    --aboutPassionBackgroundColor: var(--hightlight-color-rgba);
 
 
     /* buttons */
