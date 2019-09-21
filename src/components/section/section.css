@@ -7,16 +7,7 @@
 .c-section--on-image {
     height: 15rem;
     position:relative;
-    margin-bottom:2rem;
-    /* background: url("../../images/forest.jpg") no-repeat 100%;
-    /* background-position:fixed;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-bottom: .5rem; */
-    /*background-attachment: fixed;
-    background-size: cover;
-    padding: 10% 25%; */
-
+    margin-bottom:1rem;
 }
 
 .c-section--on-image .gatsby-image-wrapper {
@@ -30,7 +21,7 @@
 .c-section--on-image .gatsby-image-wrapper:after {
     display: flex;
     content: "";
-    background: rgba(250, 250, 250, 0.19);
+    background: var(--sectionHomeBackgroundColor);
     top: 0;
     bottom: 0;
     left: 0;
@@ -38,7 +29,7 @@
     position: absolute;
  }
  .c-section--on-image:hover > .gatsby-image-wrapper:after {
-    background: #519f943d
+    background: var(--sectionHomeBackgroundColorHover);
 
  }
  .c-section__link {
@@ -48,62 +39,35 @@
 }
  .c-section__name{
     color: var(--sectionHomeTitleTextColor);
-
+    font-style: normal;
 }
 .c-section__content{
     position: relative;
     padding: 2rem 1rem;
     z-index: 20;
-    color:white;
-    text-shadow: 1px 1px black;
+    color: var(--sectionHomeContentTextColor);
+    text-shadow: 1px 1px var(--sectionHomeContentTextShadowColor);
+    font-style: italic;
 }
-/* .c-section__link:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: -36px;    
-    width: 100%;
-    height: 60px;
-    background: white;
-    -webkit-transform: skewY(2.5deg);
-    -moz-transform: skewY(2.5deg);
-    -ms-transform: skewY(2.5deg);
-    -o-transform: skewY(2.5deg);
-    transform: skewY(2.5deg);
-    -webkit-backface-visibility: hidden;
-    z-index:20;
-  } */
-  /* .c-section__link:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -20px;
-    width: 100%;
-    height: 60px;
-    background: white;
-    -webkit-transform: skewY(2.5deg);
-    -moz-transform: skewY(2.5deg);
-    -ms-transform: skewY(2.5deg);
-    -o-transform: skewY(2.5deg);
-    transform: skewY(2.5deg);
-    -webkit-backface-visibility: hidden;
-  } */
 
  @media screen and (min-width: 768px) {
+
+    .c-sections {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .c-section__link {
+        min-width:50%;
+        flex:1;
+        border: .5rem solid transparent;
+    }
+
     .c-section--on-image {
         height: 20rem;
-        /* background: url("../../images/forest.jpg") no-repeat 100%;
-        /* background-position:fixed;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-bottom: .5rem; */
-        /*background-attachment: fixed;
-        background-size: cover;
-        padding: 10% 25%; */
+        margin-bottom: 0;
     
     }
-    .c-section__link {
-        margin-bottom: 3rem;
-   }
 
 }

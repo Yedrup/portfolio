@@ -72,7 +72,7 @@ const playgroundPage = () => {
                               <IconService
                                 nameIcon="Github"
                                 iconStyleContext={{
-                                  color: 'var(--color-text-on-dark)',
+                                  color: 'var(--playgroundProjectIconLinkColor)',
                                   size: '1.5rem'
                                 }}
                               />
@@ -83,7 +83,7 @@ const playgroundPage = () => {
                               <IconService
                                 nameIcon="link"
                                 iconStyleContext={{
-                                  color: 'var(--color-text-on-dark)',
+                                  color: 'var(--playgroundProjectIconLinkColor)',
                                   size: '1.5rem'
                                 }}
                               />

@@ -4,6 +4,7 @@ import Image from '../utils/image'
 
 import Layout from '../components/layout'
 import { StaticQuery, graphql } from 'gatsby'
+import '../pages/css/links.css'
 
 const linksPage = () => {
   return (
@@ -24,6 +25,11 @@ const linksPage = () => {
         return (
           <Layout>
             <h1 className="c-page__title">{title}</h1>
+            <div className="c-coming-soon__image">
+              <div className="c-coming-soon__image__inner">
+                <Image imageName="trexComingSoon" />
+              </div>
+            </div>
             <p>{intro}</p>
             <Link to="/">Go back to the homepage</Link>
             <Link to="/playground/">Go to the playground</Link>

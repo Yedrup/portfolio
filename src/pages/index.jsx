@@ -27,13 +27,19 @@ const IndexPage = () => {
         }
       `}
       render={data => {
-        const { title, intro, sections } = data.dataJson.homePage
+        const { title, sections, intro } = data.dataJson.homePage
         //console.log(data)
         // create page component for page layout
         return (
           <Layout>
             <h1 className="c-page__title">{title}</h1>
-            <p>{intro}</p>
+            {
+              intro.map((paragraph, index) => {
+                return(
+                  <p key={index}> {paragraph} </p>
+                )
+              })
+            }
             <div className="c-sections">
               {sections.map((section, index) => {
                 return (

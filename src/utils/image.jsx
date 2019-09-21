@@ -31,7 +31,7 @@ const Image = props => {
     <StaticQuery
       query={graphql`
         query {
-          purdey: file(relativePath: { eq: "purdey_photo.jpg" }) {
+          purdey: file(relativePath: { eq: "purdey_photo.png" }) {
             childImageSharp {
               fluid(maxWidth: 200) {
                 ...GatsbyImageSharpFluid
@@ -116,6 +116,15 @@ const Image = props => {
               }
             }
           }
+          trexComingSoon: file(
+            relativePath: { eq: "trexComingSoon.png" }
+          ) {
+            childImageSharp {
+              fluid(maxWidth: 300) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           kwick: file(relativePath: { eq: "kwick.png" }) {
             childImageSharp {
               fluid(maxWidth: 300) {
@@ -140,13 +149,6 @@ const Image = props => {
           notFoundLarge: file(relativePath: { eq: "trex-404-large.png" }) {
             childImageSharp {
               fluid(maxWidth: 1200) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          astronaut: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-            childImageSharp {
-              fluid(maxWidth: 300) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -185,6 +187,8 @@ const Image = props => {
           )
         } else if (props.imageName === '404Large') {
           return <Img fluid={data.notFoundLarge.childImageSharp.fluid} />
+        } else if (props.imageName === 'trexComingSoon') {
+          return <Img fluid={data.trexComingSoon.childImageSharp.fluid} />
         } else if (props.imageName === 'forestPlaceholder') {
           return (
             <Img

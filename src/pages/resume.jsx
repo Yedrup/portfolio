@@ -281,6 +281,7 @@ class resumePage extends Component {
                     target="_blank"
                     className="c-resume-button c-button"
                   >
+                    <IconService nameIcon="download" iconStyleContext={{color: '' , style:{'marginRight': '1rem'} }}/>
                     {buttonTitle}
                   </a>
                 </div>

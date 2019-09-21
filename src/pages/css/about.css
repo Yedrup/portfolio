@@ -1,21 +1,39 @@
+@keyframes colorchange
+{
+  0%   {background: var(--aboutPhotoBackgroundColor1);}
+  25%  {background: var(--aboutPhotoBackgroundColor2);}
+  50%  {background: var(--aboutPhotoBackgroundColor3);}
+  75%  {background: var(--aboutPhotoBackgroundColor4);}
+  100% {background: var(--aboutPhotoBackgroundColor5);}
+}
+
+.c-page__title--about {
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-family: 'Bubblegum Sans';
+}
+
 .c-about__presentation {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 .c-about__presentation__text {
-    margin: 0;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .myPhoto .gatsby-image-wrapper {
     max-width: 6rem;
-    border-radius: var(--buttonBorderRadius);
+    border-radius: 50%;
+    animation: colorchange 10s infinite;
 }
 
 .c-about__title {
     margin: 1rem 0;
     display: inline;
-    color: var(--color-text-on-dark);
+    color: var(--aboutTitleTextColor);
     background-color: var(--aboutTitleBackgroundColor);
     border-radius: var(--buttonBorderRadius);
     padding: .3rem;
@@ -32,7 +50,6 @@
 
 .c-about__bio__section {
     border-radius: var(--buttonBorderRadius);
-    padding: 1rem;
     margin-bottom: .8rem;
 }
 
@@ -56,33 +73,52 @@
 
 .c-passions {
     list-style: none;
+    margin: 0;
     border-radius: var(--buttonBorderRadius);
-    margin: 0 .5rem 0 0;
     display: flex;
     flex-wrap: wrap;
 }
 
 .c-passion {
+    flex:1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background: var(--aboutPassionBackgroundColor);
     border-radius: var(--buttonBorderRadius);
     margin-right: .5rem;
-    padding: .5rem 1rem;
 }
 
+.c-passion__title {
+    display: flex;
+    flex:1;
+    padding: .5rem .15rem;
+    text-align: center;
+    justify-content: center;
+    align-items: baseline;
+    color: var(--aboutPassionTextColor);
+}
+
+.c-passion__image {
+    margin-bottom: 0;
+}
 
 @media screen and (max-width: 640px) {
-
     .c-passion {
+        flex: unset;
         width: 100%;
     }
 }
 
 @media screen and (min-width: 640px) {
+    .c-passions {
+        margin: 1rem;
+    }
     .c-passion {
-        width: 30%;
+        min-width: 30%;
+    }
+    .c-about__bio__section {
+        padding: 1rem;
     }
     .c-about__title {
         font-size: 1.5rem;
@@ -94,6 +130,7 @@
 
 @media screen and (min-width: 1024px) {
     .c-passion {
-        width: 20%;
+        min-width: 10%;
+        max-width: 20rem!important;
     }
 }

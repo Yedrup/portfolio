@@ -1,74 +1,120 @@
 :root {
-    --primary-color: rgb(81, 159, 148);
-    /*#519f94*/
+    --primary-color: rgb(81, 159, 148);/*#519f94*/
     --primary-color-rgba: rgba(81, 159, 149, 0.872);
-    --secondary-color: rgb(54, 87, 115);
-    /*#365773*/
+
+    --secondary-color: rgba(1, 41, 60, 0.882);/*#01293ce1*/
     --secondary-color-rgba: rgba(54, 87, 115,0.55);
-    --hightlight-color: rgb(171, 66, 103);
-    /*#ab4267*/
-    --hightlight-color-rgba: rgba(171, 66, 103,0.32);
-    --tercery-color: rgb(226, 188, 116);
-    /*#e2bc74*/
+    --color-dark-contrast: rgba(1, 41, 60, 0.884); /*#01243c*/
+    --hightlight-color: rgb(171, 66, 103);/*#ab4267*/
+    --hightlight-color-on-dark: #ed5b90;/*#ed5b90*/
+    --hightlight-color-rgba: rgba(171, 66, 103,0.01);
+    --tercery-color: rgb(226, 188, 116);/*#e2bc74*/
     --tercery-color-rgba: rgba(226, 188, 116,0.55);
-    /* --active-color:#d64d55;#e2bc74 */
     --active-color: #012e33;
-
-
+    
     --color-text-on-dark: rgb(250, 250, 250);
-    --color-text-on-light: var(--secondary-color);
-    --linkActiveColor: var(--active-color);
-    --linkActiveColorShadow: #04373c;
-    --linkActiveColorBackground: var(--hightlight-color);
+    --color-text-on-light: var(--color-dark-contrast);
+    
+    /* buttons */
+    --buttonBorderRadius:3px;
+
+    /* links */
     --linkInlineBgLight: var(--hightlight-color);
 
+    /* header */
+    --headerHeight: 6rem;
+    --headerBackground: -webkit-linear-gradient(45deg, rgba(1, 41, 60, 0.884) 1%, #519f94 63%, #e2bc74 100%);
+    --headerTextColor: var(--color-dark-contrast);
+    
     --logoWrittenColor: var(--color-text-on-dark);
     --logoWrittenShadow: #505a5a;
+    
+    --headerLinksBgColor: rgba(210, 144, 0, 0.05);
+    --headerLinkShadowColor: rgba(1, 28, 46, 0.9);
 
-    --headerBackground: -webkit-linear-gradient(45deg, #365773 1%, #519f94 63%, #e2bc74 100%);
-    --headerTextColor: var(--color-text-on-dark);
-    --headerHeight: 6rem;
-    --headerSocialColor: #406e6a;
+    --headerLinkActiveColor: #FFF;
+    --headerLinkActiveShadowColor: #2e131c;
+    --headerLinkActiveColorBackground: var(--hightlight-color);
 
-    --footerBackground: -webkit-linear-gradient(45deg, #e2bc74 1%, #519f94 63%, #365773 100%);
+    --headerSocialColor: var(--color-dark-contrast);
+
+
+    /* footer */
+    --footerBackground: -webkit-linear-gradient(45deg, #e2bc74 1%, #519f94 63%, rgba(1, 41, 60, 0.884) 100%);
     --footerTextColor: var(--color-text-on-dark);
-    --footerSocialColor: var(--tercery-color);
+    --footerSocialColor: var(--color-text-on-dark);
     --footerHeight: 3rem;
 
+    /* Menu */
+    --menuWidth: 20%;/*fixed large*/
+    --menuBackgroundColor: rgba(171, 66, 103,.9);
+    --menuButtonCloseColor: var(--hightlight-color);
+    --menuButtonCloseBackgroundColor:#FFF;
+    --menuButtonBurgerColor: var(--hightlight-color);
+    --menuTextColor: #FFF;
+
+    --menuActiveLinkColor: var(--hightlight-color);
+    --menuActiveLinkBackgroundColor: #FFF;
+    
+
+    --menuButtonDownloadBackgroundColor: var(--primary-color);
+    --menuButtonDownloadTextColor: #FFF;
+
+    /* home -section */
+    --sectionHomeBackgroundColorHover: var(--secondary-color-rgba);
+    --sectionHomeBackgroundColor: #fdec0011 ;
+    --sectionHomeTitleTextColor: var(--hightlight-color-on-dark);
+    --sectionHomeTitleTextColor: #FFF;
+    --sectionHomeContentTextColor:#FFF;
+    --sectionHomeContentTextShadowColor:rgb(0, 0, 0);
+
+    /* pages */
     --titleTextColor: var(--hightlight-color);
 
-
-    /* Menu */
-    --menuWidth: 20%;
-    /*fixed large*/
-    --menuBackgroundColor: rgba(171, 66, 103,.9);
-    --menuButtonCloseColor: var(--primary-color);
-    --menuButtonBurgerColor: var(--hightlight-color);
-    --menuTextColor: white;
-    --menuActiveLinkColor: var(--tercery-color);
-    --sectionHomeTitleTextColor: var(--hightlight-color);
-
+    /* Resume page */
     --skillBackground: var(--primary-color);
-    --pannelScrollBackground: var(--primary-color);
+    /* --pannelScrollBackground: var(--color-dark-contrast); */
+    --pannelScrollBackground: var(--secondary-color);
     --pannelScrollLink: var(--color-text-on-dark);
-    --pannelScrollLinkActive: var(--hightlight-color);
+    --pannelScrollLinkActive: var(--hightlight-color-on-dark);
     
-    --technologiesBackground: var(--secondary-color);
+    --technologiesBackground: var(--color-dark-contrast);
     --technologiesColorText: var(--color-text-on-dark);
 
+    --resumeButtonDownloadBackgroundColor: var(--hightlight-color);
+    --resumeButtonDownloadTextColor: #FFF;
+
+
+    /* TODO: delete contact*/
     --contactIconColor: var(--primary-color);
     --contactLinkColor: var(--secondary-color);
 
 
+
+    /* about page */
+
+    /* animation colors */
+    --aboutPhotoBackgroundColor1: rgba(171, 66, 103,0.2);
+    --aboutPhotoBackgroundColor2: rgba(171, 66, 103,0.4);
+    --aboutPhotoBackgroundColor3: rgba(171, 66, 103,0.5);
+    --aboutPhotoBackgroundColor4: rgba(171, 66, 103,0.4);
+    --aboutPhotoBackgroundColor5: rgba(171, 66, 103,0.25);
     
     --aboutTitleColorText: var(--hightlight-color);
     --aboutSectionBackgroundColor: var(--tercery-color-rgba);
     --aboutSubtitleColorText: var(--primary-color);
-    --aboutTitleBackgroundColor: var(--primary-color-rgba);
-    --aboutPassionBackgroundColor: var(--hightlight-color-rgba);
 
+    --aboutTitleTextColor: var(--color-text-on-dark);
+    --aboutTitleBackgroundColor: var(--secondary-color);
 
-    /* buttons */
+    --aboutPassionBackgroundColor: var(--primary-color);
+    --aboutPassionTextColor: var(--color-dark-contrast);
 
-    --buttonBorderRadius:3px;
+    /* Playground page */
+
+    --playgroundProjectbackgroundColor: var(--primary-color);
+    --playgroundProjectTitleTextColor: var(--color-text-on-light);
+    --playgroundProjectIconLinkColor: var(--color-text-on-light);
+    --playgroundProjectPurposeTextColor: var(--color-text-on-light);
+
 }

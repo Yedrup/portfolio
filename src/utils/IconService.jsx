@@ -16,6 +16,7 @@ import {
 
 class IconService extends React.Component {
   render() {
+    // TODO: change array to obj + all harmo cap
     const Icons = [
       { title: "Github", nameIcon: FaGithub },
       { title: "home", nameIcon: FaHome },

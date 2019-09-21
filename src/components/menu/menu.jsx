@@ -87,6 +87,7 @@ class BubbleMenu extends Component {
               </ul>
               <div className="c-resume-section--menu">
                 <a href={cv} target="_blank" className="c-button c-resume-button--menu">
+                  <IconService nameIcon="download" iconStyleContext={{color: '' , style:{'marginRight': '1rem'} }}/>
                   {data.dataJson.buttons.buttonDownload}
                 </a>
               </div>

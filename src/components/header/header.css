@@ -7,7 +7,6 @@
     align-items: center;
     justify-content: space-between;
     font-family: "Alegreya";
-    /* padding: 0 1rem; */
     font-size: 1.2rem;
     border-bottom: 2px solid rgba(18, 37, 34, 0.14);
 }
@@ -42,6 +41,7 @@
 
 .c-header__links {
     display: flex;
+    background: var(--headerLinksBgColor);
     margin: 0;
     list-style: none;
     position:relative;
@@ -55,17 +55,15 @@
 .c-header__link {
     color: var(--headerTextColor);
     text-decoration: none;
-    text-shadow:1px 1px #a8abab;
+    text-shadow: .5px  .5px  .5px var(--headerLinkShadowColor) ;
     margin-right: .5rem;
     font-size: .95rem;
 }
 
 .link_active_path {
-    color: var(--linkActiveColor);
-    text-shadow: 1px 1px var(--linkActiveColorShadow);
-    
-    background: var(--linkActiveColorBackground);
-    color: white;
+    color: var(--headerLinkActiveColor);
+    text-shadow: 1px 1px var(--headerLinkActiveShadowColor);
+    background: var(--headerLinkActiveColorBackground);
     padding-left: .25rem;
     padding-right: .25rem;
 }
@@ -111,6 +109,6 @@
         font-size: 1rem;
     }
     .link_active_path {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 }

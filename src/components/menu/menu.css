@@ -6,9 +6,7 @@ div.bm-overlay[class] {
 }
 
 .bm-menu-wrap {
-    /* background: var(--menuBackgroundColor); */
     top: 0px;
-    /* width: 250px !important; */
 }
 
 .bm-menu {
@@ -20,6 +18,11 @@ div.bm-overlay[class] {
 
 .bm-morph-shape {
     fill: var(--menuBackgroundColor);
+}
+
+.bm-cross-button {
+    background: var(--menuButtonCloseBackgroundColor);
+    border-radius: 25%;
 }
 
 .bm-cross {
@@ -46,25 +49,31 @@ div.bm-overlay[class] {
     text-decoration: none;
     color: var(--menuTextColor);
 }
+
 .c-menu__socials {
-    display: flex!important;
+    display: flex !important;
     justify-content: space-between;
 }
+
 .c-menu {
     font-size: 1rem;
     color: var(--menuTextColor);
 }
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
     }
+
     99% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
+
 .c-menu-openned::after {
     content: url('../../images/dust4.png');
     position: relative;
@@ -83,23 +92,26 @@ div.bm-overlay[class] {
 
 .c-menu_link_active_path {
     color: var(--menuActiveLinkColor);
+    background: var(--menuActiveLinkBackgroundColor);
+    border-radius: var(--buttonBorderRadius);
+    padding: .25rem;
 }
 
-.c-resume-button--menu{
-    padding:1rem;
-    background:var(--primary-color);
-    color:white;
+.c-resume-button--menu {
+    padding: 1rem;
+    background: var(--menuButtonDownloadBackgroundColor);
+    color: var(--menuButtonDownloadTextColor);
     display: flex;
     margin-left: 1.45rem;
-
-    text-decoration:none;
+    text-decoration: none;
     text-align: center;
     justify-content: center;
- }
+}
 
- ul.bm-item:focus {
+ul.bm-item:focus {
     outline: none;
- }
+}
+
 /*BURGER Menu*/
 
 
@@ -156,7 +168,7 @@ div.bm-overlay[class] {
     }
 
     /* HACK target div wrappingmenu*/
-    .c-header__links + div {
+    .c-header__links+div {
         display: none;
     }
 }

@@ -46,12 +46,12 @@ const aboutPage = () => {
 
         return (
           <Layout>
-            <h1 className="c-page__title">{title}</h1>
             <div className="c-about__presentation">
-              <p className="c-about__presentation__text">{intro}</p>
               <div className="myPhoto" style={{ width: '100px' }}>
                 <Image imageName="purdey" />
               </div>
+              <h1 className="c-page__title c-page__title--about">{title}</h1>
+              <p className="c-about__presentation__text">{intro}</p>
             </div>
             <span className="c-about__title">{bioTitle}</span>
             <div className="c-about__bio__sections">
@@ -76,8 +76,8 @@ const aboutPage = () => {
               {passions.map((passion, index) => {
                 return (
                   <li className="c-passion" key={index}>
-                    <GifService nameGif={passion.gifName} alt=""/>
-                    <p>{passion.name}</p>
+                    <GifService gifName={passion.gifName} alt="" gifClass="c-passion__image" />
+                    <p className="c-passion__title">{passion.name}</p>
                   </li>)
               })}
             </ul>
