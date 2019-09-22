@@ -1,11 +1,15 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: 'Purdey Chambraud',
     description:"Hi! Welcome on my portfolio! I'm an enthusiastic Front-End Developer living in Paris area!",
     siteUrl: 'https://www.purdeychambraud.com',
     httpEquiv: 'http-equiv'
-    
-    
+
+
   },
   plugins: [
     `gatsby-transformer-json`,
@@ -40,7 +44,7 @@ module.exports = {
       options: {
         path: `${__dirname}/src/data`,
         name: `data`,
-        // typeName: `Json`,
+        // typeName: `Json`
       },
     },
     // 'gatsby-transformer-remark',
@@ -49,8 +53,8 @@ module.exports = {
       options: {
         name: "Purdey's portfolio",
         short_name: 'portfolio',
-        start_url: '/playground/gatsbyreactnewfolio/',
-        scope: '/playground/gatsbyreactnewfolio',
+        start_url: '/playground/gatsbyreactnewfolioENV/',
+        scope: '/playground/gatsbyreactnewfolioENV',
         background_color: '#519f94',
         theme_color: '#519f94',
         display: 'minimal-ui',
@@ -62,10 +66,9 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography.js`,
       },
-    },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
-    pathPrefix: `/playground/gatsbyreactnewfolio`,
-}
+    pathPrefix: `/playground/gatsbyreactnewfolioENV`}
