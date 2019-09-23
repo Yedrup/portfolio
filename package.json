@@ -32,6 +32,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "clean": "rm -rf .cache",
     "build": "gatsby build NODE_ENV=production --prefix-paths",
     "develop": "gatsby develop --open=true",
     "start": "npm run develop",

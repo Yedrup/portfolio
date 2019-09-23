@@ -42,7 +42,25 @@ const Image = props => {
             relativePath: { eq: "explosion-purdey-smaller.png" }
           ) {
             childImageSharp {
-              fluid(maxWidth: 300) {
+              fluid(maxWidth: 200) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          haveyousin: file(
+            relativePath: { eq: "haveyousin.png" }
+          ) {
+            childImageSharp {
+              fluid(maxWidth: 500) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          legacyPortfolio: file(
+            relativePath: { eq: "legacyPortfolio.png" }
+          ) {
+            childImageSharp {
+              fluid(maxWidth: 500) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -246,7 +264,20 @@ const Image = props => {
               fluid={data.map.childImageSharp.fluid}
                />
           )
-        }  else {
+        } else if (props.imageName === 'haveyousin') {
+          return (
+            <Img
+              fluid={data.haveyousin.childImageSharp.fluid}
+               />
+          )
+        }  else if (props.imageName === 'legacyPortfolio') {
+          return (
+            <Img
+              fluid={data.legacyPortfolio.childImageSharp.fluid}
+               />
+          )
+        } 
+        else {
           return <Img fluid={data.logoExplosion.childImageSharp.fluid} style={{
             ...backgroungProjectStyle,
           }} />
