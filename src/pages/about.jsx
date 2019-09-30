@@ -53,7 +53,7 @@ const aboutPage = () => {
               <h1 className="c-page__title c-page__title--about">{title}</h1>
               <p className="c-about__presentation__text">{intro}</p>
             </div>
-            <span className="c-about__title">{bioTitle}</span>
+            <span className="c-page__section__title ">{bioTitle}</span>
             <div className="c-about__bio__sections">
               {biography.map((bioParagraph, index) => {
                 let paragraphs = bioParagraph.paragraphs;
@@ -71,7 +71,7 @@ const aboutPage = () => {
                 )
               })}
             </div>
-            <h2 className="c-about__title">{passionTitle}</h2>
+            <h2 className="c-page__section__title">{passionTitle}</h2>
             <ul className="c-passions">
               {passions.map((passion, index) => {
                 return (

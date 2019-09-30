@@ -30,18 +30,6 @@
     animation: colorchange 10s infinite;
 }
 
-.c-about__title {
-    margin: 1rem 0;
-    display: inline;
-    color: var(--aboutTitleTextColor);
-    background-color: var(--aboutTitleBackgroundColor);
-    border-radius: var(--buttonBorderRadius);
-    padding: .3rem;
-    font-family: "Alegreya";
-    font-size: 1.15rem;
-}
-
-
 .c-about__subtitle {
     color: var(--aboutSubtitleColorText);
     font-family: "Alegreya";
@@ -122,9 +110,6 @@
     }
     .c-about__title {
         font-size: 1.5rem;
-    }
-    .c-about__bio__title {
-        font-size: 1.25rem;
     }
 }
 

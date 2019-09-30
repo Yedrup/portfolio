@@ -157,6 +157,33 @@ const Image = props => {
               }
             }
           }
+          French: file(
+            relativePath: { eq: "French.png" }
+          ) {
+            childImageSharp {
+              fluid(maxWidth: 300) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          English: file(
+            relativePath: { eq: "English.png" }
+          ) {
+            childImageSharp {
+              fluid(maxWidth: 300) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          Spanish: file(
+            relativePath: { eq: "Spanish.png" }
+          ) {
+            childImageSharp {
+              fluid(maxWidth: 300) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           map: file(relativePath: { eq: "map.png" }) {
             childImageSharp {
               fluid(maxWidth: 1024) {
@@ -274,6 +301,24 @@ const Image = props => {
           return (
             <Img
               fluid={data.legacyPortfolio.childImageSharp.fluid}
+               />
+          )
+        } else if (props.imageName === 'Spanish') {
+          return (
+            <Img
+              fluid={data.Spanish.childImageSharp.fluid}
+               />
+          )
+        } else if (props.imageName === 'English') {
+          return (
+            <Img
+              fluid={data.English.childImageSharp.fluid}
+               />
+          )
+        } else if (props.imageName === 'French') {
+          return (
+            <Img
+              fluid={data.French.childImageSharp.fluid}
                />
           )
         } 

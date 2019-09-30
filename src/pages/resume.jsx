@@ -203,12 +203,12 @@ class resumePage extends Component {
                 </div>
 
                 <Element name="sectionJob">
-                  <h2 id="js-sectionJob">{jobsSection.title}</h2>
+                  <h2 id="js-sectionJob" className="c-page__section__title">{jobsSection.title}</h2>
                   <ul className="c-jobs">
                     {jobsSection.jobs.map(job => {
                       return (
                         <li className="c-job" key={job.name}>
-                          <span className="c-job__year">{job.years}</span>
+                          <span className="c-resume__item__title">{job.years}</span>
                           <a href={job.url} target="_blank" className="c-link">{job.name}</a>
                           <ul className="c-missions">
                             {job.missions.map((mission, index) => {
@@ -227,12 +227,12 @@ class resumePage extends Component {
                 </Element>
 
                 <Element name="sectionSkills">
-                  <h2 id="js-sectionSkills">{skillsSection.title}</h2>
+                  <h2 id="js-sectionSkills" className="c-page__section__title">{skillsSection.title}</h2>
                   <ul className="c-skills">
                     {skills.map((skillType, index) => {
                       return (
-                        <li className="" key={index}>
-                          <h3>{skillType.title}</h3>
+                        <li key={index}>
+                          <h3 className="c-skills__title">{skillType.title}</h3>
                           <ul className="c-skills">
                             {skillType.list.map((skill, index) => {
                               return (
@@ -249,9 +249,13 @@ class resumePage extends Component {
                   <h3 className="c-resume__subtitle">{languages.title}</h3>
                   <ul className="c-languages">
                     {languages.list.map((language, index) => {
+                      console.log(language)
                       return (
-                        <li className="" key={index}>
-                          <span>{language.name}</span>
+                        <li className="c-language" key={index}>
+                          {/* <span >{language.name}</span> */}
+                          {/* <div  style={{ width: '50px' }}> */}
+                            <Image imageName={language.name} />
+                          {/* </div> */}
                         </li>
                       )
                     })}
@@ -259,13 +263,13 @@ class resumePage extends Component {
                 </Element>
 
                 <Element name="sectionEducation">
-                  <h2 id="js-sectionEducation">{educationSection.title}</h2>
+                  <h2 id="js-sectionEducation" className="c-page__section__title">{educationSection.title}</h2>
                   <ul className="c-educations">
                     {educationSection.educationList.map((education, index) => {
                       return (
                         <li className="c-job" key={index}>
-                          <span className="c-job__year">{education.year}</span>
-                          <span className="c-job__year">{education.name}</span>
+                          <span className="c-resume__item__title">{education.year}</span>
+                          <span className="c-resume__item__title">{education.name}</span>
                           <LinkOrNot
                             url={education.url}
                             name={education.place}
