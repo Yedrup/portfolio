@@ -28,8 +28,6 @@ const IndexPage = () => {
       `}
       render={data => {
         const { title, sections, intro } = data.dataJson.homePage
-        //console.log(data)
-        // create page component for page layout
         return (
           <Layout>
             <h1 className="c-page__title">{title}</h1>

@@ -58,6 +58,10 @@ const Header = ({ siteTitle }) => {
                 name
                 url
               }
+              mail {
+                name
+                url
+              }
             }
           }
         }

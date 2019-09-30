@@ -184,13 +184,6 @@ const Image = props => {
               }
             }
           }
-          map: file(relativePath: { eq: "map.png" }) {
-            childImageSharp {
-              fluid(maxWidth: 1024) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
           notFoundLarge: file(relativePath: { eq: "trex-404-large.png" }) {
             childImageSharp {
               fluid(maxWidth: 1200) {
