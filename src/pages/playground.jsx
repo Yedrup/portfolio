@@ -112,9 +112,9 @@ const playgroundPage = () => {
                         {project.purposeTech}
                       </p>
                     </div>
-                    <div className="c-project__image">
+                    <a href={project.url} className="c-project__image" target="_blank">
                       <Image imageName={project.imgName} />
-                    </div>
+                    </a>
                   </li>
                 )
               })}
