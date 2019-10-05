@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Purdey Chambraud',
+    title: 'Purdey',
     description:"Hi! Welcome on my portfolio! I'm an enthusiastic Front-End Developer living in Paris area!",
     siteUrl: 'https://www.purdeychambraud.com',
     httpEquiv: 'http-equiv'

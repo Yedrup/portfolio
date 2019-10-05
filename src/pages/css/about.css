@@ -10,7 +10,7 @@
 .c-page__title--about {
     font-size: 2rem;
     margin-top: 1rem;
-    font-family: 'Bubblegum Sans';
+    font-family: var(--font-title);
 }
 
 .c-about__presentation {
@@ -32,7 +32,7 @@
 
 .c-about__subtitle {
     color: var(--aboutSubtitleColorText);
-    font-family: "Alegreya";
+    font-family: var(--font-content);
     font-size: .9rem;
 }
 
@@ -42,9 +42,8 @@
 }
 
 .c-about__bio__title::first-letter {
-    color: var(--hightlight-color);
+    color: var(--highlight-color);
     font-style: italic;
-    font-family: "Alegreya";
     font-weight: bold;
     font-size: 1.5rem;
     padding-right: .15rem;
@@ -85,6 +84,8 @@
     justify-content: center;
     align-items: baseline;
     color: var(--aboutPassionTextColor);
+    font-family: var(--font-title);
+    font-size: 1.2rem;
 }
 
 .c-passion__image {

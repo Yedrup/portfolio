@@ -45,18 +45,25 @@ div.bm-overlay[class] {
     list-style: none;
 }
 
+/* Links */
+
+.bm-item {
+    margin-bottom: 1rem;
+}
+
 .c-menu_link {
     text-decoration: none;
     color: var(--menuTextColor);
 }
 
 .c-menu__socials {
+    margin-top: 1rem;
     display: flex !important;
     justify-content: space-between;
 }
 
 .c-menu {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: var(--menuTextColor);
 }
 
@@ -85,6 +92,19 @@ div.bm-overlay[class] {
 
 
 
+.c-menu__aera-clickToClose {
+    background: transparent;
+    position: absolute;
+    top: -1rem;
+    right: 100%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.c-menu__aera-clickToClose:focus {
+    outline: none;
+} 
+
 .c-menu-logo {
     margin-bottom: 1rem;
     width: 70%;
@@ -98,14 +118,15 @@ div.bm-overlay[class] {
 }
 
 .c-resume-button--menu {
+    display: flex;
+    justify-content: center;
     padding: 1rem;
+    margin-left: 1.45rem;
+    text-align: center;
+    text-decoration: none;
     background: var(--menuButtonDownloadBackgroundColor);
     color: var(--menuButtonDownloadTextColor);
-    display: flex;
-    margin-left: 1.45rem;
-    text-decoration: none;
-    text-align: center;
-    justify-content: center;
+    font-family: var(--font-content);
 }
 
 ul.bm-item:focus {

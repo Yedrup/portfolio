@@ -6,15 +6,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: "Alegreya";
-    font-size: 1.2rem;
+    font-family: var(--font-title);
+    font-size: 1.5rem;
     border-bottom: 2px solid rgba(18, 37, 34, 0.14);
 }
 
 .c-header__title {
     font-size: 1.5rem;
     margin: 0;
-    font-family: 'Bubblegum Sans';
+    font-family: var(--font-logo);
     text-shadow: 1px 2px rgba(18, 37, 34, 0.14);
 }
 .c-header__socials {
@@ -29,7 +29,7 @@
 .c-header_written-logo {
    color: var(--logoWrittenColor);
    text-shadow: 1px 1px var(--logoWrittenShadow);
-   letter-spacing: 2px;
+   letter-spacing: 1.5px;
    font-size:1rem;
 
 }
@@ -92,7 +92,6 @@
         right: 0;
         bottom: 0;
         justify-content: space-between;
-        /* margin-right: .5rem; */
         margin-bottom: 0;
     }
     .c-header__social {
@@ -106,9 +105,9 @@
         font-size:1.5rem;
      }
      .c-header__link {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     .link_active_path {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 }

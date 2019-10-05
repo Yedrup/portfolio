@@ -6,7 +6,6 @@
     padding: 0 1rem;
     background: var(--footerBackground);
     color: var(--footerTextColor);
-    font-family: "Alegreya";
     border-top: 2px solid rgba(18, 37, 34, 0.14);
 }
 

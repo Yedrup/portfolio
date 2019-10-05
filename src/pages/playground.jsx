@@ -47,7 +47,7 @@ const playgroundPage = () => {
                 <IconService
                   nameIcon={github.name}
                   iconStyleContext={{
-                    color: 'var(--hightlight-color)',
+                    color: 'var(--highlight-color)',
                     size: '1.5rem'
                   }}
                 />

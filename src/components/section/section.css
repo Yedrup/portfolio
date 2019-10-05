@@ -33,13 +33,16 @@
 
  }
  .c-section__link {
-     position: relative;
-     text-decoration: none;
-     margin-bottom: 0;
+    font-family: var(--font-content);
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 0;
 }
  .c-section__name{
     color: var(--sectionHomeTitleTextColor);
+    font-family: var(--font-content);
     font-style: normal;
+    font-size: 1.25rem;
 }
 .c-section__content{
     position: relative;
@@ -61,9 +64,11 @@
     .c-section__link {
         min-width:50%;
         flex:1;
-        border: .5rem solid transparent;
+        border: var(--sectionHomePadding) solid transparent;
     }
-
+    .c-section__name {
+        font-size: 1.4rem;
+    }
     .c-section--on-image {
         height: 20rem;
         margin-bottom: 0;

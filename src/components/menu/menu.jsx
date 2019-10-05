@@ -25,20 +25,26 @@ const ListLink = props => {
 const LinkHref = props => {
   return (
     <li className="bm-item">
-      <a href={props.url} target="_blank"  className="c-menu_link_active_path"
+      <a href={props.url} target="_blank" className="c-menu_link_active_path"
         className="c-menu_link">
         <IconService nameIcon={props.name} iconStyleContext={{ color: "#FFF" }} />
       </a>
     </li>
   )
 }
+
 class BubbleMenu extends Component {
   state = {
     menuOpen: false,
   }
 
+  closeMenu = () => {
+    if(this.state.menuOpen) {
+      this.setState({ menuOpen: false })
+    }
+  }
   isMenuOpen = state => {
-    console.log('state', state)
+    // console.log('state', state)
     this.setState({ menuOpen: state.isOpen })
   }
 
@@ -61,37 +67,39 @@ class BubbleMenu extends Component {
         `}
         render={data => {
           return (
-            <BubbleMenuC
-              width={250}
-              right
-              className={this.state.menuOpen ? 'c-menu c-menu-openned' : 'c-menu'}
-              onStateChange={this.isMenuOpen}>
-              <Link className="c-menu-logo" to={'/'}>
-                <Image imageName="trexNoBg" />
-              </Link>
-              <ul className="bm-item-list" role="navigation">
-                {data.dataJson.menu.map((link, index) => {
-                  return (
-                    <ListLink to={link.url} key={index}>
-                      {link.name}
-                    </ListLink>
-                  )
-                })}
-              </ul>
-              <ul className="c-menu__socials" >
-                {Object.values(socialLinks).map((link, index) => {
-                  return (
-                    <LinkHref name={link.name} key={index} url={link.url} />
-                  )
-                })}
-              </ul>
-              <div className="c-resume-section--menu">
-                <a href={cv} target="_blank" className="c-button c-resume-button--menu">
-                  <IconService nameIcon="download" iconStyleContext={{color: '' , style:{'marginRight': '1rem'} }}/>
-                  {data.dataJson.buttons.buttonDownload}
-                </a>
-              </div>
-            </BubbleMenuC>
+              <BubbleMenuC
+                width={250}
+                right
+                isOpen={this.state.menuOpen}
+                className={this.state.menuOpen ? 'c-menu c-menu-openned' : 'c-menu'}
+                onStateChange={this.isMenuOpen}>
+                <Link className="c-menu-logo" to={'/'}>
+                  <Image imageName="trexNoBg" />
+                </Link>
+                <ul className="bm-item-list" role="navigation">
+                  {data.dataJson.menu.map((link, index) => {
+                    return (
+                      <ListLink to={link.url} key={index}>
+                        {link.name}
+                      </ListLink>
+                    )
+                  })}
+                </ul>
+                <ul className="c-menu__socials" >
+                  {Object.values(socialLinks).map((link, index) => {
+                    return (
+                      <LinkHref name={link.name} key={index} url={link.url} />
+                    )
+                  })}
+                </ul>
+                <div className="c-resume-section--menu">
+                  <a href={cv} target="_blank" className="c-button c-resume-button--menu">
+                    <IconService nameIcon="download" iconStyleContext={{ color: '', style: { 'marginRight': '1rem' } }} />
+                    {data.dataJson.buttons.buttonDownload}
+                  </a>
+                </div>
+                <div className={this.state.menuOpen ? 'c-menu__aera-clickToClose' : ''}  onClick={() => {if(this.state.menuOpen) this.closeMenu()}}></div>
+              </BubbleMenuC>
           )
         }}
       />

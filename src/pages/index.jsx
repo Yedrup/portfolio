@@ -30,14 +30,16 @@ const IndexPage = () => {
         const { title, sections, intro } = data.dataJson.homePage
         return (
           <Layout>
-            <h1 className="c-page__title">{title}</h1>
-            {
-              intro.map((paragraph, index) => {
-                return(
-                  <p key={index}> {paragraph} </p>
-                )
-              })
-            }
+            <div className="c-page__intro--home">
+              <h1 className="c-page__title">{title}</h1>
+              {
+                intro.map((paragraph, index) => {
+                  return(
+                    <p key={index}> {paragraph} </p>
+                  )
+                })
+              }
+            </div>
             <div className="c-sections">
               {sections.map((section, index) => {
                 return (

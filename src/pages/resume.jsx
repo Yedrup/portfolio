@@ -35,11 +35,10 @@ class resumePage extends Component {
 
   componentDidMount() {
     Events.scrollEvent.register('begin', (to, element) => {
-    console.log('begin', arguments)
+    // console.log('begin', arguments)
     })
 
     Events.scrollEvent.register('end', (to, element) => {
-    console.log('end', arguments)
     })
 
     scrollSpy.update()
@@ -61,9 +60,7 @@ class resumePage extends Component {
     scroll.scrollMore(100)
   }
   handleSetActive = to => {
-  console.log(to)
     this.setState({ currentlyScrolled: to })
-  console.log(this.state)
   }
   render() {
     return (
@@ -212,7 +209,6 @@ class resumePage extends Component {
                           <a href={job.url} target="_blank" className="c-link">{job.name}</a>
                           <ul className="c-missions">
                             {job.missions.map((mission, index) => {
-                             console.log(mission.name)
                               return (
                                 <li className="c-mission" key={index}>
                                   {mission.name}
@@ -249,13 +245,9 @@ class resumePage extends Component {
                   <h3 className="c-resume__subtitle">{languages.title}</h3>
                   <ul className="c-languages">
                     {languages.list.map((language, index) => {
-                      console.log(language)
                       return (
                         <li className="c-language" key={index}>
-                          {/* <span >{language.name}</span> */}
-                          {/* <div  style={{ width: '50px' }}> */}
                             <Image imageName={language.name} />
-                          {/* </div> */}
                         </li>
                       )
                     })}

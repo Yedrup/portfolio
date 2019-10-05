@@ -5,9 +5,13 @@
     --secondary-color: rgba(1, 41, 60, 0.882);/*#01293ce1*/
     --secondary-color-rgba: rgba(54, 87, 115,0.55);
     --color-dark-contrast: rgba(1, 41, 60, 0.884); /*#01243c*/
-    --hightlight-color: rgb(171, 66, 103);/*#ab4267*/
-    --hightlight-color-on-dark: #ed5b90;/*#ed5b90*/
-    --hightlight-color-rgba: rgba(171, 66, 103,0.01);
+
+    /* Hightlight */
+    --highlight-color: rgb(171, 66, 103);/*#ab4267*/
+    --highlight-color-on-dark: rgb(237, 91, 144);/*#ed5b90*/
+    --highlight-color-shadow: rgb(56, 31, 39);/*#381f27*/
+    --highlight-color-rgba: rgba(171, 66, 103,0.01);
+
     --tercery-color: rgb(226, 188, 116);/*#e2bc74*/
     --tercery-color-rgba: rgba(226, 188, 116,0.55);
     --active-color: #012e33;
@@ -15,11 +19,25 @@
     --color-text-on-dark: rgb(250, 250, 250);
     --color-text-on-light: var(--color-dark-contrast);
     
+
+    /* Fonts */
+
+    --font-logo : "Bubblegum Sans", serif;
+    --font-title : "Bubblegum Sans", serif;
+    --font-content : Lato,sans-serif;
+
+    
     /* buttons */
     --buttonBorderRadius:3px;
-
+    
     /* links */
-    --linkInlineBgLight: var(--hightlight-color);
+    --linkInlineBgLight: var(--highlight-color);
+    
+    /* pages */
+    --titleTextColor: var(--highlight-color);
+    --titleTextColorShadow: var(--highlight-color-shadow);
+    --sectionTitleTextColor: var(--color-text-on-dark);
+    --sectionTitleBackgroundColor: var(--secondary-color);
 
     /* header */
     --headerHeight: 6rem;
@@ -34,7 +52,7 @@
 
     --headerLinkActiveColor: #FFF;
     --headerLinkActiveShadowColor: #2e131c;
-    --headerLinkActiveColorBackground: var(--hightlight-color);
+    --headerLinkActiveColorBackground: var(--highlight-color);
 
     --headerSocialColor: var(--color-dark-contrast);
 
@@ -48,12 +66,12 @@
     /* Menu */
     --menuWidth: 20%;/*fixed large*/
     --menuBackgroundColor: rgba(171, 66, 103,.9);
-    --menuButtonCloseColor: var(--hightlight-color);
+    --menuButtonCloseColor: var(--highlight-color);
     --menuButtonCloseBackgroundColor:#FFF;
-    --menuButtonBurgerColor: var(--hightlight-color);
+    --menuButtonBurgerColor: var(--highlight-color);
     --menuTextColor: #FFF;
 
-    --menuActiveLinkColor: var(--hightlight-color);
+    --menuActiveLinkColor: var(--highlight-color);
     --menuActiveLinkBackgroundColor: #FFF;
     
 
@@ -63,22 +81,19 @@
     /* home -section */
     --sectionHomeBackgroundColorHover: var(--secondary-color-rgba);
     --sectionHomeBackgroundColor: #fdec0011 ;
-    --sectionHomeTitleTextColor: var(--hightlight-color-on-dark);
+    --sectionHomeTitleTextColor: var(--highlight-color-on-dark);
     --sectionHomeTitleTextColor: #FFF;
     --sectionHomeContentTextColor:#FFF;
     --sectionHomeContentTextShadowColor:rgb(0, 0, 0);
+    --sectionHomePadding:.6rem;
 
-    /* pages */
-    --titleTextColor: var(--hightlight-color);
-    --sectionTitleTextColor: var(--color-text-on-dark);
-    --sectionTitleBackgroundColor: var(--secondary-color);
 
     /* Resume page */
     --skillBackground: var(--primary-color);
     /* --pannelScrollBackground: var(--color-dark-contrast); */
     --pannelScrollBackground: var(--secondary-color);
     --pannelScrollLink: var(--color-text-on-dark);
-    --pannelScrollLinkActive: var(--hightlight-color-on-dark);
+    --pannelScrollLinkActive: var(--highlight-color-on-dark);
  
     --resumeItemTitleColorText: var(--secondary-color);
     --resumeItemTitleTextShadow: 0.5px 0.5px var(--secondary-color);
@@ -86,7 +101,7 @@
     --technologiesBackground: var(--color-dark-contrast);
     --technologiesColorText: var(--color-text-on-dark);
 
-    --resumeButtonDownloadBackgroundColor: var(--hightlight-color);
+    --resumeButtonDownloadBackgroundColor: var(--highlight-color);
     --resumeButtonDownloadTextColor: #FFF;
 
 
@@ -99,7 +114,7 @@
     --aboutPhotoBackgroundColor4: rgba(171, 66, 103,0.4);
     --aboutPhotoBackgroundColor5: rgba(171, 66, 103,0.25);
     
-    --aboutTitleColorText: var(--hightlight-color);
+    --aboutTitleColorText: var(--highlight-color);
     --aboutSectionBackgroundColor: var(--tercery-color-rgba);
     --aboutSubtitleColorText: var(--primary-color);
 

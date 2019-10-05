@@ -34,7 +34,7 @@ const LinkHref = props => {
   )
 }
 const Header = ({ siteTitle }) => {
-  console.log('GatsbyLinkProps', GatsbyLinkProps)
+  // console.log('GatsbyLinkProps', GatsbyLinkProps)
 
   return (
     <StaticQuery
