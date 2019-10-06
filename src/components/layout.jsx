@@ -19,6 +19,9 @@ const Layout = ({ children }) => (
             httpEquiv
           }
         }
+        dataJson {
+          title
+        }
       }
     `}
 
@@ -35,7 +38,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={  data.site.siteMetadata.title } />
+        <Header siteTitle={ data.dataJson.title} />
         <main style={{ margin: `0`,minHeight: "70vh", padding: `.5rem .5rem`, flex:"1",display:"flex", flexDirection:"column" }}>
           {children}
         </main>

@@ -24,7 +24,9 @@
 
     --font-logo : "Bubblegum Sans", serif;
     --font-title : "Bubblegum Sans", serif;
-    --font-content : Lato,sans-serif;
+    --font-subtitle-weight : 900;
+    --font-subtitle : Lato, sans-serif;
+    --font-content : Lato, sans-serif;
 
     
     /* buttons */
@@ -79,13 +81,17 @@
     --menuButtonDownloadTextColor: #FFF;
 
     /* home -section */
-    --sectionHomeBackgroundColorHover: var(--secondary-color-rgba);
-    --sectionHomeBackgroundColor: #fdec0011 ;
-    --sectionHomeTitleTextColor: var(--highlight-color-on-dark);
-    --sectionHomeTitleTextColor: #FFF;
-    --sectionHomeContentTextColor:#FFF;
-    --sectionHomeContentTextShadowColor:rgb(0, 0, 0);
     --sectionHomePadding:.6rem;
+
+    --sectionHomeBackgroundColor: -webkit-linear-gradient(10deg, rgba(60, 1, 38, 0.372) 0%, rgba(1, 59, 60, 0.44) 50%, rgba(1, 41, 60, 0.228) 100%);
+    --sectionHomeBackgroundColorHover: -webkit-linear-gradient(45deg, rgba(1, 41, 60, 0.509)  0%, rgba(1, 59, 60, 0.616) 50%, rgba(60, 1, 38, 0.598) 100%);
+
+    --sectionHomeTitleTextColor: var(--highlight-color-on-dark);
+    --sectionHomeTitleTextColor: rgb(250, 250, 250);
+
+    --sectionHomeContentTextColor:rgb(235, 235, 235);
+    --sectionHomeContentBackground: rgba(38, 38, 38, 0.077);
+    --sectionHomeContentTextShadowColor:rgb(255, 255, 255);
 
 
     /* Resume page */
@@ -125,6 +131,7 @@
 
     --playgroundProjectbackgroundColor: var(--primary-color);
     --playgroundProjectTitleTextColor: var(--color-text-on-light);
+    --playgroundProjectTitleTextShadow: rgba(1, 41, 60, 0.51);
     --playgroundProjectIconLinkColor: var(--color-text-on-light);
     --playgroundProjectPurposeTextColor: var(--color-text-on-light);
 

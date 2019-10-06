@@ -13,14 +13,20 @@
 
 .c-project__infos__title {
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.c-project__link-title {
+    text-decoration: none;
+    margin-right: .5rem;
 }
 
 .c-project__title {
-    text-decoration: none;
+    font-size: 1.7rem;
+    font-family: var(--font-subtitle);
+    font-weight: var(--font-subtitle-weight);
     color: var(--playgroundProjectTitleTextColor);
-    text-shadow: .25px .25px var(--playgroundProjectTitleTextColor);
-    margin-right: .5rem;
+    text-shadow: .5px .9px var(--playgroundProjectTitleTextShadow);
 }
 
 .c-project__infos--written {
@@ -91,6 +97,9 @@
 @media only screen and (min-width: 900px) {
     .c-project__infos--written {
         flex:1;
+    }
+    .c-project__title {
+        font-size: 1.85rem;
     }
     .c-project__image {
         margin-left: 1rem;

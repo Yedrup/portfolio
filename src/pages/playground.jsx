@@ -62,9 +62,11 @@ const playgroundPage = () => {
                         <a
                           href={project.url}
                           target="_blank"
-                          className="c-project__title"
+                          className="c-project__link-title"
                         >
-                          <h2>{project.name}</h2>
+                          <h2 className="c-project__title">
+                            {project.name}
+                          </h2>
                         </a>
                         <ul className="c-project__links">
                           <li className="c-project__link">

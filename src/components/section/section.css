@@ -30,7 +30,7 @@
  }
  .c-section--on-image:hover > .gatsby-image-wrapper:after {
     background: var(--sectionHomeBackgroundColorHover);
-
+    
  }
  .c-section__link {
     font-family: var(--font-content);
@@ -40,17 +40,22 @@
 }
  .c-section__name{
     color: var(--sectionHomeTitleTextColor);
-    font-family: var(--font-content);
+    text-shadow: .15px .15px var(--sectionHomeContentTextShadowColor);
+    font-family: var(--font-subtitle);
+    font-weight: var(--font-subtitle-weight);
     font-style: normal;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 .c-section__content{
     position: relative;
     padding: 2rem 1rem;
     z-index: 20;
+    height: 100%;
+    text-shadow: .25px .25px var(--sectionHomeContentTextShadowColor);
+    background: var(--sectionHomeContentBackground);
     color: var(--sectionHomeContentTextColor);
-    text-shadow: 1px 1px var(--sectionHomeContentTextShadowColor);
     font-style: italic;
+    font-size: 1.1rem;
 }
 
  @media screen and (min-width: 768px) {
@@ -67,7 +72,10 @@
         border: var(--sectionHomePadding) solid transparent;
     }
     .c-section__name {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+    }
+    .c-section__content{
+        font-size: 1.2rem;
     }
     .c-section--on-image {
         height: 20rem;

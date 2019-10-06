@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Purdey',
+    title: 'Purdey Chambraud',
     description:"Hi! Welcome on my portfolio! I'm an enthusiastic Front-End Developer living in Paris area!",
     siteUrl: 'https://www.purdeychambraud.com',
     httpEquiv: 'http-equiv'
@@ -19,8 +19,7 @@ module.exports = {
     {resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Lato`,
-          `Alegreya`,
+          `Lato\:400,900`,
           `Bubblegum Sans` // you can also specify font weights and styles
         ]
       }
@@ -71,4 +70,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
-    pathPrefix: `/gatsbyreactnewfolio`}
+  pathPrefix: `/gatsbyreactnewfolio`}

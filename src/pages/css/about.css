@@ -30,28 +30,23 @@
     animation: colorchange 10s infinite;
 }
 
-.c-about__subtitle {
-    color: var(--aboutSubtitleColorText);
-    font-family: var(--font-content);
-    font-size: .9rem;
-}
-
 .c-about__bio__section {
     border-radius: var(--buttonBorderRadius);
     margin-bottom: .8rem;
 }
 
-.c-about__bio__title::first-letter {
-    color: var(--highlight-color);
-    font-style: italic;
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding-right: .15rem;
-}
 
 .c-about__bio__title {
     font-size: 1rem;
 }
+
+.c-about__bio__title::first-letter {
+    color: var(--highlight-color);
+    font: italic var(--font-subtitle-weight) 1.5rem var(--font-subtitle);
+    padding-right: .15rem;
+}
+
+
 
 .c-about__bio__paragraphs {
     list-style: none;
@@ -85,7 +80,7 @@
     align-items: baseline;
     color: var(--aboutPassionTextColor);
     font-family: var(--font-title);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .c-passion__image {

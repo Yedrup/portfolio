@@ -645,7 +645,8 @@ button:focus,
     background-color: var(--sectionTitleBackgroundColor);
     border-radius: var(--buttonBorderRadius);
     padding: .3rem;
-    font-family: var(--font-content);
+    font-family: var(--font-subtitle);
+    font-weight: var(--font-subtitle-weight);
     font-size: 1.25rem;
 }
 
