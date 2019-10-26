@@ -76,3 +76,9 @@ src/markdownData
 #nvm
 .nvmrc
 src/document/data-original.json
+
+#vscode
+.vscode/
+
+#htaccess file
+.htaccess
