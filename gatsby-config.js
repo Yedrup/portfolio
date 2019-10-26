@@ -31,7 +31,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    // {
+        // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
     //     name: `data`,
@@ -52,8 +52,9 @@ module.exports = {
       options: {
         name: "Purdey's portfolio",
         short_name: 'portfolio',
-        start_url: '/gatsbyreactnewfolio/',
-        scope: '/gatsbyreactnewfolio',
+        start_url: '/',
+        // start_url: '/gatsbyreactnewfolio/',
+        // scope: '/gatsbyreactnewfolio',
         background_color: '#519f94',
         theme_color: '#519f94',
         display: 'minimal-ui',
@@ -69,5 +70,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
-  ],
-  pathPrefix: `/gatsbyreactnewfolio`}
+  ]
+  // , pathPrefix: `/gatsbyreactnewfolio`
+}

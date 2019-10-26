@@ -1,0 +1,593 @@
+{
+  "title": "Purdey",
+  "footer": [
+    {
+      "name": "Github",
+      "url": "https://github.com/Yedrup"
+    },
+    {
+      "name": "Linkedin",
+      "url": "https://fr.linkedin.com/in/purdey-chambraud-34098679"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/yedrup"
+    },
+    {
+      "name": "mail",
+      "url": "mailto:purdey.chambraud@gmail.com?subject=Hello Purdey!"
+    }
+  ],
+  "navigation": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Playground",
+      "url": "/playground/"
+    }, 
+    {
+      "name": "Resume",
+      "url": "/resume/"
+    },
+    {
+      "name": "About",
+      "url": "/about/"
+    },
+    {
+      "name": "Links",
+      "url": "/links/"
+    }
+  ],
+  "menu": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Playground",
+      "url": "/playground/"
+    },
+    {
+      "name": "Resume",
+      "url": "/resume/"
+    },
+    {
+      "name": "About",
+      "url": "/about/"
+    },
+    {
+      "name": "Links",
+      "url": "/links/"
+    }
+  ],
+  "socialMedias": {
+    "Github": {
+      "name": "Github",
+      "url": "https://github.com/Yedrup"
+    },
+    "Linkedin": {
+      "name": "Linkedin",
+      "url": "https://fr.linkedin.com/in/purdey-chambraud-34098679"
+    },
+    "Twitter": {
+      "name": "Twitter",
+      "url": "https://twitter.com/yedrup"
+    },
+    "mail": {
+      "name": "mail",
+      "url": "mailto:purdey.chambraud@gmail.com?subject=Hello Purdey!"
+    }
+  },
+  "homePage": {
+    "title": "Welcome on my portfolio!",
+    "intro": [
+      "I am Purdey, a french, parisian, enthousiastic, happy front-end developer!"
+    ],
+    "sections": [
+      {
+        "name": "Playground - personnal projects",
+        "url": "/playground/",
+        "description": "My playground composed of different personnal projects I loved to work on ",
+        "img": "tunnelPlaceholder",
+        "color": "#220022"
+      },
+      {
+        "name": "Resume",
+        "url": "/resume/",
+        "description": "You want to see my resume... come here!",
+        "img": "workplace",
+        "color": "#002222"
+      },
+      {
+        "name": "About",
+        "url": "/about/",
+        "description": "Who am I?",
+        "img": "forestSnowFilter",
+        "color": "#220000"
+      },
+      {
+        "name": "Links",
+        "url": "/links/",
+        "description": "I've always wanted to share cool links about dev/ui/ux/tools, here my favorites tools or websites",
+        "img": "forestPlaceholder",
+        "color": "#222222"
+      }
+    ]
+  },
+  "aboutPage": {
+    "title": "Purdey Chambraud",
+    "intro": "I am a french, parisian, enthousiastic, happy front-end developer!",
+    "bioTitle": "Few words about myself",
+    "biography": [
+      {
+        "periodTitle": "Before being Developer",
+        "paragraphs": [
+          {
+            "paragraph": "I've always loved languages and research, in fact, I obtained a licence degree in Spanish and then I've followed research studies in Pre-Columbian topics."
+          },
+          {
+            "paragraph": "I realized I wanted to work in a company, I obtained a licence degree in office management / executive assistance in an one year intership at 1000mercis/numberly. It was my first contact with tech environment"
+          },
+          {
+            "paragraph": "After being graduated, I spent 3 wonderful years at Dailymotion, metting people passionned by theirs jobs and sharing their experiences!"
+          }
+        ]
+      },
+      {
+        "periodTitle": "Discovery and Revelation: I LOVE DEVELOPMENT!",
+        "paragraphs": [
+          {
+            "paragraph": "During my time at Dailymotion, I started to be curious about coding and I start learning it and I realised I wanted to be a Developer."
+          },
+          {
+            "paragraph": "With lots of support, I left Dailymotion and start an internship at Beauté Privée, an ecommerce dedicated to private sales of beauty products and services."
+          },
+          {
+            "paragraph": "I had the chance to discover lots of topics as profesional developer! The Beauté Privée's context was the code refactoring of the site to be responsive, studies about SEO, UI and UX matters."
+          },
+          {
+            "paragraph": "At same time, during my school year, I had the chance to work on different projects allowing me to learn a lot about coding, project managment and ux/ui."
+          },
+          {
+            "paragraph": "I am currently working at InWebo as Front-End developer in Research and Development team."
+          }
+        ]
+      }
+    ],
+    "passionTitle": "Random info about what I like!",
+    "introPassions": "intro passion",
+    "passions": [
+      {
+        "name": "Painting (beginner)",
+        "gifUrl": "https://media.giphy.com/media/3oKIPfmldDngrD7pKw/giphy.gif",
+        "gifName": "paintingGif"
+      },
+      {
+        "name": "Learn new things",
+        "gifUrl": "https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif",
+        "gifName": "learningCatGif"
+      },
+      {
+        "name": "Gifs, better than 1000 words",
+        "gifUrl": "https://media.giphy.com/media/pNpONEEg3pLIQ/giphy.gif",
+        "gifName": "gifAddictGif"
+      },
+      {
+        "name": "Steven Spielberg",
+        "gifUrl": "https://media.giphy.com/media/HFVsZyyv3o9jO/giphy.gif",
+        "gifName": "stevenSpielbergGif"
+      },
+      {
+        "name": "Trex",
+        "gifUrl": "https://media.giphy.com/media/3owyp35sZAWHEbdMSA/giphy.gif",
+        "gifName": "trexGif"
+      },
+      {
+        "name": "Stephen King",
+        "gifUrl": "https://media.giphy.com/media/7ZidoKPclnq7e/giphy.gif",
+        "gifName": "stephenKingGif"
+      },
+      {
+        "name": "Video games",
+        "gifUrl": "https://media.giphy.com/media/kFA6aTkhO7Gxi/giphy.gif",
+        "gifName": "videoGameGif"
+      },
+      {
+        "name": "Serie addict",
+        "gifUrl": "https://media.giphy.com/media/UoRR2d1b8xs04A2bV8/giphy.gif",
+        "gifName": "netflixGif"
+      }
+    ]
+  },
+  "resumePage": {
+    "title": "Resume",
+    "buttonTitle": "download my resume",
+    "intro": "Welcome on my resume page, you can also download it!",
+    "jobsSection": {
+      "id": "1",
+      "title": "Jobs",
+      "jobs": [
+        {
+          "name": "InWebo",
+          "years": "march 2018 - present",
+          "url": "https://www.inwebo.com/",
+          "missions": [
+            {
+              "name": "Maintenance and development of new features on applications (desktop: electronjs, mobile: ionic v1,3,4)"
+            },
+            {
+              "name": "Creation of microserver with expressjs in an electron application establishing connection between browser and another desktop authentication application "
+            },
+            {
+              "name": "Work on process of customization of our applications (mobile and desktop) in order to decline and deliver to client their own packages of our main applications"
+            },
+            {
+              "name": "Refactorization of the administration console to ionic 4 and electronjs consuming inwebo's api"
+            },
+            {
+              "name": "Industrialization of the builds of our applications"
+            },
+            {
+              "name": "Migrate one of our application to ionic 4 + angular 7"
+            },
+            {
+              "name": "Maintain legacy custom applications made in angularjs"
+            }
+          ],
+          "current": true
+        },
+        {
+          "name": "Beauté Privée",
+          "years": "2017- 2018 - 1 year",
+          "url": "https://www.beauteprivee.fr",
+          "missions": [
+            {
+              "name": "Responsive refactoring of the website using Foundation css framework"
+            },
+            {
+              "name": "Improve the front environment development (implement a package manager, task runner, bundler, transpiler)"
+            },
+            {
+              "name": "Integrate templates winners from ab testing process in PHP"
+            },
+            {
+              "name": "Implementate css code structure in terms of css classname to harmonize the project"
+            }, 
+            {
+              "name": "Create report regarding best practices in ecommerce environnement (scalability, SEO, performance)"
+            },
+            {
+              "name": "Update jquery version and librairies related using it as dependency"
+            }
+          ]
+        },
+        {
+          "name": "dailymotion",
+          "years": "2014 - 2017 - 2 years and 9 months",
+          "url": "https://www.dailymotion.com",
+          "missions": [
+            {
+              "name": "Office Manager"
+            },
+            {
+              "name": "Excecutive Assistant"
+            }
+          ],
+          "formerProfession": true
+        },
+        {
+          "name": "1000mercis(Numberly)",
+          "years": "2013 - 2014 - 1 year",
+          "url": "https://www.1000mercis.com",
+          "missions": [
+            {
+              "name": "Office Manager"
+            },
+            {
+              "name": "Excecutive Assistant"
+            }
+          ],
+          "formerProfession": true
+        }
+      ]
+    },
+    "skillsSection": {
+      "title": "Skills",
+      "id": "2",
+      "skills": [
+        {
+          "title": "Technologies",
+          "list": [
+            {
+              "name": "javascript"
+            },
+            {
+              "name": "nodejs"
+            },
+            {
+              "name": "typeScript"
+            },
+            {
+              "name": "html"
+            },
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "title": "Frameworks - Librairies",
+          "list": [
+            {
+              "name": "reactjs"
+            },
+            {
+              "name": "mobx"
+            },
+            {
+              "name": "angularjs (1.x)"
+            },
+            {
+              "name": "angular"
+            },
+            {
+              "name": "expressjs"
+            },
+            {
+              "name": "gatsby"
+            },
+            {
+              "name": "ionic 1,3,4"
+            },
+            {
+              "name": "cordova"
+            },
+            {
+              "name": "rxjs"
+            }, 
+            {
+              "name": "Foundation" 
+            },
+            {
+              "name": "jQuery"
+            },
+            {
+              "name": "postCSS"
+            },
+            {
+              "name": "sass"
+            }
+          ]
+        },
+        {
+          "title": "Softwares",
+          "list": [
+            {
+              "name": "git/github/gitlab"
+            },
+            {
+              "name": "vs code"
+            },
+            {
+              "name": "photoshop"
+            },
+            {
+              "name": "jira"
+            }
+          ]
+        }
+      ],
+      "languages": {
+        "title": "Languages",
+        "list": [
+          {
+            "name": "English"
+          },
+          {
+            "name": "Spanish"
+          },
+          {
+            "name": "French"
+          }
+        ]
+      }
+    },
+    "educationSection": {
+      "title": "Education",
+      "id": "3",
+      "educationList": [
+        {
+          "name": "Front-End Developer (internship)",
+          "place": "L'Ecole Multimedia",
+          "year": "2018",
+          "url": "https://www.ecole-multimedia.com/fr/nos-formations/formation-en-alternance/informatique-multimedia/developpeur-front-end-1329.html"
+        },
+        {
+          "name": "Bachelor's Degree Bilingual Administrative Manager (Internship)",
+          "place": "CPEA Paris",
+          "year": "2014",
+          "url": ""
+        },
+        {
+          "name": "DEESAD European diploma of superior studies to become an Executive Assistant",
+          "place": "FEDE",
+          "year": "2014",
+          "url": ""
+        },
+        {
+          "name": "Master Degree (level) in Spanish research",
+          "place": "Paris Sorbonne IV",
+          "year": "2012",
+          "url": ""
+        },
+        {
+          "name": "Bachelor's Degree in Spanish",
+          "place": "UVSQ (University Versailles Saint-Quentin-en-Yvelines)",
+          "year": "2010",
+          "url": ""
+        },
+        {
+          "name": "A-Level (Literature)",
+          "place": "",
+          "year": "2007",
+          "url": ""
+        }
+      ]
+    }
+  },
+  "linksPage": {
+    "title": "Links",
+    "intro": "The main purpose of this page is listing anything helpful I use to improve my skills. The list contains tools, games, extensions chrome, extension vscode,twitter feed etc",
+    "tools": ""
+  },
+  "playgroundPage": {
+    "title": "Playground",
+    "intro": "Here are all my projects, they are also available on my Github!",
+    "projects": [
+      {
+        "name": "HaveYouSin",
+        "imgName": "haveyousin",
+        "purpose": "The main purpose of haveyousin is to receive a feed of movies about to be released or currently in movie theaters and having a toWatchlist system (archives, custom lists..). Moreover this is a kind of projects helping me to see the big picture of a project and product.",
+        "purposeTech": "I wanted to refactorize Haveyousin in React and mobx in order to experiment it. Contrairy to the first version in angularjs, I don't use the list system and account management offered by the api The movie database (TMDB) but instead use firebase connection system and database (it currently uses the localstorage, implementation of firebase being in wip). That's the possibily to see how works a progressive web application (PWA).",
+        "url": "https://purdeychambraud.com/haveyousin",
+        "GithubUrl": "https://github.com/Yedrup/haveyousin/tree/master/src",
+        "technologies": [
+          {
+            "name": "React"
+          },
+          {
+            "name": "Mobx"
+          },
+          {
+            "name": "Firebase (wip)"
+          },
+          {
+            "name": "HTML / CSS"
+          },
+          {
+            "name": "api TMDB"
+          }
+        ]
+      },
+      {
+        "name": "Portfolio (Here!)",
+        "imgName": "Portfolio",
+        "url": "https://purdeychambraud.com/",
+        "GithubUrl": "",
+        "purpose": "My portfolio is my first playground, the former one was built with pure htlm css rendering with hard coded data inside html. Responsive pages were manually created. This refactorized portfolio allowed me to be more free regarding the way I wanted it to look, and redefine my presentation.",
+        "purposeTech": "My refactorization is made with Gatsby, I wanted to continue to use React and see how gatsby works, how are implemented the plugins, how it uses graphql, the management of a PWA.",
+        "technologies": [
+          {
+            "name": "Gatsby"
+          },
+          {
+            "name": "React"
+          },
+          {
+            "name": "Javascript"
+          },
+          {
+            "name": "Graphql"
+          },
+          {
+            "name": "HTML / CSS"
+          }
+        ]
+      },
+      {
+        "name": "Color Game",
+        "imgName": "colorGame",
+        "purpose": "When I started learning about colors to train myself having some colors in mind quickly, I had the idea of creating a game.",
+        "purposeTech": "The tech purpose was to use pure Javascript and create a scoring system, evaluate inputs from the player.",
+        "url": "https://purdeychambraud.com/color-game/index.html",
+        "GithubUrl": "https://github.com/Yedrup/Color-Game",
+        "technologies": [
+          {
+            "name": "Javascript"
+          },
+          {
+            "name": "HTML / CSS"
+          }
+        ]
+      },
+      {
+        "name": "rock paper scissors",
+        "imgName": "rockPaperScissors",
+        "purpose": "create a game in js.",
+        "purposeTech": "create a game system and manage its processes in js.",
+        "url": "https://purdeychambraud.com/rock-paper-scissors/index.html",
+        "GithubUrl": "https://github.com/Yedrup/rock-paper-scissors",
+        "technologies": [
+          {
+            "name": "Javascript"
+          },
+          {
+            "name": "HTML / CSS"
+          }
+        ]
+      },
+      {
+        "name": "kwick chat",
+        "imgName": "kwick",
+        "purpose": "kwick chat is a school project to create a chat interface and reach school api.",
+        "purposeTech": "The main purpose of kwick-chat was to use an api and the authentication management it provided, getting messages in real time.",
+        "url": "https://purdeychambraud.com/Kwick-Chat/index.html",
+        "GithubUrl": "https://github.com/Yedrup/kwick-chat",
+        "technologies": [
+          {
+            "name": "angularjs"
+          },
+          {
+            "name": "HTML / CSS"
+          }
+        ]
+      },
+      {
+        "name": "HaveYouSin - Legacy",
+        "imgName": "HYSAJS",
+        "purpose": "The main purpose of haveyousin is to receive a feed of movies about to be released or currently in movie theaters, and having a toWatchlist system (archives, custom lists..).",
+        "purposeTech": "The purpose to create a web app during the final exam using a framework js, I chose angularjs because it was the one we've learnt during few months at school. For this project, I used the api themoviedatabase and its list and account management. It allowed me to understand concepts as bearer token, api, private/public pages.",
+        "url": "https://purdeychambraud.com/legacy-haveyousin",
+        "GithubUrl": "https://github.com/Yedrup/haveyousin/tree/master/src",
+        "technologies": [
+          {
+            "name": "angularjs"
+          },
+          {
+            "name": "webpack 3"
+          },
+          {
+            "name": "api TMDB"
+          },
+          {
+            "name": "HTML / CSS"
+          }
+        ]
+      },
+      {
+        "name": "Portfolio - Legacy",
+        "imgName": "legacyPortfolio",
+        "url": "https://purdeychambraud.com/legacy-portfolio/",
+        "GithubUrl": "https://github.com/Yedrup/portfolio-legacy",
+        "purpose": "Having a website presenting myself and hosting my playground of side projects.",
+        "purposeTech": "Create a responsive website, learn how to use a task manager(gulp), postcss and then deploy on an ovh web server. I've learnt how to do some basic server configuration, redirection urls etc.",
+        "technologies": [
+          {
+            "name": "HTML / CSS"
+          },
+          {
+            "name": "gulp"
+          },
+          {
+            "name": "postcss"
+          }
+        ]
+      }
+    ]
+  },
+  "buttons": {
+    "buttonDownload": "My resume"
+  }
+}
