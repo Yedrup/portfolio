@@ -212,6 +212,7 @@
         {
           "name": "InWebo",
           "years": "march 2018 - present",
+          "jobTitle": "Front-End Developer",
           "url": "https://www.inwebo.com/",
           "missions": [
             {
@@ -241,6 +242,7 @@
         {
           "name": "Beauté Privée",
           "years": "2017- 2018 - 1 year",
+          "jobTitle": "Front-End Developer",
           "url": "https://www.beauteprivee.fr",
           "missions": [
             {
@@ -264,15 +266,16 @@
           ]
         },
         {
-          "name": "dailymotion",
+          "name": "Dailymotion",
           "years": "2014 - 2017 - 2 years and 9 months",
+          "jobTitle": "Executive Assistant / Office Manager",
           "url": "https://www.dailymotion.com",
           "missions": [
             {
-              "name": "Office Manager"
+              "name": "Excecutive Assistance: Managing and maintaining executives' schedules, expenses and travel arrangements, updating database of clients"
             },
             {
-              "name": "Excecutive Assistant"
+              "name": "Office Management: Office optimization, managing supplier’s relationships, managing Office Management’s budget, organization of requests for proposal, managing insurance policies, welcoming visitors and managing the switchboard, , organization of internal events (engineering Meetups, seminars, workshops...)"
             }
           ],
           "formerProfession": true
@@ -280,13 +283,14 @@
         {
           "name": "1000mercis(Numberly)",
           "years": "2013 - 2014 - 1 year",
+          "jobTitle": "Executive Assistant / Office Manager",
           "url": "https://www.1000mercis.com",
           "missions": [
             {
-              "name": "Office Manager"
+              "name": "Excecutive Assistance: Managing and maintaining executives' schedules, email inboxes, expenses and travel arrangements, updating database of clients"
             },
             {
-              "name": "Excecutive Assistant"
+              "name": "Office Management: Office optimization, managing supplier’s relationships, welcoming visitors and managing the switchboard, organization of internal events (launchs, workshops...)"
             }
           ],
           "formerProfession": true

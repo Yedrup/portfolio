@@ -19,8 +19,7 @@
 }
 
 .c-mission:before {
-    content: "•"; 
-    color: rgb(81, 159, 148);
+    content: url("../../images/bullet-explosion.png"); 
     margin-right: .6rem;
 }
 

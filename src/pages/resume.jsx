@@ -79,6 +79,7 @@ class resumePage extends Component {
                     name
                     url
                     years
+                    jobTitle
                     missions {
                       name
                     }
@@ -205,8 +206,8 @@ class resumePage extends Component {
                     {jobsSection.jobs.map(job => {
                       return (
                         <li className="c-job" key={job.name}>
-                          <span className="c-resume__item__title">{job.years}</span>
                           <a href={job.url} target="_blank" className="c-link">{job.name}</a>
+                          <span className="c-resume__item__title"> - {job.jobTitle} ({job.years})</span>
                           <ul className="c-missions">
                             {job.missions.map((mission, index) => {
                               return (
