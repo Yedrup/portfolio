@@ -1,0 +1,23 @@
+.c-notFound__image__inner {
+    margin: 1.5rem auto;
+    width: 100%;
+}
+
+
+.c-notFound__link {
+    color: var(--linkInlineBgLight);
+}
+
+
+@media screen and (min-width: 900px) {
+    .c-notFound__image__inner {
+        width: 90%;
+        max-width: 60rem;
+    }
+
+    .c-notFound__image__inner:hover {
+        animation: shakeIt 0.9s;
+        animation-iteration-count: infinite;
+    }
+}
+

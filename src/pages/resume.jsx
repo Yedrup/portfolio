@@ -283,10 +283,6 @@ class resumePage extends Component {
                   </a>
                 </div>
               </div>
-
-              {/*  
-              <Link to="/">Go back to the jobs</Link>
-              <Link to="/playground/">Go to the playground</Link> */}
             </Layout>
           )
         }}

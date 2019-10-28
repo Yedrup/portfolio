@@ -456,7 +456,7 @@
         "purpose": "The main purpose of haveyousin is to receive a feed of movies about to be released or currently in movie theaters and having a toWatchlist system (archives, custom lists..). Moreover this is a kind of projects helping me to see the big picture of a project and product.",
         "purposeTech": "I wanted to refactorize Haveyousin in React and mobx in order to experiment it. Contrairy to the first version in angularjs, I don't use the list system and account management offered by the api The movie database (TMDB) but instead use firebase connection system and database (it currently uses the localstorage, implementation of firebase being in wip). That's the possibily to see how works a progressive web application (PWA).",
         "url": "https://purdeychambraud.com/haveyousin",
-        "GithubUrl": "https://github.com/Yedrup/haveyousin/tree/master/src",
+        "GithubUrl": "https://github.com/Yedrup/haveyousin",
         "technologies": [
           {
             "name": "React"
@@ -505,7 +505,7 @@
         "imgName": "colorGame",
         "purpose": "When I started learning about colors to train myself having some colors in mind quickly, I had the idea of creating a game.",
         "purposeTech": "The tech purpose was to use pure Javascript and create a scoring system, evaluate inputs from the player.",
-        "url": "https://purdeychambraud.com/color-game/index.html",
+        "url": "https://purdeychambraud.com/color-game",
         "GithubUrl": "https://github.com/Yedrup/Color-Game",
         "technologies": [
           {
@@ -521,7 +521,7 @@
         "imgName": "rockPaperScissors",
         "purpose": "create a game in js.",
         "purposeTech": "create a game system and manage its processes in js.",
-        "url": "https://purdeychambraud.com/rock-paper-scissors/index.html",
+        "url": "https://purdeychambraud.com/rock-paper-scissors",
         "GithubUrl": "https://github.com/Yedrup/rock-paper-scissors",
         "technologies": [
           {
@@ -537,7 +537,7 @@
         "imgName": "kwick",
         "purpose": "kwick chat is a school project to create a chat interface and reach school api.",
         "purposeTech": "The main purpose of kwick-chat was to use an api and the authentication management it provided, getting messages in real time.",
-        "url": "https://purdeychambraud.com/Kwick-Chat/index.html",
+        "url": "https://purdeychambraud.com/Kwick-Chat",
         "GithubUrl": "https://github.com/Yedrup/kwick-chat",
         "technologies": [
           {
@@ -554,7 +554,7 @@
         "purpose": "The main purpose of haveyousin is to receive a feed of movies about to be released or currently in movie theaters, and having a toWatchlist system (archives, custom lists..).",
         "purposeTech": "The purpose to create a web app during the final exam using a framework js, I chose angularjs because it was the one we've learnt during few months at school. For this project, I used the api themoviedatabase and its list and account management. It allowed me to understand concepts as bearer token, api, private/public pages.",
         "url": "https://purdeychambraud.com/legacy-haveyousin",
-        "GithubUrl": "https://github.com/Yedrup/haveyousin/tree/master/src",
+        "GithubUrl": "https://github.com/Yedrup/legacy-haveyousin",
         "technologies": [
           {
             "name": "angularjs"

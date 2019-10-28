@@ -31,8 +31,6 @@ const linksPage = () => {
               </div>
             </div>
             <p>{intro}</p>
-            <Link to="/">Go back to the homepage</Link>
-            <Link to="/playground/">Go to the playground</Link>
           </Layout>
         )
       }}
