@@ -19,6 +19,10 @@
     --color-text-on-dark: rgb(250, 250, 250);
     --color-text-on-light: var(--color-dark-contrast);
     
+    /* selection */
+    /* --selected-background : var(--highlight-color-on-dark) ; */
+    --selected-background : rgba(1, 41, 60, 0.879);
+    --selected-color : rgba(248,248,248) ;
 
     /* Fonts */
 

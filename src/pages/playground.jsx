@@ -94,9 +94,6 @@ const playgroundPage = () => {
                         </ul>
                       </div>
                       <div className="c-project__technologies">
-                        <span className="c-project__purpose__title">
-                          Technologies:
-                        </span>
                         {project.technologies.map((technologie, index) => {
                           return <span className="c-project__technology" key={index}>{technologie.name}</span>
                         })}

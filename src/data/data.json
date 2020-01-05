@@ -26,7 +26,7 @@
     {
       "name": "Playground",
       "url": "/playground/"
-    }, 
+    },
     {
       "name": "Resume",
       "url": "/resume/"
@@ -216,25 +216,19 @@
           "url": "https://www.inwebo.com/",
           "missions": [
             {
-              "name": "Maintenance and development of new features on applications (desktop: electronjs, mobile: ionic v1,3,4)"
+              "name": "Maintain and develop new features applications (desktop: electronjs, mobile: ionic v1(angularjs), v3 and v4 (angular))"
             },
             {
-              "name": "Creation of microserver with expressjs in an electron application establishing connection between browser and another desktop authentication application "
+              "name": "Create a microserver with expressjs in an electron application establishing connections between browser and another desktop authentication application "
             },
             {
-              "name": "Work on process of customization of our applications (mobile and desktop) in order to decline and deliver to client their own packages of our main applications"
+              "name": "Work on process of customization of our applications (mobile and desktop) in order to produce and deliver to client their own packages of our main applications(variabilization, templating)"
+            },
+            {
+              "name": "Industrialize the builds of customized applications (mobile and desktop) using a nodejs script.\nThe scripts clones a project branch from repository, builds artefacts of customs available, deployes it on a server and notifies by email the report of build and deployment status"
             },
             {
               "name": "Refactorization of the administration console to ionic 4 and electronjs consuming inwebo's api"
-            },
-            {
-              "name": "Industrialization of the builds of our applications"
-            },
-            {
-              "name": "Migrate one of our application to ionic 4 + angular 7"
-            },
-            {
-              "name": "Maintain legacy custom applications made in angularjs"
             }
           ],
           "current": true
@@ -246,7 +240,7 @@
           "url": "https://www.beauteprivee.fr",
           "missions": [
             {
-              "name": "Responsive refactoring of the website using Foundation css framework"
+              "name": "Work on responsive refactoring of the website using Foundation css framework"
             },
             {
               "name": "Improve the front environment development (implement a package manager, task runner, bundler, transpiler)"
@@ -256,7 +250,7 @@
             },
             {
               "name": "Implementate css code structure in terms of css classname to harmonize the project"
-            }, 
+            },
             {
               "name": "Create report regarding best practices in ecommerce environnement (scalability, SEO, performance)"
             },
@@ -275,7 +269,7 @@
               "name": "Excecutive Assistance: Managing and maintaining executives' schedules, expenses and travel arrangements, updating database of clients"
             },
             {
-              "name": "Office Management: Office optimization, managing supplier’s relationships, managing Office Management’s budget, organization of requests for proposal, managing insurance policies, welcoming visitors and managing the switchboard, , organization of internal events (engineering Meetups, seminars, workshops...)"
+              "name": "Office Management: Office optimization, managing supplier’s relationships, managing Office Management’s budget, organization of requests for proposal, managing insurance policies, welcoming visitors and managing the switchboard, organization of internal events (engineering Meetups, seminars, workshops...)"
             }
           ],
           "formerProfession": true
@@ -350,9 +344,6 @@
             },
             {
               "name": "rxjs"
-            }, 
-            {
-              "name": "Foundation" 
             },
             {
               "name": "jQuery"
@@ -362,6 +353,12 @@
             },
             {
               "name": "sass"
+            },
+            {
+              "name": "Foundation"
+            },
+            {
+              "name": "mustachejs"
             }
           ]
         },
