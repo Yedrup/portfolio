@@ -90,28 +90,28 @@
         "name": "Playground - personnal projects",
         "url": "/playground/",
         "description": "My playground composed of different personnal projects I loved to work on ",
-        "img": "tunnelPlaceholder",
+        "img": "purdeyWorkingBack",
         "color": "#220022"
       },
       {
         "name": "Resume",
         "url": "/resume/",
         "description": "You want to see my resume... come here!",
-        "img": "workplace",
+        "img": "purdeyWorkingFace",
         "color": "#002222"
       },
       {
         "name": "About",
         "url": "/about/",
         "description": "Who am I?",
-        "img": "forestSnowFilter",
+        "img": "purdeyPortrait",
         "color": "#220000"
       },
       {
         "name": "Links",
         "url": "/links/",
         "description": "I've always wanted to share cool links about dev/ui/ux/tools, here my favorites tools or websites",
-        "img": "forestPlaceholder",
+        "img": "deskDeco",
         "color": "#222222"
       }
     ]

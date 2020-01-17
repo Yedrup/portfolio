@@ -37,9 +37,10 @@
 .c-skill{
     background: var(--skillBackground);
     color:var(--color-text-on-dark);
+    margin: .35rem;
+    white-space: nowrap;
     padding: .5rem 1rem;
     border-radius: 2px;
-    margin: .35rem;
 } 
 
 .c-skill:last-child {

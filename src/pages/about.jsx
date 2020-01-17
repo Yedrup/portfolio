@@ -46,12 +46,14 @@ const aboutPage = () => {
 
         return (
           <Layout>
-            <div className="c-about__presentation">
-              <div className="myPhoto" style={{ width: '100px' }}>
-                <Image imageName="purdey" />
+            <div className="c-about__presentation__wrapper">
+              <div className="c-about__photo" style={{ width: '20%' }}>
+                <Image imageName="purdeyPortraitStandingUp" />
               </div>
-              <h1 className="c-page__title c-page__title--about">{title}</h1>
-              <p className="c-about__presentation__text">{intro}</p>
+              <div className="c-about__presentation">
+                <h1 className="c-page__title c-page__title--about">{title}</h1>
+                <p className="c-about__presentation__text">{intro}</p>
+              </div>
             </div>
             <span className="c-page__section__title ">{bioTitle}</span>
             <div className="c-about__bio__sections">

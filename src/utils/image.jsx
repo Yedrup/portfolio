@@ -86,6 +86,62 @@ const Image = props => {
               }
             }
           }
+          purdeyPortrait: file(relativePath: { eq: "purdey107.jpg" }) {
+            childImageSharp {
+              fixed(width: 500, height: 500) {
+                ...GatsbyImageSharpFixed
+              }      
+            }
+          }
+          purdeyPortraitLaptop: file(relativePath: { eq: "purdey119.jpg" }) {
+            childImageSharp {
+              fluid(maxWidth: 1024) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          purdeyPortraitStandingUp: file(relativePath: { eq: "purdey175.jpg" }) {
+            childImageSharp {
+              fluid(maxWidth: 1024) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          deskDeco: file(relativePath: { eq: "purdey179.jpg" }) {
+            childImageSharp {
+              fluid(maxWidth: 1024) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          purdeyWorking: file(relativePath: { eq: "purdey191.jpg" }) {
+            childImageSharp {
+              fluid(maxWidth: 1024) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          purdeyWorkingSmile: file(relativePath: { eq: "purdey243.jpg" }) {
+            childImageSharp {
+              fluid(maxWidth: 1024) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          purdeyWorkingBack: file(relativePath: { eq: "purdey207.jpg" }) {
+            childImageSharp {
+              fluid(maxWidth: 1024) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          purdeyWorkingFace: file(relativePath: { eq: "purdey225.jpg" }) {
+            childImageSharp {
+              fluid(maxWidth: 1024) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           forestPlaceholder: file(
             relativePath: { eq: "forestPlaceholder.jpg" }
           ) {
@@ -214,6 +270,14 @@ const Image = props => {
           return <Img fluid={data.logoExplosionNoBg.childImageSharp.fluid} />
         } else if (props.imageName === 'trexNoBg') {
           return <Img fluid={data.trexNoBg.childImageSharp.fluid} />
+        }
+        //  else if (props.imageName === 'purdeyPortrait') {
+        //   return <Img fluid={data.purdeyPortrait.childImageSharp.fluid} />
+        // } 
+        else if (props.imageName === 'purdeyPortraitLaptop') {
+          return <Img fluid={data.purdeyPortraitLaptop.childImageSharp.fluid} />
+        } else if (props.imageName === 'purdeyPortraitStandingUp') {
+          return <Img fluid={data.purdeyPortraitStandingUp.childImageSharp.fluid} />
         } else if (props.imageName === 'forestSnowFilter') {
           return (
             <Img
@@ -223,7 +287,53 @@ const Image = props => {
               }}
             />
           )
-        } else if (props.imageName === '404Large') {
+        } else if (props.imageName === 'purdeyPortrait') {
+          return (
+            <Img
+            fixed={data.purdeyPortrait.childImageSharp.fixed}
+              style={{
+                ...backgroungSectionStyle,
+              }}
+            />
+          )
+        }else if (props.imageName === 'purdeyWorkingSmile') {
+          return (
+            <Img
+              fluid={data.purdeyWorkingSmile.childImageSharp.fluid}
+              style={{
+                ...backgroungSectionStyle,
+              }}
+            />
+          )
+        }
+        else if (props.imageName === 'purdeyWorkingBack') {
+          return (
+            <Img
+              fluid={data.purdeyWorkingBack.childImageSharp.fluid}
+              style={{
+                ...backgroungSectionStyle,
+              }}
+            />
+          )
+        } else if (props.imageName === 'purdeyWorkingFace') {
+          return (
+            <Img
+              fluid={data.purdeyWorkingFace.childImageSharp.fluid}
+              style={{
+                ...backgroungSectionStyle,
+              }}
+            />
+          )
+        } else if (props.imageName === 'deskDeco') {
+          return (
+            <Img
+              fluid={data.deskDeco.childImageSharp.fluid}
+              style={{
+                ...backgroungSectionStyle,
+              }}
+            />
+          )
+        }else if (props.imageName === '404Large') {
           return <Img fluid={data.notFoundLarge.childImageSharp.fluid} />
         } else if (props.imageName === 'trexComingSoon') {
           return <Img fluid={data.trexComingSoon.childImageSharp.fluid} />

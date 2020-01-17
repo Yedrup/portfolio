@@ -21,7 +21,6 @@
 .c-section--on-image .gatsby-image-wrapper img {
     object-fit: cover !important;
     width: 100%; 
-    object-position: top!important;
  }
 .c-section--on-image .gatsby-image-wrapper:after {
     display: flex;
