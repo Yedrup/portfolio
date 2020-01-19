@@ -31,13 +31,6 @@ const Image = props => {
     <StaticQuery
       query={graphql`
         query {
-          purdey: file(relativePath: { eq: "purdey_photo.png" }) {
-            childImageSharp {
-              fluid(maxWidth: 200) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
           logoExplosion: file(
             relativePath: { eq: "explosion-purdey-smaller.png" }
           ) {
@@ -72,20 +65,6 @@ const Image = props => {
               }
             }
           }
-          forestSnowFilter: file(relativePath: { eq: "forest.jpg" }) {
-            childImageSharp {
-              fluid(maxWidth: 1024) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          workplace: file(relativePath: { eq: "workplace.jpg" }) {
-            childImageSharp {
-              fluid(maxWidth: 1024) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
           purdeyPortrait: file(relativePath: { eq: "purdey107.jpg" }) {
             childImageSharp {
               fixed(width: 500, height: 500) {
@@ -100,7 +79,7 @@ const Image = props => {
               }
             }
           }
-          purdeyPortraitStandingUp: file(relativePath: { eq: "purdey175.jpg" }) {
+          purdeyPortraitStandingUpExplosions: file(relativePath: { eq: "photo-explosion-small.png" }) {
             childImageSharp {
               fluid(maxWidth: 1024) {
                 ...GatsbyImageSharpFluid
@@ -136,24 +115,6 @@ const Image = props => {
             }
           }
           purdeyWorkingFace: file(relativePath: { eq: "purdey225.jpg" }) {
-            childImageSharp {
-              fluid(maxWidth: 1024) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          forestPlaceholder: file(
-            relativePath: { eq: "forestPlaceholder.jpg" }
-          ) {
-            childImageSharp {
-              fluid(maxWidth: 1024) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          tunnelPlaceholder: file(
-            relativePath: { eq: "tunnelPlaceholder.jpg" }
-          ) {
             childImageSharp {
               fluid(maxWidth: 1024) {
                 ...GatsbyImageSharpFluid
@@ -251,18 +212,7 @@ const Image = props => {
       `}
       render={data => {
         // console.log(data)
-        if (props.imageName === 'purdey') {
-          return <Img fluid={data.purdey.childImageSharp.fluid} />
-        } else if (props.imageName === 'workplace') {
-          return (
-            <Img
-              fluid={data.workplace.childImageSharp.fluid}
-              style={{
-                ...backgroungSectionStyle,
-              }}
-            />
-          )
-        } else if (props.imageName === 'logo') {
+       if (props.imageName === 'logo') {
           return <Img fluid={data.logo.childImageSharp.fluid} />
         } else if (props.imageName === 'logoExplosion') {
           return <Img fluid={data.logoExplosion.childImageSharp.fluid} />
@@ -270,23 +220,12 @@ const Image = props => {
           return <Img fluid={data.logoExplosionNoBg.childImageSharp.fluid} />
         } else if (props.imageName === 'trexNoBg') {
           return <Img fluid={data.trexNoBg.childImageSharp.fluid} />
-        }
-        //  else if (props.imageName === 'purdeyPortrait') {
-        //   return <Img fluid={data.purdeyPortrait.childImageSharp.fluid} />
-        // } 
+        } 
         else if (props.imageName === 'purdeyPortraitLaptop') {
           return <Img fluid={data.purdeyPortraitLaptop.childImageSharp.fluid} />
-        } else if (props.imageName === 'purdeyPortraitStandingUp') {
-          return <Img fluid={data.purdeyPortraitStandingUp.childImageSharp.fluid} />
-        } else if (props.imageName === 'forestSnowFilter') {
-          return (
-            <Img
-              fluid={data.forestSnowFilter.childImageSharp.fluid}
-              style={{
-                ...backgroungSectionStyle,
-              }}
-            />
-          )
+        } 
+        else if (props.imageName === 'purdeyPortraitStandingUpExplosions') {
+          return <Img fluid={data.purdeyPortraitStandingUpExplosions.childImageSharp.fluid} />
         } else if (props.imageName === 'purdeyPortrait') {
           return (
             <Img
@@ -337,24 +276,6 @@ const Image = props => {
           return <Img fluid={data.notFoundLarge.childImageSharp.fluid} />
         } else if (props.imageName === 'trexComingSoon') {
           return <Img fluid={data.trexComingSoon.childImageSharp.fluid} />
-        } else if (props.imageName === 'forestPlaceholder') {
-          return (
-            <Img
-              fluid={data.forestPlaceholder.childImageSharp.fluid}
-              style={{
-                ...backgroungSectionStyle,
-              }}
-            />
-          )
-        } else if (props.imageName === 'tunnelPlaceholder') {
-          return (
-            <Img
-              fluid={data.tunnelPlaceholder.childImageSharp.fluid}
-              style={{
-                ...backgroungSectionStyle,
-              }}
-            />
-          )
         } else if (props.imageName === 'rockPaperScissors') {
           return (
             <Img
@@ -387,12 +308,6 @@ const Image = props => {
             <Img
               fluid={data.colorGame.childImageSharp.fluid}
             />
-          )
-        } else if (props.imageName === 'map') {
-          return (
-            <Img
-              fluid={data.map.childImageSharp.fluid}
-               />
           )
         } else if (props.imageName === 'haveyousin') {
           return (
