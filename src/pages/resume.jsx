@@ -34,18 +34,13 @@ class resumePage extends Component {
   }
 
   componentDidMount() {
-    Events.scrollEvent.register('begin', (to, element) => {
-    // console.log('begin', arguments)
-    })
-
-    Events.scrollEvent.register('end', (to, element) => {
-    })
-
+    Events.scrollEvent.register('begin');
+    Events.scrollEvent.register('end');
     scrollSpy.update()
   }
   componentWillUnmount() {
-    Events.scrollEvent.remove('begin')
-    Events.scrollEvent.remove('end')
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
   }
   scrollToTop() {
     scroll.scrollToTop()
@@ -57,7 +52,7 @@ class resumePage extends Component {
     scroll.scrollTo(100)
   }
   scrollMore() {
-    scroll.scrollMore(100)
+    scroll.scrollMore(500)
   }
   handleSetActive = to => {
     this.setState({ currentlyScrolled: to })
@@ -133,19 +128,19 @@ class resumePage extends Component {
             <Layout>
               <h1 className="c-page__title">{title}</h1>
               <p>{intro}
-              <a
-                    href={cv}
-                    target="_blank"
-                    className="c-resume__download-link c-link"
-                  >                     
-              <IconService
-                      nameIcon="download"
-                      iconStyleContext={{
-                        color: '',
-                      }}
-                    />
-                    </a>
-                    </p>
+                <a
+                  href={cv}
+                  target="_blank"
+                  className="c-resume__download-link c-link"
+                >
+                  <IconService
+                    nameIcon="Download"
+                    iconStyleContext={{
+                      color: '',
+                    }}
+                  />
+                </a>
+              </p>
               <div className="c-resume-scrollable">
                 <div className="c-pannel-scoll">
                   <LinkScroll
@@ -248,7 +243,7 @@ class resumePage extends Component {
                     {languages.list.map((language, index) => {
                       return (
                         <li className="c-language" key={index}>
-                            <Image imageName={language.name} />
+                          <Image imageName={language.name} />
                         </li>
                       )
                     })}
@@ -278,7 +273,7 @@ class resumePage extends Component {
                     target="_blank"
                     className="c-resume-button c-button"
                   >
-                    <IconService nameIcon="download" iconStyleContext={{color: '' , style:{'marginRight': '1rem'} }}/>
+                    <IconService nameIcon="Download" iconStyleContext={{ color: '', style: { 'marginRight': '1rem' } }} />
                     {buttonTitle}
                   </a>
                 </div>

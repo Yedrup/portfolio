@@ -7,37 +7,49 @@ import stephenKingGif from '../images/stephenKingGif.gif'
 import stevenSpielbergGif from '../images/stevenSpielbergGif.gif'
 import trexGif from '../images/trexGif.gif'
 import videoGameGif from '../images/videoGameGif.gif'
+import magicTheGatheringGif from '../images/magicTheGatheringGif.gif'
 
-
-
-
-
-class GifService extends React.Component {
-  render() {
-    // TODO: change array to obj
-    const gifs = [
-      { title: "gifAddictGif", gifName: gifAddictGif },
-      { title: "learningCatGif", gifName: learningCatGif },
-      { title: "netflixGif", gifName: netflixGif },
-      { title: "paintingGif", gifName: paintingGif},
-      { title: "stephenKingGif", gifName: stephenKingGif},
-      { title: "stevenSpielbergGif", gifName: stevenSpielbergGif},
-      { title: "trexGif", gifName: trexGif},
-      { title: "videoGameGif", gifName: videoGameGif}
-    ];
-    let gifToFind = this.props.gifName;
-    let gifClass = this.props.gifClass;
-    function getGifComponent(gif) {
-      return gif.title === gifToFind;
-    }
-    let gifName = gifs.find(getGifComponent);
-    if(gifName) gifName = gifName.gifName;
-    else return null
-
-    return (
-        <img src={gifName} className={gifClass} alt=''/>
-    );
+const gifs = {
+  gifAddictGif: {
+    gifPath: gifAddictGif,
+  },
+  learningCatGif: {
+    gifPath: learningCatGif,
+  },
+  netflixGif: {
+    gifPath: netflixGif,
+  },
+  paintingGif: {
+    gifPath: paintingGif,
+  },
+  stephenKingGif: {
+    gifPath: stephenKingGif,
+  },
+  stevenSpielbergGif: {
+    gifPath: stevenSpielbergGif,
+  },
+  trexGif: {
+    gifPath: trexGif,
+  },
+  videoGameGif: {
+    gifPath: videoGameGif,
+  },
+  magicTheGatheringGif: {
+    gifPath: magicTheGatheringGif
   }
 }
 
+// TODO: HIGH ORDER FUNCTION FOR THIS
+class GifService extends React.Component {
+  render() {
+    let gifToFind = this.props.gifName;
+    let gifClass = this.props.gifClass;
+    let isGifDeclared = !!gifs[gifToFind];
+    if (isGifDeclared) {
+      let { gifPath } = gifs[gifToFind];
+      return <img src={gifPath} className={gifClass} alt='' />
+    }
+    return null
+  }
+}
 export default GifService;

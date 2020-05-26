@@ -1,11 +1,16 @@
-.c-jobs,.c-missions,.c-skills {
+.c-jobs,
+.c-missions,
+.c-skills {
     list-style: none;
 }
-.c-jobs, .c-educations {
+
+.c-jobs,
+.c-educations {
     margin: 0;
 }
+
 .c-job {
-    padding:  1rem 0;
+    padding: 1rem 0;
 }
 
 .c-resume__item__title {
@@ -20,28 +25,28 @@
 }
 
 .c-mission:before {
-    content: url("../../images/bullet-explosion.png"); 
+    content: url("../../images/bullet-explosion.png");
     margin-right: .6rem;
 }
 
 .c-skills {
     display: flex;
     flex-wrap: wrap;
-    margin:0;
+    margin: 0;
 }
 
 .c-skills__title {
     margin-top: 1rem;
 }
 
-.c-skill{
-    background: var(--skillBackground);
-    color:var(--color-text-on-dark);
+.c-skill {
     margin: .35rem;
-    white-space: nowrap;
     padding: .5rem 1rem;
     border-radius: 2px;
-} 
+    white-space: nowrap;
+    background: var(--skillBackground);
+    color: var(--color-text-on-dark);
+}
 
 .c-skill:last-child {
     margin-bottom: auto;
@@ -50,52 +55,53 @@
 .c-languages {
     display: flex;
     margin: 0;
-    text-decoration:none;
-    list-style:none;
+    text-decoration: none;
+    list-style: none;
 }
 
 .c-language {
-    margin-right: .5rem;
     width: 2rem;
+    margin-right: .5rem;
 }
 
 .c-educations {
-    text-decoration:none;
-    list-style:none;
+    text-decoration: none;
+    list-style: none;
 }
 
 .c-resume-section--button {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     margin: 5rem 0;
 }
-.c-resume-button {
-    padding:1rem;
-    background: var(--resumeButtonDownloadBackgroundColor);
-    color:var(--resumeButtonDownloadTextColor);
-    display: flex;
-    text-decoration:none;
-    text-align: center;
-    justify-content: center;
-    margin: 2rem 0;
-}
 
+.c-resume-button {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: var(--resumeButtonDownloadBackgroundColor);
+    color: var(--resumeButtonDownloadTextColor);
+    text-decoration: none;
+    text-align: center;
+}
 
 .c-resume-scrollable {
     position: relative;
-
 }
+
 .c-pannel-scoll {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    position: fixed;
+    right: 0;
+    max-width: 50%;
+    padding: 1rem;
     background: var(--pannelScrollBackground);
     border-radius: var(--buttonBorderRadius);
-    display: flex;
-    align-self: flex-end;
-    flex-direction: column;
-    max-width:50%;
-    font-size: 1rem; 
-    padding: 1rem;
-    right:0;
-    position: fixed;
+    box-shadow: var(--elevation-16);
+    font-size: 1rem;
 }
 
 .c-pannel-scroll__link {
@@ -105,6 +111,7 @@
 .c-pannel-scroll__link--active {
     color: var(--pannelScrollLinkActive);
 }
+
 .c-resume__download-link {
     margin-left: .5rem;
 }

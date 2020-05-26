@@ -1,58 +1,113 @@
 :root {
-    --primary-color: rgb(81, 159, 148);/*#519f94*/
-    --primary-color-rgba: rgba(81, 159, 149, 0.872);
+    --primary-color: rgb(81, 159, 148);
+    /*#519f94*/
+    --primary-color-light: rgb(115, 188, 179);
+    /*#519f94*/
+    --primary-color-rgba-3: rgba(81, 159, 149, 0.3);
+    --primary-color-rgba-8: rgba(81, 159, 149, 0.8);
 
-    --secondary-color: rgba(1, 41, 60, 0.882);/*#01293ce1*/
-    --secondary-color-rgba: rgba(54, 87, 115,0.55);
-    --color-dark-contrast: rgba(1, 41, 60, 0.884); /*#01243c*/
+    --secondary-color: rgba(1, 41, 60, 0.882);
+    /*#01293ce1*/
+    --secondary-color-rgba: rgba(54, 87, 115, 0.55);
+    --color-dark-contrast: rgba(1, 41, 60, 0.884);
+    /*#01243c*/
 
     /* Hightlight */
-    --highlight-color: rgb(171, 66, 103);/*#ab4267*/
-    --highlight-color-on-dark: rgb(237, 91, 144);/*#ed5b90*/
-    --highlight-color-shadow: rgb(56, 31, 39);/*#381f27*/
-    --highlight-color-rgba: rgba(171, 66, 103,0.01);
+    --highlight-color: rgb(171, 66, 103);
+    /*#ab4267*/
+    --highlight-color-on-dark: rgb(237, 91, 144);
+    /*#ed5b90*/
+    --highlight-color-shadow: rgb(56, 31, 39);
+    /*#381f27*/
+    --highlight-color-rgba: rgba(171, 66, 103, 0.01);
 
-    --tercery-color: rgb(226, 188, 116);/*#e2bc74*/
-    --tercery-color-rgba: rgba(226, 188, 116,0.55);
+    --tercery-color: rgb(226, 188, 116);
+    /*#e2bc74*/
+    --tercery-color-rgba: rgba(226, 188, 116, 0.55);
     --active-color: #012e33;
-    
+
     --color-text-on-dark: rgb(250, 250, 250);
     --color-text-on-light: var(--color-dark-contrast);
-    
+
     /* selection */
     /* --selected-background : var(--highlight-color-on-dark) ; */
-    --selected-background : rgba(1, 41, 60, 0.879);
-    --selected-color : rgba(248,248,248) ;
+    --selected-background: rgba(1, 41, 60, 0.879);
+    --selected-color: rgba(248, 248, 248);
 
     /* Fonts */
 
-    --font-logo : "Bubblegum Sans", serif;
-    --font-title : "Bubblegum Sans", serif;
-    --font-subtitle-weight : 900;
-    --font-subtitle : Lato, sans-serif;
-    --font-content : Lato, sans-serif;
+    --font-logo: "Bubblegum Sans", serif;
+    --font-title: "Bubblegum Sans", serif;
+    --font-subtitle-weight: 900;
+    --font-subtitle: Lato, sans-serif;
+    --font-content: Lato, sans-serif;
 
-    
+    /* elevations */
+    /* from cheat sheet : https://codepen.io/topherlen/pen/rZGMpQ */
+    --elevation-0: 0px 0px 0px 0px rgba(0, 0, 0, 0.2),
+        0px 0px 0px 0px rgba(0, 0, 0, 0.14),
+        0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+
+    --elevation-1: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    --elevation-2: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+
+    --elevation-3: 0 3px 3px -2px rgba(0, 0, 0, 0.2),
+        0 3px 4px 0 rgba(0, 0, 0, 0.14),
+        0 1px 8px 0 rgba(0, 0, 0, 0.12);
+
+    --elevation-4:
+        0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+        0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+
+    --elevation-6: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+        0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+
+    --elevation-8: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+        0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+        0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+
+    --elevation-12: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),
+        0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+        0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+
+    --elevation-16: 0px 8px 10px -5px rgba(0, 0, 0, 0.2),
+        0px 16px 24px 2px rgba(0, 0, 0, 0.14),
+        0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+
+    --elevation-24: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+        0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+        0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+
     /* buttons */
-    --buttonBorderRadius:3px;
-    
+    --buttonBorderRadius: 3px;
+
     /* links */
     --linkInlineBgLight: var(--highlight-color);
-    
+
     /* pages */
     --titleTextColor: var(--highlight-color);
     --titleTextColorShadow: var(--highlight-color-shadow);
     --sectionTitleTextColor: var(--color-text-on-dark);
     --sectionTitleBackgroundColor: var(--secondary-color);
 
+    /* main */
+    --mainPadding: 1rem;
+
     /* header */
     --headerHeight: 6rem;
     --headerBackground: -webkit-linear-gradient(45deg, rgba(1, 41, 60, 0.884) 1%, #519f94 63%, #e2bc74 100%);
     --headerTextColor: var(--color-dark-contrast);
-    
+
     --logoWrittenColor: var(--color-text-on-dark);
     --logoWrittenShadow: #505a5a;
-    
+
     --headerLinksBgColor: rgba(210, 144, 0, 0.05);
     --headerLinkShadowColor: rgba(1, 28, 46, 0.9);
 
@@ -70,32 +125,32 @@
     --footerHeight: 3rem;
 
     /* Menu */
-    --menuWidth: 20%;/*fixed large*/
-    --menuBackgroundColor: rgba(171, 66, 103,.9);
+    --menuWidth: 20%;
+    /*fixed large*/
+    --menuBackgroundColor: rgba(171, 66, 103, .9);
     --menuButtonCloseColor: var(--highlight-color);
-    --menuButtonCloseBackgroundColor:#FFF;
+    --menuButtonCloseBackgroundColor: #FFF;
     --menuButtonBurgerColor: var(--highlight-color);
     --menuTextColor: #FFF;
 
     --menuActiveLinkColor: var(--highlight-color);
     --menuActiveLinkBackgroundColor: #FFF;
-    
+
 
     --menuButtonDownloadBackgroundColor: var(--primary-color);
     --menuButtonDownloadTextColor: #FFF;
 
     /* home -section */
-    --sectionHomePadding:.6rem;
 
     --sectionHomeBackgroundColor: -webkit-linear-gradient(10deg, rgba(60, 1, 38, 0.372) 0%, rgba(1, 59, 60, 0.44) 50%, rgba(1, 41, 60, 0.228) 100%);
-    --sectionHomeBackgroundColorHover: -webkit-linear-gradient(45deg, rgba(1, 41, 60, 0.509)  0%, rgba(1, 59, 60, 0.616) 50%, rgba(60, 1, 38, 0.598) 100%);
+    --sectionHomeBackgroundColorHover: -webkit-linear-gradient(45deg, rgba(1, 41, 60, 0.509) 0%, rgba(1, 59, 60, 0.616) 50%, rgba(60, 1, 38, 0.598) 100%);
 
     --sectionHomeTitleTextColor: var(--highlight-color-on-dark);
     --sectionHomeTitleTextColor: rgb(250, 250, 250);
 
-    --sectionHomeContentTextColor:rgb(235, 235, 235);
+    --sectionHomeContentTextColor: rgb(235, 235, 235);
     --sectionHomeContentBackground: rgba(38, 38, 38, 0.077);
-    --sectionHomeContentTextShadowColor:rgb(255, 255, 255);
+    --sectionHomeContentTextShadowColor: rgb(255, 255, 255);
 
 
     /* Resume page */
@@ -104,7 +159,7 @@
     --pannelScrollBackground: var(--secondary-color);
     --pannelScrollLink: var(--color-text-on-dark);
     --pannelScrollLinkActive: var(--highlight-color-on-dark);
- 
+
     --resumeItemTitleColorText: var(--secondary-color);
     --resumeItemTitleTextShadow: 0.5px 0.5px var(--secondary-color);
 
@@ -117,23 +172,18 @@
 
     /* about page */
 
-    /* animation colors */
-    --aboutPhotoBackgroundColor1: rgba(171, 66, 103,0.2);
-    --aboutPhotoBackgroundColor2: rgba(171, 66, 103,0.4);
-    --aboutPhotoBackgroundColor3: rgba(171, 66, 103,0.5);
-    --aboutPhotoBackgroundColor4: rgba(171, 66, 103,0.4);
-    --aboutPhotoBackgroundColor5: rgba(171, 66, 103,0.25);
-    
+    --aboutPresentationBackgroundColor : rgba(171, 66, 103, 0.05);
     --aboutTitleColorText: var(--highlight-color);
     --aboutSectionBackgroundColor: var(--tercery-color-rgba);
     --aboutSubtitleColorText: var(--primary-color);
 
-    --aboutPassionBackgroundColor: var(--primary-color);
+    --aboutPassionBackgroundColor: var(--primary-color-rgba-3);
     --aboutPassionTextColor: var(--color-dark-contrast);
 
     /* Playground page */
 
-    --playgroundProjectbackgroundColor: var(--primary-color);
+    --playgroundProjectbackgroundColor: var(--primary-color-light); 
+    --playgroundProjectCardHeader: -webkit-linear-gradient(0deg, rgba(232, 217, 149, 0.249) 1%, var(--primary-color) 63%, rgba(1, 41, 60, 0.351) 100%);
     --playgroundProjectTitleTextColor: var(--color-text-on-light);
     --playgroundProjectTitleTextShadow: rgba(1, 41, 60, 0.51);
     --playgroundProjectIconLinkColor: var(--color-text-on-light);

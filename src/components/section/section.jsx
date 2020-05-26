@@ -1,11 +1,9 @@
 import React from 'react'
 import './section.css'
-import { Link, GatsbyLinkProps } from 'gatsby'
-// import { StaticQuery, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import Image from '../../utils/image'
 
 const Section = props => {
-  // console.log(props)
   return (
     <Link className="c-section__link" to={props.url}>
     <div className="c-section--on-image" style={{ backgroundColor: props.color }}>

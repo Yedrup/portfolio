@@ -618,6 +618,17 @@ h6 {
   font-family: var(--font-content);
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  flex: 1;
+  min-height: 70vh;
+  max-width: 90rem;
+  margin-top: 1rem;
+  padding: .5rem .5rem;
+}
+
 #___gatsby > * {
   min-height: 100vh;
   display: flex;
@@ -644,6 +655,7 @@ button:focus,
     color: var(--sectionTitleTextColor);
     background-color: var(--sectionTitleBackgroundColor);
     border-radius: var(--buttonBorderRadius);
+    box-shadow: var(--elevation-4);
     padding: .3rem;
     font-family: var(--font-subtitle);
     font-weight: var(--font-subtitle-weight);
@@ -656,6 +668,13 @@ button:focus,
 
 .c-button {
   border-radius:var(--buttonBorderRadius);
+  box-shadow: var(--elevation-1);
+}
+.c-button:hover {
+  box-shadow: var(--elevation-4);
+}
+.c-button:focus {
+  box-shadow: var(--elevation-8);
 }
 
 .c-link {
@@ -663,6 +682,10 @@ button:focus,
 }
 
 @media screen and (min-width: 640px) {
+  .main {
+    margin: var(--mainPadding);
+    margin-top: calc(var(--headerHeight) + 2rem);
+  }
   .c-page__title {
     font-size: 1.8rem;
   }
@@ -672,7 +695,7 @@ button:focus,
 }
 @media screen and (min-width: 768px) {
   .c-page__intro--home {
-    padding: 0 var(--sectionHomePadding);
+    margin-bottom: 1rem;
   }
 }
 

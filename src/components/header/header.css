@@ -1,14 +1,15 @@
 .c-header {
-    background: var(--headerBackground);
-    position: relative;
-    margin-bottom: 1.45rem;
-    height: var(--headerHeight);
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: var(--headerHeight);
+    z-index: 999;
+    background: var(--headerBackground);
+    box-shadow: var(--elevation-6);
+    border-bottom: 2px solid rgba(18, 37, 34, 0.14);
     font-family: var(--font-title);
     font-size: 1.5rem;
-    border-bottom: 2px solid rgba(18, 37, 34, 0.14);
 }
 
 .c-header__title {
@@ -85,6 +86,9 @@
     
 }
 @media only screen and (min-width: 600px) {
+    .c-header {
+        position: fixed;
+    }
     .c-header__socials {
         list-style: none;
         position: absolute;

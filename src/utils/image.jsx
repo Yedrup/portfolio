@@ -27,6 +27,7 @@ const Image = props => {
   let backgroungProjectStyle = {
     height: 'unset',
   }
+
   return (
     <StaticQuery
       query={graphql`
@@ -44,18 +45,27 @@ const Image = props => {
             relativePath: { eq: "haveyousin.png" }
           ) {
             childImageSharp {
-              fluid(maxWidth: 500) {
-                ...GatsbyImageSharpFluid
-              }
+              fixed(width: 300, height: 300) {
+                ...GatsbyImageSharpFixed
+              } 
             }
           }
           legacyPortfolio: file(
             relativePath: { eq: "legacyPortfolio.png" }
           ) {
             childImageSharp {
-              fluid(maxWidth: 500) {
-                ...GatsbyImageSharpFluid
-              }
+              fixed(width: 300, height: 300) {
+                ...GatsbyImageSharpFixed
+              } 
+            }
+          }
+          portfolio: file(
+            relativePath: { eq: "portfolio.png" }
+          ) {
+            childImageSharp {
+              fixed(width: 300, height: 300) {
+                ...GatsbyImageSharpFixed
+              } 
             }
           }
           logoExplosionNoBg: file(relativePath: { eq: "explosion-no-bg.png" }) {
@@ -74,49 +84,49 @@ const Image = props => {
           }
           purdeyPortraitLaptop: file(relativePath: { eq: "purdey119.jpg" }) {
             childImageSharp {
-              fluid(maxWidth: 1024) {
+              fluid(maxWidth: 1224) {
                 ...GatsbyImageSharpFluid
               }
             }
           }
           purdeyPortraitStandingUpExplosions: file(relativePath: { eq: "photo-explosion-small.png" }) {
             childImageSharp {
-              fluid(maxWidth: 1024) {
+              fluid(maxWidth: 1224) {
                 ...GatsbyImageSharpFluid
               }
             }
           }
           deskDeco: file(relativePath: { eq: "purdey179.jpg" }) {
             childImageSharp {
-              fluid(maxWidth: 1024) {
+              fluid(maxWidth: 1224) {
                 ...GatsbyImageSharpFluid
               }
             }
           }
           purdeyWorking: file(relativePath: { eq: "purdey191.jpg" }) {
             childImageSharp {
-              fluid(maxWidth: 1024) {
+              fluid(maxWidth: 1224) {
                 ...GatsbyImageSharpFluid
               }
             }
           }
           purdeyWorkingSmile: file(relativePath: { eq: "purdey243.jpg" }) {
             childImageSharp {
-              fluid(maxWidth: 1024) {
+              fluid(maxWidth: 1224) {
                 ...GatsbyImageSharpFluid
               }
             }
           }
           purdeyWorkingBack: file(relativePath: { eq: "purdey207.jpg" }) {
             childImageSharp {
-              fluid(maxWidth: 1024) {
+              fluid(maxWidth: 1224) {
                 ...GatsbyImageSharpFluid
               }
             }
           }
           purdeyWorkingFace: file(relativePath: { eq: "purdey225.jpg" }) {
             childImageSharp {
-              fluid(maxWidth: 1024) {
+              fluid(maxWidth: 1224) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -130,25 +140,25 @@ const Image = props => {
           }
           colorGame: file(relativePath: { eq: "colorGame.png" }) {
             childImageSharp {
-              fluid(maxWidth: 300) {
-                ...GatsbyImageSharpFluid
-              }
+              fixed(width: 300, height: 300) {
+                ...GatsbyImageSharpFixed
+              } 
             }
           }
           HYSAJS: file(relativePath: { eq: "HYSAJS.png" }) {
             childImageSharp {
-              fluid(maxWidth: 300) {
-                ...GatsbyImageSharpFluid
-              }
+              fixed(width: 300, height: 300) {
+                ...GatsbyImageSharpFixed
+              } 
             }
           }
           rockPaperScissors: file(
             relativePath: { eq: "rockPaperScissors.png" }
           ) {
             childImageSharp {
-              fluid(maxWidth: 300) {
-                ...GatsbyImageSharpFluid
-              }
+              fixed(width: 300, height: 300) {
+                ...GatsbyImageSharpFixed
+              } 
             }
           }
           trexComingSoon: file(
@@ -162,9 +172,9 @@ const Image = props => {
           }
           kwick: file(relativePath: { eq: "kwick.png" }) {
             childImageSharp {
-              fluid(maxWidth: 300) {
-                ...GatsbyImageSharpFluid
-              }
+              fixed(width: 300, height: 300) {
+                ...GatsbyImageSharpFixed
+              } 
             }
           }
           trexNoBg: file(relativePath: { eq: "trex-no-bg.png" }) {
@@ -210,142 +220,164 @@ const Image = props => {
           }
         }
       `}
-      render={data => {
-        // console.log(data)
-       if (props.imageName === 'logo') {
-          return <Img fluid={data.logo.childImageSharp.fluid} />
-        } else if (props.imageName === 'logoExplosion') {
-          return <Img fluid={data.logoExplosion.childImageSharp.fluid} />
-        } else if (props.imageName === 'logoExplosionNoBg') {
-          return <Img fluid={data.logoExplosionNoBg.childImageSharp.fluid} />
-        } else if (props.imageName === 'trexNoBg') {
-          return <Img fluid={data.trexNoBg.childImageSharp.fluid} />
-        } 
-        else if (props.imageName === 'purdeyPortraitLaptop') {
-          return <Img fluid={data.purdeyPortraitLaptop.childImageSharp.fluid} />
-        } 
-        else if (props.imageName === 'purdeyPortraitStandingUpExplosions') {
-          return <Img fluid={data.purdeyPortraitStandingUpExplosions.childImageSharp.fluid} />
-        } else if (props.imageName === 'purdeyPortrait') {
-          return (
-            <Img
-            fixed={data.purdeyPortrait.childImageSharp.fixed}
-              style={{
-                ...backgroungSectionStyle,
-              }}
-            />
-          )
-        }else if (props.imageName === 'purdeyWorkingSmile') {
-          return (
-            <Img
-              fluid={data.purdeyWorkingSmile.childImageSharp.fluid}
-              style={{
-                ...backgroungSectionStyle,
-              }}
-            />
-          )
-        }
-        else if (props.imageName === 'purdeyWorkingBack') {
-          return (
-            <Img
-              fluid={data.purdeyWorkingBack.childImageSharp.fluid}
-              style={{
-                ...backgroungSectionStyle,
-              }}
-            />
-          )
-        } else if (props.imageName === 'purdeyWorkingFace') {
-          return (
-            <Img
-              fluid={data.purdeyWorkingFace.childImageSharp.fluid}
-              style={{
-                ...backgroungSectionStyle,
-              }}
-            />
-          )
-        } else if (props.imageName === 'deskDeco') {
-          return (
-            <Img
-              fluid={data.deskDeco.childImageSharp.fluid}
-              style={{
-                ...backgroungSectionStyle,
-              }}
-            />
-          )
-        }else if (props.imageName === '404Large') {
-          return <Img fluid={data.notFoundLarge.childImageSharp.fluid} />
-        } else if (props.imageName === 'trexComingSoon') {
-          return <Img fluid={data.trexComingSoon.childImageSharp.fluid} />
-        } else if (props.imageName === 'rockPaperScissors') {
-          return (
-            <Img
-              fluid={data.rockPaperScissors.childImageSharp.fluid}
-              style={{
-                ...backgroungProjectStyle,
-              }}
-            />
-          )
-        } else if (props.imageName === 'kwick') {
-          return (
-            <Img
-              fluid={data.kwick.childImageSharp.fluid}
-              style={{
-                ...backgroungProjectStyle,
-              }}
-            />
-          )
-        } else if (props.imageName === 'HYSAJS') {
-          return (
-            <Img
-              fluid={data.HYSAJS.childImageSharp.fluid}
-              style={{
-                ...backgroungProjectStyle,
-              }}
-            />
-          )
-        } else if (props.imageName === 'colorGame') {
-          return (
-            <Img
-              fluid={data.colorGame.childImageSharp.fluid}
-            />
-          )
-        } else if (props.imageName === 'haveyousin') {
-          return (
-            <Img
-              fluid={data.haveyousin.childImageSharp.fluid}
-               />
-          )
-        }  else if (props.imageName === 'legacyPortfolio') {
-          return (
-            <Img
-              fluid={data.legacyPortfolio.childImageSharp.fluid}
-               />
-          )
-        } else if (props.imageName === 'Spanish') {
-          return (
-            <Img
-              fluid={data.Spanish.childImageSharp.fluid}
-               />
-          )
-        } else if (props.imageName === 'English') {
-          return (
-            <Img
-              fluid={data.English.childImageSharp.fluid}
-               />
-          )
-        } else if (props.imageName === 'French') {
-          return (
-            <Img
-              fluid={data.French.childImageSharp.fluid}
-               />
-          )
-        } 
-        else {
-          return <Img fluid={data.logoExplosion.childImageSharp.fluid} style={{
-            ...backgroungProjectStyle,
-          }} />
-        }
-      }}
+      render={
+        data => {
+          // console.log(data)
+          if (props.imageName === 'logo') {
+            return <Img fluid={data.logo.childImageSharp.fluid} />
+          }
+          else if (props.imageName === 'logoExplosion') {
+            return <Img fluid={data.logoExplosion.childImageSharp.fluid} />
+          }
+          else if (props.imageName === 'logoExplosionNoBg') {
+            return <Img fluid={data.logoExplosionNoBg.childImageSharp.fluid} />
+          }
+          else if (props.imageName === 'trexNoBg') {
+            return <Img fluid={data.trexNoBg.childImageSharp.fluid} />
+          }
+          else if (props.imageName === 'purdeyPortraitLaptop') {
+            return <Img fluid={data.purdeyPortraitLaptop.childImageSharp.fluid} />
+          }
+          else if (props.imageName === 'purdeyPortraitStandingUpExplosions') {
+            return <Img fluid={data.purdeyPortraitStandingUpExplosions.childImageSharp.fluid} />
+          } else if (props.imageName === 'purdeyPortrait') {
+            return (
+              <Img
+                fixed={data.purdeyPortrait.childImageSharp.fixed}
+                style={{
+                  ...backgroungSectionStyle,
+                }}
+              />
+            )
+          } else if (props.imageName === 'purdeyWorkingSmile') {
+            return (
+              <Img
+                fluid={data.purdeyWorkingSmile.childImageSharp.fluid}
+                style={{
+                  ...backgroungSectionStyle,
+                }}
+              />
+            )
+          }
+          else if (props.imageName === 'purdeyWorkingBack') {
+            return (
+              <Img
+                fluid={data.purdeyWorkingBack.childImageSharp.fluid}
+                style={{
+                  ...backgroungSectionStyle,
+                }}
+              />
+            )
+          }
+          else if (props.imageName === 'purdeyWorkingFace') {
+            return (
+              <Img
+                fluid={data.purdeyWorkingFace.childImageSharp.fluid}
+                style={{
+                  ...backgroungSectionStyle,
+                }}
+              />
+            )
+          }
+          else if (props.imageName === 'deskDeco') {
+            return (
+              <Img
+                fluid={data.deskDeco.childImageSharp.fluid}
+                style={{
+                  ...backgroungSectionStyle,
+                }}
+              />
+            )
+          }
+          else if (props.imageName === '404Large') {
+            return <Img fluid={data.notFoundLarge.childImageSharp.fluid} />
+          }
+          else if (props.imageName === 'trexComingSoon') {
+            return <Img fluid={data.trexComingSoon.childImageSharp.fluid} />
+          }
+          else if (props.imageName === 'rockPaperScissors') {
+            return (
+              <Img
+                fixed={data.rockPaperScissors.childImageSharp.fixed}
+                imgStyle={{ objectFit: 'outside' }}
+              />
+            )
+          }
+          else if (props.imageName === 'kwick') {
+            return (
+              <Img
+                fixed={data.kwick.childImageSharp.fixed}
+                imgStyle={{ objectFit: 'outside' }}
+              />
+            )
+          }
+          else if (props.imageName === 'HYSAJS') {
+            return (
+              <Img
+                fixed={data.HYSAJS.childImageSharp.fixed}
+                imgStyle={{ objectFit: 'outside' }}
+              />
+            )
+          }
+          else if (props.imageName === 'colorGame') {
+            return (
+              <Img
+                fixed={data.colorGame.childImageSharp.fixed}
+                imgStyle={{ objectFit: 'outside' }}
+              />
+            )
+          }
+          else if (props.imageName === 'haveyousin') {
+            return (
+              <Img
+                fixed={data.haveyousin.childImageSharp.fixed}
+                imgStyle={{ objectFit: 'outside' }}
+              />
+            )
+          }
+          else if (props.imageName === 'legacyPortfolio') {
+            return (
+              <Img
+                fixed={data.legacyPortfolio.childImageSharp.fixed}
+                imgStyle={{ objectFit: 'outside' }}
+              />
+            )
+          }
+          else if (props.imageName === 'portfolio') {
+            return (
+              <Img
+                fixed={data.portfolio.childImageSharp.fixed}
+                imgStyle={{ objectFit: 'outside' }}
+              />
+            )
+          }
+          else if (props.imageName === 'Spanish') {
+            return (
+              <Img
+                fluid={data.Spanish.childImageSharp.fluid}
+              />
+            )
+          }
+          else if (props.imageName === 'English') {
+            return (
+              <Img
+                fluid={data.English.childImageSharp.fluid}
+              />
+            )
+          }
+          else if (props.imageName === 'French') {
+            return (
+              <Img
+                fluid={data.French.childImageSharp.fluid}
+              />
+            )
+          }
+          else {
+            return <Img fluid={data.logoExplosion.childImageSharp.fluid} style={{
+              ...backgroungProjectStyle,
+            }} />
+          }
+        }}
     />
   )
 }

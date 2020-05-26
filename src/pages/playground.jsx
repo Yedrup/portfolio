@@ -57,42 +57,48 @@ const playgroundPage = () => {
               {projects.map((project, index) => {
                 return (
                   <li key={index} className="c-project">
+                    <div className="c-project__header">
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        className="c-project__link-title"
+                      >
+                        <h2 className="c-project__title">
+                          {project.name}
+                        </h2>
+                      </a>
+                      <ul className="c-project__links">
+                        <li className="c-project__link">
+                          <a href={project.GithubUrl} target="_blank">
+                            <IconService
+                              nameIcon="Github"
+                              iconStyleContext={{
+                                color: 'var(--playgroundProjectIconLinkColor)',
+                                size: '1.5rem'
+                              }}
+                            />
+                          </a>
+                        </li>
+                        <li className="c-project__link">
+                          <a href={project.url} target="_blank">
+                            <IconService
+                              nameIcon="link"
+                              iconStyleContext={{
+                                color: 'var(--playgroundProjectIconLinkColor)',
+                                size: '1.5rem'
+                              }}
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="c-project__image__wrapper">
+                      <a href={project.url} className="c-project__image" target="_blank">
+                        <Image imageName={project.imgName} />
+                      </a>
+                    </div>
                     <div className="c-project__infos--written">
-                      <div className="c-project__infos__title">
-                        <a
-                          href={project.url}
-                          target="_blank"
-                          className="c-project__link-title"
-                        >
-                          <h2 className="c-project__title">
-                            {project.name}
-                          </h2>
-                        </a>
-                        <ul className="c-project__links">
-                          <li className="c-project__link">
-                            <a href={project.GithubUrl} target="_blank">
-                              <IconService
-                                nameIcon="Github"
-                                iconStyleContext={{
-                                  color: 'var(--playgroundProjectIconLinkColor)',
-                                  size: '1.5rem'
-                                }}
-                              />
-                            </a>
-                          </li>
-                          <li className="c-project__link">
-                            <a href={project.url} target="_blank">
-                              <IconService
-                                nameIcon="link"
-                                iconStyleContext={{
-                                  color: 'var(--playgroundProjectIconLinkColor)',
-                                  size: '1.5rem'
-                                }}
-                              />
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
                       <div className="c-project__technologies">
                         {project.technologies.map((technologie, index) => {
                           return <span className="c-project__technology" key={index}>{technologie.name}</span>
@@ -111,9 +117,6 @@ const playgroundPage = () => {
                         {project.purposeTech}
                       </p>
                     </div>
-                    <a href={project.url} className="c-project__image" target="_blank">
-                      <Image imageName={project.imgName} />
-                    </a>
                   </li>
                 )
               })}

@@ -83,7 +83,7 @@
   "homePage": {
     "title": "Welcome on my portfolio!",
     "intro": [
-      "I am Purdey, a french, parisian, enthousiastic, happy front-end developer!"
+      "I am Purdey, a passionate Front-End Developer living in Paris area!"
     ],
     "sections": [
       {
@@ -118,7 +118,7 @@
   },
   "aboutPage": {
     "title": "Hey, I'm Purdey.",
-    "intro": "I am a french, parisian, enthousiastic, happy front-end developer!",
+    "intro": "I am a parisian Front-End Developer! You wanna know more about me? You're in the right place! ",
     "bioTitle": "Few words about myself",
     "biography": [
       {
@@ -190,6 +190,11 @@
         "gifName": "stephenKingGif"
       },
       {
+        "name": "Magic the Gathering",
+        "gifUrl": "https://media.giphy.com/media/13hzdQ3QCID172/giphy.gif",
+        "gifName": "magicTheGatheringGif"
+      },
+      {
         "name": "Video games",
         "gifUrl": "https://media.giphy.com/media/kFA6aTkhO7Gxi/giphy.gif",
         "gifName": "videoGameGif"
@@ -211,7 +216,7 @@
       "jobs": [
         {
           "name": "InWebo",
-          "years": "march 2018 - present",
+          "years": "march 2018 - april 2020 - 2 years",
           "jobTitle": "Front-End Developer",
           "url": "https://www.inwebo.com/",
           "missions": [
@@ -222,13 +227,13 @@
               "name": "Create a microserver with expressjs in an electron application establishing connections between browser and another desktop authentication application "
             },
             {
-              "name": "Work on process of customization of our applications (mobile and desktop) in order to produce and deliver to client their own packages of our main applications(variabilization, templating)"
+              "name": "Work on process of customization of our applications (mobile and desktop) in order to produce and deliver to customers their own packages of our main applications(variabilization, templating)"
             },
             {
               "name": "Industrialize the builds of customized applications (mobile and desktop) using a nodejs script.\nThe scripts clones a project branch from repository, builds artefacts of customs available, deployes it on a server and notifies by email the report of build and deployment status"
             },
             {
-              "name": "Refactorization of the administration console to ionic 4 and electronjs consuming inwebo's api"
+              "name": "Refactorization of the administration console to ionic 4 and electronjs consuming inwebo's API"
             }
           ],
           "current": true
@@ -266,7 +271,7 @@
           "url": "https://www.dailymotion.com",
           "missions": [
             {
-              "name": "Excecutive Assistance: Managing and maintaining executives' schedules, expenses and travel arrangements, updating database of clients"
+              "name": "Excecutive Assistance: Managing and maintaining executives' schedules, expenses and travel arrangements, updating database of customers"
             },
             {
               "name": "Office Management: Office optimization, managing supplier’s relationships, managing Office Management’s budget, organization of requests for proposal, managing insurance policies, welcoming visitors and managing the switchboard, organization of internal events (engineering Meetups, seminars, workshops...)"
@@ -281,7 +286,7 @@
           "url": "https://www.1000mercis.com",
           "missions": [
             {
-              "name": "Excecutive Assistance: Managing and maintaining executives' schedules, email inboxes, expenses and travel arrangements, updating database of clients"
+              "name": "Excecutive Assistance: Managing and maintaining executives' schedules, email inboxes, expenses and travel arrangements, updating database of customers"
             },
             {
               "name": "Office Management: Office optimization, managing supplier’s relationships, welcoming visitors and managing the switchboard, organization of internal events (launchs, workshops...)"
@@ -299,19 +304,19 @@
           "title": "Technologies",
           "list": [
             {
-              "name": "javascript"
+              "name": "JavaScript"
             },
             {
-              "name": "nodejs"
+              "name": "Node.js"
             },
             {
-              "name": "typeScript"
+              "name": "TypeScript"
             },
             {
-              "name": "html"
+              "name": "HTML"
             },
             {
-              "name": "css"
+              "name": "CSS"
             }
           ]
         },
@@ -319,46 +324,49 @@
           "title": "Frameworks - Librairies",
           "list": [
             {
-              "name": "reactjs"
+              "name": "React"
             },
             {
-              "name": "mobx"
+              "name": "Express.js"
             },
             {
-              "name": "angularjs (1.x)"
+              "name": "Electronjs"
             },
             {
-              "name": "angular"
+              "name": "Angular(1.x, X)"
             },
             {
-              "name": "expressjs"
+              "name": "Ionic"
             },
             {
-              "name": "gatsby"
+              "name": "Gatsby"
             },
             {
-              "name": "ionic 1,3,4"
+              "name": "Material UI RxJS"
             },
             {
-              "name": "cordova"
+              "name": "MobX"
             },
             {
-              "name": "rxjs"
+              "name": "D3.js"
             },
             {
               "name": "jQuery"
             },
             {
-              "name": "postCSS"
+              "name": "SASS"
             },
             {
               "name": "sass"
             },
             {
-              "name": "Foundation"
+              "name": "Fondation (Zurb)"
             },
             {
-              "name": "mustachejs"
+              "name": "Gulp"
+            },
+            {
+              "name": "Webpack"
             }
           ]
         },
@@ -366,16 +374,22 @@
           "title": "Softwares",
           "list": [
             {
-              "name": "git/github/gitlab"
+              "name": "git"
+            }, 
+            {
+              "name": "Github/Gitlab/Bitbucket"
             },
             {
-              "name": "vs code"
+              "name": "VS Code"
             },
             {
-              "name": "photoshop"
+              "name": "Photoshop"
             },
             {
-              "name": "jira"
+              "name": "Illustrator"
+            },
+            {
+              "name": "Jira/Confluence"
             }
           ]
         }
@@ -445,13 +459,13 @@
   },
   "playgroundPage": {
     "title": "Playground",
-    "intro": "Here are all my projects, they are also available on my Github!",
+    "intro": "Here are all my public projects, they are also available on my Github!",
     "projects": [
       {
         "name": "HaveYouSin",
         "imgName": "haveyousin",
         "purpose": "The main purpose of haveyousin is to receive a feed of movies about to be released or currently in movie theaters and having a toWatchlist system (archives, custom lists..). Moreover this is a kind of projects helping me to see the big picture of a project and product.",
-        "purposeTech": "I wanted to refactorize Haveyousin in React and mobx in order to experiment it. Contrairy to the first version in angularjs, I don't use the list system and account management offered by the api The movie database (TMDB) but instead use firebase connection system and database (it currently uses the localstorage, implementation of firebase being in wip). That's the possibily to see how works a progressive web application (PWA).",
+        "purposeTech": "I wanted to refactorize Haveyousin in React and mobx in order to experiment it. Contrairy to the first version in angularjs, I don't use the list system and account management offered by the API The movie database (The Movie Database) but instead use firebase connection system and database (it currently uses the localstorage, implementation of firebase being in wip). That's the possibily to see how works a progressive web application (PWA).",
         "url": "https://purdeychambraud.com/haveyousin",
         "GithubUrl": "https://github.com/Yedrup/haveyousin",
         "technologies": [
@@ -459,22 +473,25 @@
             "name": "React"
           },
           {
-            "name": "Mobx"
+            "name": "MobX"
           },
           {
             "name": "Firebase (wip)"
           },
           {
-            "name": "HTML / CSS"
+            "name": "HTML"
           },
           {
-            "name": "api TMDB"
+            "name": "CSS"
+          },
+          {
+            "name": "API The Movie Database v3"
           }
         ]
       },
       {
         "name": "Portfolio (Here!)",
-        "imgName": "Portfolio",
+        "imgName": "portfolio",
         "url": "https://purdeychambraud.com/",
         "GithubUrl": "https://github.com/Yedrup/portfolio",
         "purpose": "My portfolio is my first playground, the former one was built with pure htlm css rendering with hard coded data inside html. Responsive pages were manually created. This refactorized portfolio allowed me to be more free regarding the way I wanted it to look, and redefine my presentation.",
@@ -493,7 +510,10 @@
             "name": "Graphql"
           },
           {
-            "name": "HTML / CSS"
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
           }
         ]
       },
@@ -506,10 +526,13 @@
         "GithubUrl": "https://github.com/Yedrup/Color-Game",
         "technologies": [
           {
-            "name": "Javascript"
+            "name": "JavaScript"
           },
           {
-            "name": "HTML / CSS"
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
           }
         ]
       },
@@ -522,23 +545,26 @@
         "GithubUrl": "https://github.com/Yedrup/rock-paper-scissors",
         "technologies": [
           {
-            "name": "Javascript"
+            "name": "JavaScript"
           },
           {
-            "name": "HTML / CSS"
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
           }
         ]
       },
       {
         "name": "kwick chat",
         "imgName": "kwick",
-        "purpose": "kwick chat is a school project to create a chat interface and reach school api.",
-        "purposeTech": "The main purpose of kwick-chat was to use an api and the authentication management it provided, getting messages in real time.",
+        "purpose": "kwick chat is a school project to create a chat interface and reach school API.",
+        "purposeTech": "The main purpose of kwick-chat was to use an API and the authentication management it provided, getting messages in real time.",
         "url": "https://purdeychambraud.com/Kwick-Chat",
         "GithubUrl": "https://github.com/Yedrup/kwick-chat",
         "technologies": [
           {
-            "name": "angularjs"
+            "name": "Angular(1.x)"
           },
           {
             "name": "HTML / CSS"
@@ -549,21 +575,24 @@
         "name": "HaveYouSin - Legacy",
         "imgName": "HYSAJS",
         "purpose": "The main purpose of haveyousin is to receive a feed of movies about to be released or currently in movie theaters, and having a toWatchlist system (archives, custom lists..).",
-        "purposeTech": "The purpose to create a web app during the final exam using a framework js, I chose angularjs because it was the one we've learnt during few months at school. For this project, I used the api themoviedatabase and its list and account management. It allowed me to understand concepts as bearer token, api, private/public pages.",
+        "purposeTech": "The purpose to create a web app during the final exam using a framework js, I chose angularjs because it was the one we've learnt during few months at school. For this project, I used the API themoviedatabase and its list and account management. It allowed me to understand concepts as bearer token, API, private/public pages.",
         "url": "https://purdeychambraud.com/legacy-haveyousin",
         "GithubUrl": "https://github.com/Yedrup/legacy-haveyousin",
         "technologies": [
           {
-            "name": "angularjs"
+            "name": "Angular(1.x)"
           },
           {
-            "name": "webpack 3"
+            "name": "Webpack 3"
           },
           {
-            "name": "api TMDB"
+            "name": "CSS"
           },
           {
-            "name": "HTML / CSS"
+            "name": "HTML"
+          },
+          {
+            "name": "API The Movie Database v4"
           }
         ]
       },
@@ -576,7 +605,10 @@
         "purposeTech": "Create a responsive website, learn how to use a task manager(gulp), postcss and then deploy on an ovh web server. I've learnt how to do some basic server configuration, redirection urls etc.",
         "technologies": [
           {
-            "name": "HTML / CSS"
+            "name": "CSS"
+          },
+          {
+            "name": "HTML"
           },
           {
             "name": "gulp"
