@@ -1,10 +1,10 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import './css/playground.css'
-import Layout from '../components/layout'
-import { StaticQuery, graphql } from 'gatsby'
-import IconService from '../utils/IconService'
-import Image from '../utils/image'
+import React from 'react';
+import { Link } from 'gatsby';
+import './css/playground.css';
+import Layout from '../components/layout';
+import { StaticQuery, graphql } from 'gatsby';
+import IconService from '../utils/IconService';
+import Image from '../utils/image';
 
 const playgroundPage = () => {
   return (
@@ -42,13 +42,14 @@ const playgroundPage = () => {
         return (
           <Layout>
             <h1 className="c-page__title">{title}</h1>
-            <p>{intro}
+            <p>
+              {intro}
               <a href={github.url} target="_blank">
                 <IconService
                   nameIcon={github.name}
                   iconStyleContext={{
                     color: 'var(--highlight-color)',
-                    size: '1.5rem'
+                    size: '1.5rem',
                   }}
                 />
               </a>
@@ -63,9 +64,7 @@ const playgroundPage = () => {
                         target="_blank"
                         className="c-project__link-title"
                       >
-                        <h2 className="c-project__title">
-                          {project.name}
-                        </h2>
+                        <h2 className="c-project__title">{project.name}</h2>
                       </a>
                       <ul className="c-project__links">
                         <li className="c-project__link">
@@ -74,7 +73,7 @@ const playgroundPage = () => {
                               nameIcon="Github"
                               iconStyleContext={{
                                 color: 'var(--playgroundProjectIconLinkColor)',
-                                size: '1.5rem'
+                                size: '1.5rem',
                               }}
                             />
                           </a>
@@ -85,7 +84,7 @@ const playgroundPage = () => {
                               nameIcon="link"
                               iconStyleContext={{
                                 color: 'var(--playgroundProjectIconLinkColor)',
-                                size: '1.5rem'
+                                size: '1.5rem',
                               }}
                             />
                           </a>
@@ -94,14 +93,22 @@ const playgroundPage = () => {
                     </div>
 
                     <div className="c-project__image__wrapper">
-                      <a href={project.url} className="c-project__image" target="_blank">
+                      <a
+                        href={project.url}
+                        className="c-project__image"
+                        target="_blank"
+                      >
                         <Image imageName={project.imgName} />
                       </a>
                     </div>
                     <div className="c-project__infos--written">
                       <div className="c-project__technologies">
                         {project.technologies.map((technologie, index) => {
-                          return <span className="c-project__technology" key={index}>{technologie.name}</span>
+                          return (
+                            <span className="c-project__technology" key={index}>
+                              {technologie.name}
+                            </span>
+                          );
                         })}
                       </div>
                       <p className="c-project__purpose">
@@ -118,14 +125,14 @@ const playgroundPage = () => {
                       </p>
                     </div>
                   </li>
-                )
+                );
               })}
             </ul>
           </Layout>
-        )
+        );
       }}
     />
-  )
-}
+  );
+};
 
-export default playgroundPage
+export default playgroundPage;

@@ -1,5 +1,5 @@
-import React from "react";
-import { IconContext } from "react-icons";
+import React from 'react';
+import { IconContext } from 'react-icons';
 import {
   FaHome,
   FaGithub,
@@ -11,41 +11,41 @@ import {
   FaDownload,
   FaLink,
   FaEnvelope,
-  FaAngular
-} from "react-icons/fa";
+  FaAngular,
+} from 'react-icons/fa';
 
 const icons = {
   Github: {
-    nameIcon: FaGithub
+    nameIcon: FaGithub,
   },
   Home: {
-    nameIcon: FaHome
+    nameIcon: FaHome,
   },
   Linkedin: {
-    nameIcon: FaLinkedin
+    nameIcon: FaLinkedin,
   },
   Twitter: {
-    nameIcon: FaTwitter
+    nameIcon: FaTwitter,
   },
   Education: {
-    nameIcon: FaGraduationCap
+    nameIcon: FaGraduationCap,
   },
   Job: {
-    nameIcon: FaBuilding
+    nameIcon: FaBuilding,
   },
   Skills: {
-    nameIcon: FaWrench
+    nameIcon: FaWrench,
   },
   Download: {
-    nameIcon: FaDownload
+    nameIcon: FaDownload,
   },
   link: {
-    nameIcon: FaLink
+    nameIcon: FaLink,
   },
   mail: {
-    nameIcon: FaEnvelope
-  }
-}
+    nameIcon: FaEnvelope,
+  },
+};
 
 // TODO: HIGH ORDER FUNCTION FOR THIS
 class IconService extends React.Component {
@@ -65,7 +65,7 @@ class IconService extends React.Component {
         </span>
       );
     }
-    return null
+    return null;
   }
 }
 

@@ -1,158 +1,157 @@
 .c-about__presentation {
-    margin: 1rem;
-    padding: 1rem;
-    background-color: var(--aboutPresentationBackgroundColor);
-    box-shadow: var(--elevation-1);
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--aboutPresentationBackgroundColor);
+  box-shadow: var(--elevation-1);
 }
 
 .c-page__title--about {
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-family: var(--font-title);
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-family: var(--font-title);
 }
 
 .c-about__photo {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .c-about__presentation__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .c-about__photo .gatsby-image-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    max-width: 15rem;
-    border-radius: 1%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 15rem;
+  border-radius: 1%;
 }
 
 .c-about__presentation__text {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .c-about__presentation__intro {
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: bold;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .c-about__bio__section {
-    margin-bottom: .8rem;
-    border-radius: var(--buttonBorderRadius);
+  margin-bottom: 0.8rem;
+  border-radius: var(--buttonBorderRadius);
 }
 
 .c-about__bio__title {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .c-about__bio__title::first-letter {
-    padding-right: .15rem;
-    color: var(--highlight-color);
-    font: italic var(--font-subtitle-weight) 1.5rem var(--font-subtitle);
+  padding-right: 0.15rem;
+  color: var(--highlight-color);
+  font: italic var(--font-subtitle-weight) 1.5rem var(--font-subtitle);
 }
 
 .c-about__bio__paragraphs {
-    margin: 0.3rem;
-    list-style: none;
+  margin: 0.3rem;
+  list-style: none;
 }
 
 .c-passions {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: .5rem;
-    margin: 1rem 0;
-    border-radius: var(--buttonBorderRadius);
-    list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+  margin: 1rem 0;
+  border-radius: var(--buttonBorderRadius);
+  list-style: none;
 }
 
 .c-passion {
-    margin: 0;
-    background: var(--aboutPassionBackgroundColor);
-    border-radius: var(--buttonBorderRadius);
+  margin: 0;
+  background: var(--aboutPassionBackgroundColor);
+  border-radius: var(--buttonBorderRadius);
 }
 
 .c-passion__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    padding: 1rem .15rem;
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--aboutPassionTextColor);
-    font-family: var(--font-title);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 1rem 0.15rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--aboutPassionTextColor);
+  font-family: var(--font-title);
 }
 
 .c-passion__image {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 640px) {
-    .c-passions {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1.5rem;
-    }
+  .c-passions {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+  }
 
-    .c-about__bio__section {
-        padding: 1rem;
-    }
+  .c-about__bio__section {
+    padding: 1rem;
+  }
 
-    .c-about__title {
-        font-size: 1.5rem;
-    }
+  .c-about__title {
+    font-size: 1.5rem;
+  }
 
-    .c-about__presentation__wrapper {
-        flex-direction: row;
-        justify-content: center;
-        padding: 0;
-    }
+  .c-about__presentation__wrapper {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+  }
 
-    .c-about__presentation {
-        display: flex;
-    }
+  .c-about__presentation {
+    display: flex;
+  }
 
-    .c-about__presentation__intro {
-        line-height: 2rem;
-    }
+  .c-about__presentation__intro {
+    line-height: 2rem;
+  }
 
-    .c-about__photo {
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-        max-width: 40rem;
-    }
+  .c-about__photo {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 40rem;
+  }
 }
 
-
 @media only screen and (min-width: 900px) {
-    .c-passions {
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2rem;
-    }
+  .c-passions {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
 }
 
 @media only screen and (min-width: 1224px) {
-    .c-passions {
-        grid-template-columns: repeat(5, 1fr);
-    }
-    .c-about__presentation__text {
-        justify-content: center;
-        align-items: flex-start;
-    }
+  .c-passions {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .c-about__presentation__text {
+    justify-content: center;
+    align-items: flex-start;
+  }
 
-    .c-page__title--about {
-        font-size: 2.5rem;
-    }
+  .c-page__title--about {
+    font-size: 2.5rem;
+  }
 
-    .c-about__presentation__intro {
-        font-size: 1.5rem;
-        line-height: 3rem;
-    }
+  .c-about__presentation__intro {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
 }

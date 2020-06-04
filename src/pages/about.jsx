@@ -1,12 +1,12 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from '../components/layout'
-import Image from '../utils/image'
-import { StaticQuery, graphql } from 'gatsby'
-import GifService from '../utils/gifsService'
+import Layout from '../components/layout';
+import Image from '../utils/image';
+import { StaticQuery, graphql } from 'gatsby';
+import GifService from '../utils/gifsService';
 
-import '../pages/css/about.css'
+import '../pages/css/about.css';
 
 const aboutPage = () => {
   return (
@@ -41,15 +41,17 @@ const aboutPage = () => {
           bioTitle,
           biography,
           passionTitle,
-          passions
-        } = data.dataJson.aboutPage
+          passions,
+        } = data.dataJson.aboutPage;
 
         return (
           <Layout>
             <div className="c-about__presentation__wrapper">
               <div className="c-about__presentation">
                 <div className="c-about__presentation__text">
-                  <h1 className="c-page__title c-page__title--about">{title}</h1>
+                  <h1 className="c-page__title c-page__title--about">
+                    {title}
+                  </h1>
                   <p className="c-about__presentation__intro">{intro}</p>
                 </div>
                 <div style={{ width: '100%' }} className="c-about__photo">
@@ -63,16 +65,16 @@ const aboutPage = () => {
                 let paragraphs = bioParagraph.paragraphs;
                 return (
                   <div key={index} className="c-about__bio__section">
-                    <h3 className="c-about__bio__title">{bioParagraph.periodTitle}</h3>
+                    <h3 className="c-about__bio__title">
+                      {bioParagraph.periodTitle}
+                    </h3>
                     <ul className="c-about__bio__paragraphs">
                       {paragraphs.map((value, index) => {
-                        return (
-                          <li key={index}>{value.paragraph}</li>
-                        )
+                        return <li key={index}>{value.paragraph}</li>;
                       })}
                     </ul>
                   </div>
-                )
+                );
               })}
             </div>
             <h2 className="c-page__section__title">{passionTitle}</h2>
@@ -80,17 +82,21 @@ const aboutPage = () => {
               {passions.map((passion, index) => {
                 return (
                   <li className="c-passion" key={index}>
-                    <GifService gifName={passion.gifName} alt="" gifClass="c-passion__image" />
+                    <GifService
+                      gifName={passion.gifName}
+                      alt=""
+                      gifClass="c-passion__image"
+                    />
                     <p className="c-passion__title">{passion.name}</p>
-                  </li>)
+                  </li>
+                );
               })}
             </ul>
           </Layout>
-        )
+        );
       }}
     />
+  );
+};
 
-  )
-}
-
-export default aboutPage
+export default aboutPage;

@@ -1,21 +1,19 @@
-
 .c-coming-soon__image {
-    display: flex;
-    justify-content: center;
-    background:var(--primary-color);
+  display: flex;
+  justify-content: center;
+  background: var(--primary-color);
 }
 
 .c-coming-soon__image__inner {
-    width: 50%;
+  width: 50%;
 }
 
 @media screen and (min-width: 640px) {
-    .c-coming-soon__image__inner {
-        width: 25%;
-        max-width: 20rem;
-    }
-    .c-coming-soon__image {
-        background: transparent;
-    }
-    
+  .c-coming-soon__image__inner {
+    width: 25%;
+    max-width: 20rem;
+  }
+  .c-coming-soon__image {
+    background: transparent;
+  }
 }

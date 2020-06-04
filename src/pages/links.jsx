@@ -1,10 +1,10 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Image from '../utils/image'
+import React from 'react';
+import { Link } from 'gatsby';
+import Image from '../utils/image';
 
-import Layout from '../components/layout'
-import { StaticQuery, graphql } from 'gatsby'
-import '../pages/css/links.css'
+import Layout from '../components/layout';
+import { StaticQuery, graphql } from 'gatsby';
+import '../pages/css/links.css';
 
 const linksPage = () => {
   return (
@@ -20,7 +20,7 @@ const linksPage = () => {
         }
       `}
       render={data => {
-        const { title, intro } = data.dataJson.linksPage
+        const { title, intro } = data.dataJson.linksPage;
         //console.log(data)
         return (
           <Layout>
@@ -32,11 +32,10 @@ const linksPage = () => {
             </div>
             <p>{intro}</p>
           </Layout>
-        )
+        );
       }}
     />
-  )
-}
+  );
+};
 
-
-export default linksPage
+export default linksPage;

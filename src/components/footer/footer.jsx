@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import './footer.css'
-import { StaticQuery, graphql, Link } from 'gatsby'
-import IconService from "../../utils/IconService"
+import PropTypes from 'prop-types';
+import React from 'react';
+import './footer.css';
+import { StaticQuery, graphql, Link } from 'gatsby';
+import IconService from '../../utils/IconService';
 
 const LinkHref = props => {
   return (
@@ -11,14 +11,14 @@ const LinkHref = props => {
         <IconService
           nameIcon={props.name}
           iconStyleContext={{
-            className: "c-footer_links",
+            className: 'c-footer_links',
             color: 'var(--footerSocialColor)',
           }}
         />
       </a>
     </li>
-  )
-}
+  );
+};
 
 const Footer = () => {
   return (
@@ -39,14 +39,16 @@ const Footer = () => {
           <footer className="c-footer">
             <ul className="c-footer__socials">
               {data.dataJson.footer.map(link => {
-                return <LinkHref name={link.name} key={link.name} url={link.url} />
+                return (
+                  <LinkHref name={link.name} key={link.name} url={link.url} />
+                );
               })}
             </ul>
           </footer>
-        )
+        );
       }}
     />
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

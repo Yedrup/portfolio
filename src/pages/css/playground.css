@@ -1,110 +1,110 @@
 .c-projects {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2.5rem 0;
-    margin: 2rem 0 ;
-    list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2.5rem 0;
+  margin: 2rem 0;
+  list-style: none;
 }
 
 .c-project {
-    background: var(--playgroundProjectbackgroundColor);
-    box-shadow: var(--elevation-1);
-    margin: 0;
+  background: var(--playgroundProjectbackgroundColor);
+  box-shadow: var(--elevation-1);
+  margin: 0;
 }
 .c-project:hover {
-    box-shadow: var(--elevation-3);
+  box-shadow: var(--elevation-3);
 }
 
 .c-project__header {
-    display: flex;
-    align-items: baseline;
-    padding: 1rem 0.5rem;
-    font-size: 1.85rem;
-    background: var(--playgroundProjectCardHeader);
-    box-shadow: var(--elevation-1);
+  display: flex;
+  align-items: baseline;
+  padding: 1rem 0.5rem;
+  font-size: 1.85rem;
+  background: var(--playgroundProjectCardHeader);
+  box-shadow: var(--elevation-1);
 }
 
 .c-project__image__wrapper {
-    text-align: center;
-    margin: 2rem 0 1rem;
+  text-align: center;
+  margin: 2rem 0 1rem;
 }
 
 .c-project__image .gatsby-image-wrapper {
-    box-shadow: var(--elevation-1);
+  box-shadow: var(--elevation-1);
 }
 
 .c-project__image .gatsby-image-wrapper:hover {
-    box-shadow: var(--elevation-3);
+  box-shadow: var(--elevation-3);
 }
 
 .c-project__link-title {
-    margin-right: .5rem;
-    text-decoration: none;
+  margin-right: 0.5rem;
+  text-decoration: none;
 }
 
 .c-project__title {
-    font-size: 1.7rem;
-    color: var(--playgroundProjectTitleTextColor);
-    text-shadow: .5px .9px var(--playgroundProjectTitleTextShadow);
+  font-size: 1.7rem;
+  color: var(--playgroundProjectTitleTextColor);
+  text-shadow: 0.5px 0.9px var(--playgroundProjectTitleTextShadow);
 }
 
 .c-project__links {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: 0;
-    list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0;
+  list-style: none;
 }
 
 .c-project__link {
-    margin: 0 .5rem 0 0;
+  margin: 0 0.5rem 0 0;
 }
 
 .c-project__purpose {
-    color: var(--playgroundProjectPurposeTextColor);
+  color: var(--playgroundProjectPurposeTextColor);
 }
 .c-project__purpose__title {
-    margin-right: .5rem;
-    font-weight: bold;
-    text-shadow: .25px .25px var(--playgroundProjectTitleTextColor);
+  margin-right: 0.5rem;
+  font-weight: bold;
+  text-shadow: 0.25px 0.25px var(--playgroundProjectTitleTextColor);
 }
 
 .c-project__technologies {
-    margin-bottom: 1.45rem;
-    text-align: center;
+  margin-bottom: 1.45rem;
+  text-align: center;
 }
 .c-project__technology {
-    display: inline-block;
-    margin: 0 .5rem .5rem 0;
-    padding: .25rem .5rem;
-    background: var(--technologiesBackground);
-    border-radius: var(--buttonBorderRadius);
-    box-shadow: var(--elevation-1);
-    color: var(--technologiesColorText);
-    font-weight: bold;
+  display: inline-block;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0.25rem 0.5rem;
+  background: var(--technologiesBackground);
+  border-radius: var(--buttonBorderRadius);
+  box-shadow: var(--elevation-1);
+  color: var(--technologiesColorText);
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 900px) {
-    .c-project__title {
-        font-size: 1.5rem;
-    }
-    .c-project__infos--written {
-        padding: .5rem;
-    }
+  .c-project__title {
+    font-size: 1.5rem;
+  }
+  .c-project__infos--written {
+    padding: 0.5rem;
+  }
 }
 
 @media only screen and (min-width: 900px) {
-    .c-projects {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 60px;
-    }
-    .c-project__infos--written {
-        padding: 1rem;
-    }
+  .c-projects {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+  }
+  .c-project__infos--written {
+    padding: 1rem;
+  }
 }
 
 @media only screen and (min-width: 1224px) {
-    .c-projects {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .c-projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

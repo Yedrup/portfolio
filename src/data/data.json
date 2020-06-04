@@ -87,9 +87,9 @@
     ],
     "sections": [
       {
-        "name": "Playground - personnal projects",
+        "name": "Playground - personal projects",
         "url": "/playground/",
-        "description": "My playground composed of different personnal projects I loved to work on ",
+        "description": "My playground composed of different personal projects I loved to work on ",
         "img": "purdeyWorkingBack",
         "color": "#220022"
       },
@@ -110,7 +110,7 @@
       {
         "name": "Links",
         "url": "/links/",
-        "description": "I've always wanted to share cool links about dev/ui/ux/tools, here my favorites tools or websites",
+        "description": "I've always wanted to share cool links about dev/ui/ux/tools, here my favorite tools or websites",
         "img": "deskDeco",
         "color": "#222222"
       }
@@ -125,13 +125,13 @@
         "periodTitle": "Before being Developer",
         "paragraphs": [
           {
-            "paragraph": "I've always loved languages and research, in fact, I obtained a licence degree in Spanish and then I've followed research studies in Pre-Columbian topics."
+            "paragraph": "I've always loved languages and research, I obtained a licence degree in Spanish and then I've followed research studies in Pre-Columbian topics."
           },
           {
-            "paragraph": "I realized I wanted to work in a company, I obtained a licence degree in office management / executive assistance in an one year intership at 1000mercis/numberly. It was my first contact with tech environment"
+            "paragraph": "I realized I wanted to work in a company, I obtained a licence degree in office management / executive assistance in an one year internship at 1000mercis/Numberly. It was my first contact with tech environment"
           },
           {
-            "paragraph": "After being graduated, I spent 3 wonderful years at Dailymotion, metting people passionned by theirs jobs and sharing their experiences!"
+            "paragraph": "After being graduated, I spent 3 wonderful years at Dailymotion, meeting people passionate by theirs jobs and sharing their experiences!"
           }
         ]
       },
@@ -139,16 +139,16 @@
         "periodTitle": "Discovery and Revelation: I LOVE DEVELOPMENT!",
         "paragraphs": [
           {
-            "paragraph": "During my time at Dailymotion, I started to be curious about coding and I start learning it and I realised I wanted to be a Developer."
+            "paragraph": "During my time at Dailymotion, I started to be curious about coding and I start learning it and I realized I wanted to be a Developer."
           },
           {
             "paragraph": "With lots of support, I left Dailymotion and start an internship at Beauté Privée, an ecommerce dedicated to private sales of beauty products and services."
           },
           {
-            "paragraph": "I had the chance to discover lots of topics as profesional developer! The Beauté Privée's context was the code refactoring of the site to be responsive, studies about SEO, UI and UX matters."
+            "paragraph": "I had the chance to discover lots of topics as professional developer! The Beauté Privée's context was the code refactoring of the site to be responsive, studies about SEO, UI and UX matters."
           },
           {
-            "paragraph": "At same time, during my school year, I had the chance to work on different projects allowing me to learn a lot about coding, project managment and ux/ui."
+            "paragraph": "At same time, during my school year, I had the chance to work on different projects allowing me to learn a lot about coding, project management and ux/ui."
           },
           {
             "paragraph": "I am currently working at InWebo as Front-End developer in Research and Development team."
@@ -216,27 +216,26 @@
       "jobs": [
         {
           "name": "InWebo",
-          "years": "march 2018 - april 2020 - 2 years",
+          "years": "March 2018 - April 2020 - 2 years",
           "jobTitle": "Front-End Developer",
           "url": "https://www.inwebo.com/",
           "missions": [
             {
-              "name": "Maintain and develop new features applications (desktop: electronjs, mobile: ionic v1(angularjs), v3 and v4 (angular))"
+              "name": "Develop features and maintain desktop and mobile applications using different stacks (Electron, Ionic v1 (Angularjs), Ionic v3/v4 (Angular X))"
             },
             {
-              "name": "Create a microserver with expressjs in an electron application establishing connections between browser and another desktop authentication application "
+              "name": "Create an Express.js server embedded in an Electron authentication application establishing connection between the browser and the application"
             },
             {
-              "name": "Work on process of customization of our applications (mobile and desktop) in order to produce and deliver to customers their own packages of our main applications(variabilization, templating)"
+              "name": "Work on process of customization of the main authentication application (mobile and desktop) in order to produce and deliver to customers their own packages of the main applications"
             },
             {
-              "name": "Industrialize the builds of customized applications (mobile and desktop) using a nodejs script.\nThe scripts clones a project branch from repository, builds artefacts of customs available, deployes it on a server and notifies by email the report of build and deployment status"
+              "name": "Industrialize the build process of customized applications (mobile and desktop) using a Node.js script.\nThe script clones the project from the repository, builds the artifacts of all customization directories available, deploys the artifacts on a server and send a report by email with build and deployment status"
             },
             {
-              "name": "Refactorization of the administration console to ionic 4 and electronjs consuming inwebo's API"
+              "name": "Develop the new administration console with Ionic v4 (Angular X) and Electron consuming Inwebo's API"
             }
-          ],
-          "current": true
+          ]
         },
         {
           "name": "Beauté Privée",
@@ -245,22 +244,22 @@
           "url": "https://www.beauteprivee.fr",
           "missions": [
             {
-              "name": "Work on responsive refactoring of the website using Foundation css framework"
+              "name": "Work on responsive refactoring of the website using Foundation CSS framework"
             },
             {
-              "name": "Improve the front environment development (implement a package manager, task runner, bundler, transpiler)"
+              "name": "Improve the front-end development environment implementing a package manager, a task runner, a bundler and a transpiler"
             },
             {
-              "name": "Integrate templates winners from ab testing process in PHP"
+              "name": "Integrate templates in PHP"
             },
             {
-              "name": "Implementate css code structure in terms of css classname to harmonize the project"
+              "name": "Implement CSS code structure BEMIT (BEM + ITCSS) in order to harmonize the codebase"
             },
             {
-              "name": "Create report regarding best practices in ecommerce environnement (scalability, SEO, performance)"
+              "name": "Create reports about best practices in e-commerce environment (scalability, SEO, performance)"
             },
             {
-              "name": "Update jquery version and librairies related using it as dependency"
+              "name": "Update jQuery version and libraries related using it as dependency"
             }
           ]
         },
@@ -271,7 +270,7 @@
           "url": "https://www.dailymotion.com",
           "missions": [
             {
-              "name": "Excecutive Assistance: Managing and maintaining executives' schedules, expenses and travel arrangements, updating database of customers"
+              "name": "Executive Assistance: Managing and maintaining executives' schedules, expenses and travel arrangements, updating database of customers"
             },
             {
               "name": "Office Management: Office optimization, managing supplier’s relationships, managing Office Management’s budget, organization of requests for proposal, managing insurance policies, welcoming visitors and managing the switchboard, organization of internal events (engineering Meetups, seminars, workshops...)"
@@ -286,10 +285,10 @@
           "url": "https://www.1000mercis.com",
           "missions": [
             {
-              "name": "Excecutive Assistance: Managing and maintaining executives' schedules, email inboxes, expenses and travel arrangements, updating database of customers"
+              "name": "Executive Assistance: Managing and maintaining executives' schedules, email inboxes, expenses and travel arrangements, updating database of customers"
             },
             {
-              "name": "Office Management: Office optimization, managing supplier’s relationships, welcoming visitors and managing the switchboard, organization of internal events (launchs, workshops...)"
+              "name": "Office Management: Office optimization, managing supplier’s relationships, welcoming visitors and managing the switchboard, organization of internal events (lunches, workshops...)"
             }
           ],
           "formerProfession": true
@@ -321,7 +320,7 @@
           ]
         },
         {
-          "title": "Frameworks - Librairies",
+          "title": "Frameworks - Libraries",
           "list": [
             {
               "name": "React"
@@ -330,7 +329,7 @@
               "name": "Express.js"
             },
             {
-              "name": "Electronjs"
+              "name": "Electron"
             },
             {
               "name": "Angular(1.x, X)"
@@ -342,7 +341,10 @@
               "name": "Gatsby"
             },
             {
-              "name": "Material UI RxJS"
+              "name": "Material UI"
+            },
+            {
+              "name": "RxJS"
             },
             {
               "name": "MobX"
@@ -354,10 +356,7 @@
               "name": "jQuery"
             },
             {
-              "name": "SASS"
-            },
-            {
-              "name": "sass"
+              "name": "Sass"
             },
             {
               "name": "Fondation (Zurb)"
@@ -375,9 +374,9 @@
           "list": [
             {
               "name": "git"
-            }, 
+            },
             {
-              "name": "Github/Gitlab/Bitbucket"
+              "name": "Github/ Gitlab/ Bitbucket"
             },
             {
               "name": "VS Code"
@@ -465,7 +464,7 @@
         "name": "HaveYouSin",
         "imgName": "haveyousin",
         "purpose": "The main purpose of haveyousin is to receive a feed of movies about to be released or currently in movie theaters and having a toWatchlist system (archives, custom lists..). Moreover this is a kind of projects helping me to see the big picture of a project and product.",
-        "purposeTech": "I wanted to refactorize Haveyousin in React and mobx in order to experiment it. Contrairy to the first version in angularjs, I don't use the list system and account management offered by the API The movie database (The Movie Database) but instead use firebase connection system and database (it currently uses the localstorage, implementation of firebase being in wip). That's the possibily to see how works a progressive web application (PWA).",
+        "purposeTech": "I wanted to rebuild from scratch Haveyousin in React and MobX in order to experiment it. Contrary to the first version in Angularjs, I don't use the list system and account management offered by the API The movie database (The Movie Database) but instead use firebase connection system and database (it currently uses the localstorage, implementation of firebase being in wip). That's the possibility to see how works a progressive web application (PWA).",
         "url": "https://purdeychambraud.com/haveyousin",
         "GithubUrl": "https://github.com/Yedrup/haveyousin",
         "technologies": [
@@ -494,8 +493,8 @@
         "imgName": "portfolio",
         "url": "https://purdeychambraud.com/",
         "GithubUrl": "https://github.com/Yedrup/portfolio",
-        "purpose": "My portfolio is my first playground, the former one was built with pure htlm css rendering with hard coded data inside html. Responsive pages were manually created. This refactorized portfolio allowed me to be more free regarding the way I wanted it to look, and redefine my presentation.",
-        "purposeTech": "My refactorization is made with Gatsby, I wanted to continue to use React and see how gatsby works, how are implemented the plugins, how it uses graphql, the management of a PWA.",
+        "purpose": "My portfolio is my first playground, the former one was built with pure HTML css rendering with hard coded data inside html. Responsive pages were manually created. Recoding my portfolio allowed me to be more free regarding the way I wanted it to look, and redefine my presentation.",
+        "purposeTech": "The new version of my portfolio is made with Gatsby, I wanted to continue to use React and see how Gatsby works, how are implemented the plugins, how it uses Graphql, the management of a PWA.",
         "technologies": [
           {
             "name": "Gatsby"
@@ -504,13 +503,10 @@
             "name": "React"
           },
           {
-            "name": "Javascript"
+            "name": "JavaScript"
           },
           {
             "name": "Graphql"
-          },
-          {
-            "name": "HTML"
           },
           {
             "name": "CSS"
@@ -575,7 +571,7 @@
         "name": "HaveYouSin - Legacy",
         "imgName": "HYSAJS",
         "purpose": "The main purpose of haveyousin is to receive a feed of movies about to be released or currently in movie theaters, and having a toWatchlist system (archives, custom lists..).",
-        "purposeTech": "The purpose to create a web app during the final exam using a framework js, I chose angularjs because it was the one we've learnt during few months at school. For this project, I used the API themoviedatabase and its list and account management. It allowed me to understand concepts as bearer token, API, private/public pages.",
+        "purposeTech": "The purpose to create a web app during the final exam using a framework js, I chose Angularjs because it was the one we've learnt during few months at school. For this project, I used the API themoviedatabase and its list and account management. It allowed me to understand concepts as bearer token, API, private/public pages.",
         "url": "https://purdeychambraud.com/legacy-haveyousin",
         "GithubUrl": "https://github.com/Yedrup/legacy-haveyousin",
         "technologies": [
@@ -611,10 +607,10 @@
             "name": "HTML"
           },
           {
-            "name": "gulp"
+            "name": "Gulp"
           },
           {
-            "name": "postcss"
+            "name": "Postcss"
           }
         ]
       }

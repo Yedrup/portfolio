@@ -1,10 +1,10 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from '../components/layout'
-import Section from '../components/section/section'
-import Image from '../utils/image'
-import { StaticQuery, graphql } from 'gatsby'
+import Layout from '../components/layout';
+import Section from '../components/section/section';
+import Image from '../utils/image';
+import { StaticQuery, graphql } from 'gatsby';
 
 const IndexPage = () => {
   return (
@@ -27,18 +27,14 @@ const IndexPage = () => {
         }
       `}
       render={data => {
-        const { title, sections, intro } = data.dataJson.homePage
+        const { title, sections, intro } = data.dataJson.homePage;
         return (
           <Layout>
             <div className="c-page__intro--home">
               <h1 className="c-page__title">{title}</h1>
-              {
-                intro.map((paragraph, index) => {
-                  return(
-                    <p key={index}> {paragraph} </p>
-                  )
-                })
-              }
+              {intro.map((paragraph, index) => {
+                return <p key={index}> {paragraph} </p>;
+              })}
             </div>
             <div className="c-sections">
               {sections.map((section, index) => {
@@ -51,14 +47,13 @@ const IndexPage = () => {
                     color={section.color}
                     img={section.img}
                   />
-                )
+                );
               })}
             </div>
           </Layout>
-        )
+        );
       }}
     />
-  )
-}
-export default IndexPage
-
+  );
+};
+export default IndexPage;

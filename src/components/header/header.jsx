@@ -1,11 +1,11 @@
-import { Link, GatsbyLinkProps } from 'gatsby'
-import PropTypes from 'prop-types'
-import React, { Component } from 'react'
-import './header.css'
-import Image from '../../utils/image'
-import { StaticQuery, graphql } from 'gatsby'
-import IconService from '../../utils/IconService'
-import BubbleMenu from '../menu/menu'
+import { Link, GatsbyLinkProps } from 'gatsby';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import './header.css';
+import Image from '../../utils/image';
+import { StaticQuery, graphql } from 'gatsby';
+import IconService from '../../utils/IconService';
+import BubbleMenu from '../menu/menu';
 
 const ListLink = props => {
   return (
@@ -13,12 +13,13 @@ const ListLink = props => {
       <Link
         activeClassName="link_active_path c-button"
         className="c-header__link"
-        to={props.to}>
+        to={props.to}
+      >
         {props.children}
       </Link>
     </li>
-  )
-}
+  );
+};
 const LinkHref = props => {
   return (
     <li className="c-header__social">
@@ -31,8 +32,8 @@ const LinkHref = props => {
         />
       </a>
     </li>
-  )
-}
+  );
+};
 const Header = ({ siteTitle }) => {
   // console.log('GatsbyLinkProps', GatsbyLinkProps)
 
@@ -90,29 +91,35 @@ const Header = ({ siteTitle }) => {
                   <ListLink to={link.url} key={index}>
                     {link.name}
                   </ListLink>
-                )
+                );
               })}
             </ul>
 
             <BubbleMenu socialLinks={socialLinks} />
             <ul className="c-header__socials">
               {Object.values(socialLinks).map((linkheader, index) => {
-                return <LinkHref name={linkheader.name} key={index} url={linkheader.url}/>
+                return (
+                  <LinkHref
+                    name={linkheader.name}
+                    key={index}
+                    url={linkheader.url}
+                  />
+                );
               })}
             </ul>
           </header>
-        )
+        );
       }}
     />
-  )
-}
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: '',
-}
+};
 
-export default Header
+export default Header;

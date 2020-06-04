@@ -1,143 +1,142 @@
 /* *BURGER MENU - small -medium only */
 
 div.bm-overlay[class] {
-    top: 0px;
-    background: transparent !important;
+  top: 0px;
+  background: transparent !important;
 }
 
 .bm-menu-wrap {
-    top: 0px;
+  top: 0px;
 }
 
 .bm-menu {
-    height: 100%;
-    margin: 1rem .5rem;
-    overflow: unset !important;
+  height: 100%;
+  margin: 1rem 0.5rem;
+  overflow: unset !important;
 }
 
-
 .bm-morph-shape {
-    fill: var(--menuBackgroundColor);
+  fill: var(--menuBackgroundColor);
 }
 
 .bm-cross-button {
-    background: var(--menuButtonCloseBackgroundColor);
-    border-radius: 25%;
+  background: var(--menuButtonCloseBackgroundColor);
+  border-radius: 25%;
 }
 
 .bm-cross {
-    background: var(--menuButtonCloseColor);
+  background: var(--menuButtonCloseColor);
 }
 
 .bm-burger-bars {
-    background: var(--menuButtonBurgerColor);
+  background: var(--menuButtonBurgerColor);
 }
 
 .bm-burger-button {
-    width: 15px;
-    height: 15px;
-    position: fixed;
-    right: 36px;
-    top: calc(var(--headerHeight)/2 - 7.5px);
+  width: 15px;
+  height: 15px;
+  position: fixed;
+  right: 36px;
+  top: calc(var(--headerHeight) / 2 - 7.5px);
 }
 
 .bm-menu-wrap ul {
-    list-style: none;
+  list-style: none;
 }
 
 /* Links */
 
 .bm-item {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .c-menu_link {
-    text-decoration: none;
-    color: var(--menuTextColor);
+  text-decoration: none;
+  color: var(--menuTextColor);
 }
 
 .c-menu__socials {
-    display: flex !important;
-    justify-content: space-between;
-    margin-top: 1rem;
+  display: flex !important;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .c-menu {
-    font-size: 1.25rem;
-    color: var(--menuTextColor);
+  font-size: 1.25rem;
+  color: var(--menuTextColor);
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    99% {
-        opacity: 0;
-    }
+  99% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .c-menu-openned::after {
-    content: url('../../images/dust4.png');
-    position: relative;
-    top: -6rem;
-    left: -17rem;
-    z-index: -1;
-    animation: fadeIn .4s ease-out;
+  content: url('../../images/dust4.png');
+  position: relative;
+  top: -6rem;
+  left: -17rem;
+  z-index: -1;
+  animation: fadeIn 0.4s ease-out;
 }
 
 .c-menu__aera-clickToClose {
-    position: absolute;
-    top: -1rem;
-    right: 100%;
-    height: 100vh;
-    width: 100vw;
-    background: transparent;
+  position: absolute;
+  top: -1rem;
+  right: 100%;
+  height: 100vh;
+  width: 100vw;
+  background: transparent;
 }
 
 .c-menu__aera-clickToClose:focus {
-    outline: none;
-} 
+  outline: none;
+}
 
 .c-menu-logo {
-    width: 70%;
-    margin-bottom: 1rem;
+  width: 70%;
+  margin-bottom: 1rem;
 }
 
 .c-menu_link_active_path {
-    padding: .25rem;
-    background: var(--menuActiveLinkBackgroundColor);
-    border-radius: var(--buttonBorderRadius);
-    color: var(--menuActiveLinkColor);
+  padding: 0.25rem;
+  background: var(--menuActiveLinkBackgroundColor);
+  border-radius: var(--buttonBorderRadius);
+  color: var(--menuActiveLinkColor);
 }
 
 .c-resume-button--menu {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    margin-left: 1.45rem;
-    background: var(--menuButtonDownloadBackgroundColor);
-    text-decoration: none;
-    text-align: center;
-    color: var(--menuButtonDownloadTextColor);
-    font-family: var(--font-content);
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-left: 1.45rem;
+  background: var(--menuButtonDownloadBackgroundColor);
+  text-decoration: none;
+  text-align: center;
+  color: var(--menuButtonDownloadTextColor);
+  font-family: var(--font-content);
 }
 
 ul.bm-item:focus {
-    outline: none;
+  outline: none;
 }
 
-@media screen and (min-width:601px) {
-    .bm-burger-button {
-        display: none;
-    }
+@media screen and (min-width: 601px) {
+  .bm-burger-button {
+    display: none;
+  }
 
-    /* HACK target div wrappingmenu*/
-    .c-header__links+div {
-        display: none;
-    }
+  /* HACK target div wrappingmenu*/
+  .c-header__links + div {
+    display: none;
+  }
 }

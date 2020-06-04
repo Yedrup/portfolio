@@ -1,8 +1,8 @@
-import React from 'react'
-import Layout from '../components/layout'
-import { Link } from 'gatsby'
-import Image from '../utils/image'
-import '../pages/css/404.css'
+import React from 'react';
+import Layout from '../components/layout';
+import { Link } from 'gatsby';
+import Image from '../utils/image';
+import '../pages/css/404.css';
 
 const NotFoundPage = () => (
   <Layout>
@@ -11,9 +11,11 @@ const NotFoundPage = () => (
 
     <div className="c-notFound__image__inner">
       <Image imageName="404Large" />
-    <Link className="c-notFound__link" to="/">Go back to a safer place</Link>
+      <Link className="c-notFound__link" to="/">
+        Go back to a safer place
+      </Link>
     </div>
   </Layout>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;
