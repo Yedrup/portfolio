@@ -623,8 +623,8 @@ h6 {
   flex-direction: column;
   align-self: center;
   flex: 1;
-  min-height: 70vh;
-  max-width: 90rem;
+  width: 100%;
+  max-width: 70rem;
   margin-top: 1rem;
   padding: 0.5rem 0.5rem;
 }

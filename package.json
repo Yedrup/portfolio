@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Purdey Chambraud <purdey.chambraud@gmail.com> based on gatsby-starter-default",
   "dependencies": {
-    "gatsby": "^2.15.20",
+    "gatsby": "^2.23.1",
     "gatsby-image": "^2.2.20",
     "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-manifest": "^2.2.18",
@@ -33,7 +33,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf .cache rm -rf public",
-    "build": "npm run clean && gatsby build NODE_ENV=production --prefix-paths && cp ./.htaccess ./public ",
+    "build": "npm run clean && gatsby build --prefix-paths && cp ./.htaccess ./public ",
     "develop": "gatsby develop --open=true",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",

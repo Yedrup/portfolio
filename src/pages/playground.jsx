@@ -119,7 +119,7 @@ const playgroundPage = () => {
                       </p>
                       <p className="c-project__purpose">
                         <span className="c-project__purpose__title">
-                          Project's tech purpose:
+                          Tech purpose:
                         </span>
                         {project.purposeTech}
                       </p>

@@ -1,36 +1,27 @@
 :root {
   --primary-color: rgb(81, 159, 148);
-  /*#519f94*/
   --primary-color-light: rgb(115, 188, 179);
-  /*#519f94*/
   --primary-color-rgba-3: rgba(81, 159, 149, 0.3);
   --primary-color-rgba-8: rgba(81, 159, 149, 0.8);
 
   --secondary-color: rgba(1, 41, 60, 0.882);
-  /*#01293ce1*/
   --secondary-color-rgba: rgba(54, 87, 115, 0.55);
   --color-dark-contrast: rgba(1, 41, 60, 0.884);
-  /*#01243c*/
 
-  /* Hightlight */
+  /* Highlight */
   --highlight-color: rgb(171, 66, 103);
-  /*#ab4267*/
   --highlight-color-on-dark: rgb(237, 91, 144);
-  /*#ed5b90*/
   --highlight-color-shadow: rgb(56, 31, 39);
-  /*#381f27*/
   --highlight-color-rgba: rgba(171, 66, 103, 0.01);
 
-  --tercery-color: rgb(226, 188, 116);
-  /*#e2bc74*/
-  --tercery-color-rgba: rgba(226, 188, 116, 0.55);
+  --tertiary-color: rgb(226, 188, 116);
+  --tertiary-color-rgba: rgba(226, 188, 116, 0.55);
   --active-color: #012e33;
 
   --color-text-on-dark: rgb(250, 250, 250);
   --color-text-on-light: var(--color-dark-contrast);
 
   /* selection */
-  /* --selected-background : var(--highlight-color-on-dark) ; */
   --selected-background: rgba(1, 41, 60, 0.879);
   --selected-color: rgba(248, 248, 248);
 
@@ -179,7 +170,7 @@
 
   --aboutPresentationBackgroundColor: rgba(171, 66, 103, 0.05);
   --aboutTitleColorText: var(--highlight-color);
-  --aboutSectionBackgroundColor: var(--tercery-color-rgba);
+  --aboutSectionBackgroundColor: var(--tertiary-color-rgba);
   --aboutSubtitleColorText: var(--primary-color);
 
   --aboutPassionBackgroundColor: var(--primary-color-rgba-3);
@@ -187,7 +178,7 @@
 
   /* Playground page */
 
-  --playgroundProjectbackgroundColor: var(--primary-color-light);
+  --playgroundProjectBackgroundColor: var(--primary-color-light);
   --playgroundProjectCardHeader: -webkit-linear-gradient(
     0deg,
     rgba(232, 217, 149, 0.249) 1%,

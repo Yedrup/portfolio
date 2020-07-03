@@ -489,6 +489,28 @@
         ]
       },
       {
+        "name": "Color Game",
+        "imgName": "colorGame",
+        "purpose": "When I started learning about colors to train myself having some colors in mind quickly, I had the idea of creating a game. This new version allows to choose between RGB, HEXA and HSL with different level of difficulty : limited time and / or hits allowed",
+        "purposeTech": "The tech purpose was to use pure Javascript and create a scoring system, evaluate user choices and manage different modes and difficulties.",
+        "url": "https://purdeychambraud.com/color-game",
+        "GithubUrl": "https://github.com/Yedrup/Color-Game",
+        "technologies": [
+          {
+            "name": "JavaScript"
+          },
+          {
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
+          },
+          {
+            "name": "Parcel"
+          }
+        ]
+      },
+      {
         "name": "Portfolio (Here!)",
         "imgName": "portfolio",
         "url": "https://purdeychambraud.com/",
@@ -514,29 +536,10 @@
         ]
       },
       {
-        "name": "Color Game",
-        "imgName": "colorGame",
-        "purpose": "When I started learning about colors to train myself having some colors in mind quickly, I had the idea of creating a game.",
-        "purposeTech": "The tech purpose was to use pure Javascript and create a scoring system, evaluate inputs from the player.",
-        "url": "https://purdeychambraud.com/color-game",
-        "GithubUrl": "https://github.com/Yedrup/Color-Game",
-        "technologies": [
-          {
-            "name": "JavaScript"
-          },
-          {
-            "name": "HTML"
-          },
-          {
-            "name": "CSS"
-          }
-        ]
-      },
-      {
-        "name": "rock paper scissors",
+        "name": "Rock Paper Scissors ",
         "imgName": "rockPaperScissors",
-        "purpose": "create a game in js.",
-        "purposeTech": "create a game system and manage its processes in js.",
+        "purpose": "This is one of my first exercise in JavaScript. I really enjoy working on a former project to improve it, It allows to see the way we improve as Developer! The new version has a Lizard Spock version from TV show The Big Bang Theory! 🖖",
+        "purposeTech": "Create a game system and manage modes applying same logic across the game.",
         "url": "https://purdeychambraud.com/rock-paper-scissors",
         "GithubUrl": "https://github.com/Yedrup/rock-paper-scissors",
         "technologies": [
@@ -548,6 +551,9 @@
           },
           {
             "name": "CSS"
+          },
+          {
+            "name": "Parcel"
           }
         ]
       },
@@ -568,7 +574,7 @@
         ]
       },
       {
-        "name": "HaveYouSin - Legacy",
+        "name": "Legacy - HaveYouSin",
         "imgName": "HYSAJS",
         "purpose": "The main purpose of haveyousin is to receive a feed of movies about to be released or currently in movie theaters, and having a toWatchlist system (archives, custom lists..).",
         "purposeTech": "The purpose to create a web app during the final exam using a framework js, I chose Angularjs because it was the one we've learnt during few months at school. For this project, I used the API themoviedatabase and its list and account management. It allowed me to understand concepts as bearer token, API, private/public pages.",
@@ -593,7 +599,7 @@
         ]
       },
       {
-        "name": "Portfolio - Legacy",
+        "name": "Legacy - Portfolio",
         "imgName": "legacyPortfolio",
         "url": "https://purdeychambraud.com/legacy-portfolio/",
         "GithubUrl": "https://github.com/Yedrup/portfolio-legacy",
