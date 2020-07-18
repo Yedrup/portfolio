@@ -1,10 +1,10 @@
 .c-header {
+  height: var(--headerHeight);
+  width: 100%;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: var(--headerHeight);
-  z-index: 999;
   background: var(--headerBackground);
   box-shadow: var(--elevation-6);
   border-bottom: 2px solid rgba(18, 37, 34, 0.14);
@@ -13,9 +13,9 @@
 }
 
 .c-header__title {
-  font-size: 1.5rem;
   margin: 0;
   font-family: var(--font-logo);
+  font-size: 1.5rem;
   text-shadow: 1px 2px rgba(18, 37, 34, 0.14);
 }
 .c-header__socials {
@@ -28,10 +28,10 @@
 }
 
 .c-header_written-logo {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
   color: var(--logoWrittenColor);
   text-shadow: 1px 1px var(--logoWrittenShadow);
-  letter-spacing: 1.5px;
-  font-size: 1rem;
 }
 
 .c-header__title__link .gatsby-image-wrapper {
@@ -40,32 +40,30 @@
 }
 
 .c-header__links {
+  position: relative;
+  margin: 0;
   display: flex;
   background: var(--headerLinksBgColor);
-  margin: 0;
   list-style: none;
-  position: relative;
 }
 
 .c-header__li {
-  margin-right: 1rem;
-  margin-bottom: 0;
+  margin: 0 1rem 0 0;
 }
 
 .c-header__link {
+  margin-right: 0.5rem;
+  font-size: 0.95rem;
   color: var(--headerTextColor);
   text-decoration: none;
   text-shadow: 0.5px 0.5px 0.5px var(--headerLinkShadowColor);
-  margin-right: 0.5rem;
-  font-size: 0.95rem;
 }
 
 .link_active_path {
+  padding: 0 0.25rem;
+  background: var(--headerLinkActiveColorBackground);
   color: var(--headerLinkActiveColor);
   text-shadow: 1px 1px var(--headerLinkActiveShadowColor);
-  background: var(--headerLinkActiveColorBackground);
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 .c-header__li:last-of-type {
   margin: 0;
@@ -87,17 +85,16 @@
     position: fixed;
   }
   .c-header__socials {
-    list-style: none;
     position: absolute;
-    display: flex;
     right: 0;
     bottom: 0;
-    justify-content: space-between;
     margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
   }
   .c-header__social {
-    margin-bottom: 0;
-    margin-right: 0.5rem;
+    margin: 0 0.5rem 0 0;
   }
 }
 @media only screen and (min-width: 900px) {

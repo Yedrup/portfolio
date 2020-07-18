@@ -19,12 +19,12 @@
 
 .c-section--on-image .gatsby-image-wrapper:after {
   content: '';
-  display: flex;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
   background: var(--sectionHomeBackgroundColor);
 }
 
@@ -44,24 +44,24 @@
 }
 
 .c-section__name {
-  color: var(--sectionHomeTitleTextColor);
-  text-shadow: 0.15px 0.15px var(--sectionHomeContentTextShadowColor);
   font-family: var(--font-subtitle);
+  font-size: 1.5rem;
+  color: var(--sectionHomeTitleTextColor);
   font-weight: var(--font-subtitle-weight);
   font-style: normal;
-  font-size: 1.5rem;
+  text-shadow: 0.15px 0.15px var(--sectionHomeContentTextShadowColor);
 }
 
 .c-section__content {
   position: relative;
+  z-index: 20;
   height: 100%;
   padding: 2rem 1rem;
-  z-index: 20;
-  text-shadow: 0.25px 0.25px var(--sectionHomeContentTextShadowColor);
   background: var(--sectionHomeContentBackground);
+  font-size: 1.1rem;
   color: var(--sectionHomeContentTextColor);
   font-style: italic;
-  font-size: 1.1rem;
+  text-shadow: 0.25px 0.25px var(--sectionHomeContentTextShadowColor);
 }
 
 @media screen and (min-width: 1824px) {

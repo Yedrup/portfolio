@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import './css/playground.css';
 import Layout from '../components/layout';
 import { StaticQuery, graphql } from 'gatsby';
@@ -44,7 +43,7 @@ const playgroundPage = () => {
             <h1 className="c-page__title">{title}</h1>
             <p>
               {intro}
-              <a href={github.url} target="_blank">
+              <a href={github.url} rel="noreferrer" target="_blank">
                 <IconService
                   nameIcon={github.name}
                   iconStyleContext={{
@@ -56,19 +55,31 @@ const playgroundPage = () => {
             </p>
             <ul className="c-projects">
               {projects.map((project, index) => {
+                const {
+                  url,
+                  name,
+                  GithubUrl,
+                  imgName,
+                  purpose,
+                  purposeTech,
+                  technologies,
+                } = project;
+
+                let isHosted = !!url;
                 return (
                   <li key={index} className="c-project">
                     <div className="c-project__header">
                       <a
-                        href={project.url}
+                        href={isHosted ? url : GithubUrl}
+                        rel="noreferrer"
                         target="_blank"
                         className="c-project__link-title"
                       >
-                        <h2 className="c-project__title">{project.name}</h2>
+                        <h2 className="c-project__title">{name}</h2>
                       </a>
                       <ul className="c-project__links">
                         <li className="c-project__link">
-                          <a href={project.GithubUrl} target="_blank">
+                          <a href={GithubUrl} rel="noreferrer" target="_blank">
                             <IconService
                               nameIcon="Github"
                               iconStyleContext={{
@@ -78,35 +89,40 @@ const playgroundPage = () => {
                             />
                           </a>
                         </li>
-                        <li className="c-project__link">
-                          <a href={project.url} target="_blank">
-                            <IconService
-                              nameIcon="link"
-                              iconStyleContext={{
-                                color: 'var(--playgroundProjectIconLinkColor)',
-                                size: '1.5rem',
-                              }}
-                            />
-                          </a>
-                        </li>
+                        {isHosted && (
+                          <li className="c-project__link">
+                            <a href={url} rel="noreferrer" target="_blank">
+                              <IconService
+                                nameIcon="link"
+                                iconStyleContext={{
+                                  color:
+                                    'var(--playgroundProjectIconLinkColor)',
+                                  size: '1.5rem',
+                                }}
+                              />
+                            </a>
+                          </li>
+                        )}
                       </ul>
                     </div>
 
                     <div className="c-project__image__wrapper">
                       <a
-                        href={project.url}
+                        href={isHosted ? url : GithubUrl}
                         className="c-project__image"
+                        rel="noreferrer"
                         target="_blank"
                       >
-                        <Image imageName={project.imgName} />
+                        <Image imageName={imgName} />
                       </a>
                     </div>
+
                     <div className="c-project__infos--written">
                       <div className="c-project__technologies">
-                        {project.technologies.map((technologie, index) => {
+                        {technologies.map((technology, index) => {
                           return (
                             <span className="c-project__technology" key={index}>
-                              {technologie.name}
+                              {technology.name}
                             </span>
                           );
                         })}
@@ -115,13 +131,13 @@ const playgroundPage = () => {
                         <span className="c-project__purpose__title">
                           Project's purpose:
                         </span>
-                        {project.purpose}
+                        {purpose}
                       </p>
                       <p className="c-project__purpose">
                         <span className="c-project__purpose__title">
                           Tech purpose:
                         </span>
-                        {project.purposeTech}
+                        {purposeTech}
                       </p>
                     </div>
                   </li>

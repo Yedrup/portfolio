@@ -13,7 +13,7 @@
   grid-template-rows: minmax(5rem, auto);
   align-items: flex-start;
   align-content: flex-start;
-  grid-gap: 2rem;
+  grid-gap: 1.5rem;
   margin: 0;
   background: var(--playgroundProjectBackgroundColor);
   box-shadow: var(--elevation-1);
@@ -52,7 +52,7 @@
 
 .c-project__infos--written {
   display: grid;
-  grid-template-rows: repeat(3, minmax(7rem, auto));
+  grid-template-rows: repeat(3, minmax(0, auto));
   grid-gap: var(--padding);
   align-content: flex-start;
   align-items: flex-start;
@@ -67,6 +67,7 @@
 .c-project__links {
   display: flex;
   align-items: flex-start;
+  justify-content: flex-end;
   margin: 0;
   list-style: none;
 }
@@ -76,6 +77,7 @@
 }
 
 .c-project__purpose {
+  margin: 0;
   color: var(--playgroundProjectPurposeTextColor);
 }
 .c-project__purpose__title {
@@ -99,4 +101,10 @@
   box-shadow: var(--elevation-1);
   color: var(--technologiesColorText);
   font-weight: bold;
+}
+
+@media screen and (min-width: 650px) {
+  .c-project__infos--written {
+    grid-template-rows: repeat(3, minmax(5rem, auto));
+  }
 }

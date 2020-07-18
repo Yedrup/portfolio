@@ -152,10 +152,10 @@
 
   /* Resume page */
   --skillBackground: var(--primary-color);
-  /* --pannelScrollBackground: var(--color-dark-contrast); */
-  --pannelScrollBackground: var(--secondary-color);
-  --pannelScrollLink: var(--color-text-on-dark);
-  --pannelScrollLinkActive: var(--highlight-color-on-dark);
+  /* --panelScrollBackground: var(--color-dark-contrast); */
+  --panelScrollBackground: var(--secondary-color);
+  --panelScrollLink: var(--color-text-on-dark);
+  --panelScrollLinkActive: var(--highlight-color-on-dark);
 
   --resumeItemTitleColorText: var(--secondary-color);
   --resumeItemTitleTextShadow: 0.5px 0.5px var(--secondary-color);

@@ -2,38 +2,30 @@ import { bubble as BubbleMenuC } from 'react-burger-menu';
 import React, { Component } from 'react';
 import './menu.css';
 import cv from '../../document/purdey_chambraud_cv_front_end-en.pdf';
-import { Link, GatsbyLinkProps, StaticQuery, graphql } from 'gatsby';
+import { Link, StaticQuery, graphql } from 'gatsby';
 import Image from '../../utils/image';
 import IconService from '../../utils/IconService';
 
-//TODO create component, see how to manage classes
-const ListLink = props => {
+// TODO: create component, see how to manage classes
+const ListLink = ({ to, children }) => {
   return (
     <li className="bm-item">
       <Link
         activeClassName="c-menu_link_active_path"
         className="c-menu_link"
-        to={props.to}
+        to={to}
       >
-        {props.children}
+        {children}
       </Link>
     </li>
   );
 };
 
-const LinkHref = props => {
+const LinkHref = ({ url, name }) => {
   return (
     <li className="bm-item">
-      <a
-        href={props.url}
-        target="_blank"
-        className="c-menu_link_active_path"
-        className="c-menu_link"
-      >
-        <IconService
-          nameIcon={props.name}
-          iconStyleContext={{ color: '#FFF' }}
-        />
+      <a href={url} target="_blank" rel="noreferrer" className="c-menu_link ">
+        <IconService nameIcon={name} iconStyleContext={{ color: '#FFF' }} />
       </a>
     </li>
   );
@@ -72,39 +64,41 @@ class BubbleMenu extends Component {
           }
         `}
         render={data => {
+          const { menu, buttons } = data.dataJson;
           return (
             <BubbleMenuC
               width={250}
               right
               isOpen={this.state.menuOpen}
               className={
-                this.state.menuOpen ? 'c-menu c-menu-openned' : 'c-menu'
+                this.state.menuOpen ? 'c-menu c-menu-opened' : 'c-menu'
               }
               onStateChange={this.isMenuOpen}
             >
-              <Link className="c-menu-logo" to={'/'}>
+              <Link className="c-menu-logo" to="/">
                 <Image imageName="trexNoBg" />
               </Link>
               <ul className="bm-item-list" role="navigation">
-                {data.dataJson.menu.map((link, index) => {
+                {menu.map((link, index) => {
+                  const { url, name } = link;
                   return (
-                    <ListLink to={link.url} key={index}>
-                      {link.name}
+                    <ListLink to={url} key={index}>
+                      {name}
                     </ListLink>
                   );
                 })}
               </ul>
               <ul className="c-menu__socials">
                 {Object.values(socialLinks).map((link, index) => {
-                  return (
-                    <LinkHref name={link.name} key={index} url={link.url} />
-                  );
+                  const { url, name } = link;
+                  return <LinkHref name={name} key={index} url={url} />;
                 })}
               </ul>
               <div className="c-resume-section--menu">
                 <a
                   href={cv}
                   target="_blank"
+                  rel="noreferrer"
                   className="c-button c-resume-button--menu"
                 >
                   <IconService
@@ -114,13 +108,14 @@ class BubbleMenu extends Component {
                       style: { marginRight: '1rem' },
                     }}
                   />
-                  {data.dataJson.buttons.buttonDownload}
+                  {buttons.buttonDownload}
                 </a>
               </div>
               <div
                 className={
-                  this.state.menuOpen ? 'c-menu__aera-clickToClose' : ''
+                  this.state.menuOpen ? 'c-menu__area-clickToClose' : ''
                 }
+                role="button"
                 onClick={() => {
                   if (this.state.menuOpen) this.closeMenu();
                 }}

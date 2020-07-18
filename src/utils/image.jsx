@@ -13,9 +13,8 @@ import Img from 'gatsby-image';
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const Image = props => {
-  // console.log(props)
-  let backgroungSectionStyle = {
+const Image = ({ imageName }) => {
+  let backgroundSectionStyle = {
     position: 'absolute',
     left: 0,
     top: 0,
@@ -24,7 +23,7 @@ const Image = props => {
     width: '100%',
     height: '100%',
   };
-  let backgroungProjectStyle = {
+  let backgroundProjectStyle = {
     height: 'unset',
   };
 
@@ -42,6 +41,13 @@ const Image = props => {
             }
           }
           haveyousin: file(relativePath: { eq: "haveyousin.png" }) {
+            childImageSharp {
+              fixed(width: 300, height: 300) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+          cpuMonitor: file(relativePath: { eq: "cpu-monitor-dark-theme.png" }) {
             childImageSharp {
               fixed(width: 300, height: 300) {
                 ...GatsbyImageSharpFixed
@@ -208,141 +214,195 @@ const Image = props => {
           }
         }
       `}
-      render={data => {
+      render={({
+        logo,
+        logoExplosion,
+        logoExplosionNoBg,
+        kwick,
+        trexNoBg,
+        purdeyPortraitLaptop,
+        purdeyPortraitStandingUpExplosions,
+        purdeyPortrait,
+        purdeyWorkingSmile,
+        purdeyWorkingBack,
+        purdeyWorkingFace,
+        deskDeco,
+        notFoundLarge,
+        trexComingSoon,
+        rockPaperScissors,
+        HYSAJS,
+        colorGame,
+        haveyousin,
+        legacyPortfolio,
+        cpuMonitor,
+        portfolio,
+        Spanish,
+        English,
+        French,
+      }) => {
         // console.log(data)
-        if (props.imageName === 'logo') {
-          return <Img fluid={data.logo.childImageSharp.fluid} />;
-        } else if (props.imageName === 'logoExplosion') {
-          return <Img fluid={data.logoExplosion.childImageSharp.fluid} />;
-        } else if (props.imageName === 'logoExplosionNoBg') {
-          return <Img fluid={data.logoExplosionNoBg.childImageSharp.fluid} />;
-        } else if (props.imageName === 'trexNoBg') {
-          return <Img fluid={data.trexNoBg.childImageSharp.fluid} />;
-        } else if (props.imageName === 'purdeyPortraitLaptop') {
-          return (
-            <Img fluid={data.purdeyPortraitLaptop.childImageSharp.fluid} />
-          );
-        } else if (props.imageName === 'purdeyPortraitStandingUpExplosions') {
-          return (
-            <Img
-              fluid={
-                data.purdeyPortraitStandingUpExplosions.childImageSharp.fluid
-              }
-            />
-          );
-        } else if (props.imageName === 'purdeyPortrait') {
-          return (
-            <Img
-              fixed={data.purdeyPortrait.childImageSharp.fixed}
-              style={{
-                ...backgroungSectionStyle,
-              }}
-            />
-          );
-        } else if (props.imageName === 'purdeyWorkingSmile') {
-          return (
-            <Img
-              fluid={data.purdeyWorkingSmile.childImageSharp.fluid}
-              style={{
-                ...backgroungSectionStyle,
-              }}
-            />
-          );
-        } else if (props.imageName === 'purdeyWorkingBack') {
-          return (
-            <Img
-              fluid={data.purdeyWorkingBack.childImageSharp.fluid}
-              style={{
-                ...backgroungSectionStyle,
-              }}
-            />
-          );
-        } else if (props.imageName === 'purdeyWorkingFace') {
-          return (
-            <Img
-              fluid={data.purdeyWorkingFace.childImageSharp.fluid}
-              style={{
-                ...backgroungSectionStyle,
-              }}
-            />
-          );
-        } else if (props.imageName === 'deskDeco') {
-          return (
-            <Img
-              fluid={data.deskDeco.childImageSharp.fluid}
-              style={{
-                ...backgroungSectionStyle,
-              }}
-            />
-          );
-        } else if (props.imageName === '404Large') {
-          return <Img fluid={data.notFoundLarge.childImageSharp.fluid} />;
-        } else if (props.imageName === 'trexComingSoon') {
-          return <Img fluid={data.trexComingSoon.childImageSharp.fluid} />;
-        } else if (props.imageName === 'rockPaperScissors') {
-          return (
-            <Img
-              fixed={data.rockPaperScissors.childImageSharp.fixed}
-              imgStyle={{ objectFit: 'outside' }}
-            />
-          );
-        } else if (props.imageName === 'kwick') {
-          return (
-            <Img
-              fixed={data.kwick.childImageSharp.fixed}
-              imgStyle={{ objectFit: 'outside' }}
-            />
-          );
-        } else if (props.imageName === 'HYSAJS') {
-          return (
-            <Img
-              fixed={data.HYSAJS.childImageSharp.fixed}
-              imgStyle={{ objectFit: 'outside' }}
-            />
-          );
-        } else if (props.imageName === 'colorGame') {
-          return (
-            <Img
-              fixed={data.colorGame.childImageSharp.fixed}
-              imgStyle={{ objectFit: 'outside' }}
-            />
-          );
-        } else if (props.imageName === 'haveyousin') {
-          return (
-            <Img
-              fixed={data.haveyousin.childImageSharp.fixed}
-              imgStyle={{ objectFit: 'outside' }}
-            />
-          );
-        } else if (props.imageName === 'legacyPortfolio') {
-          return (
-            <Img
-              fixed={data.legacyPortfolio.childImageSharp.fixed}
-              imgStyle={{ objectFit: 'outside' }}
-            />
-          );
-        } else if (props.imageName === 'portfolio') {
-          return (
-            <Img
-              fixed={data.portfolio.childImageSharp.fixed}
-              imgStyle={{ objectFit: 'outside' }}
-            />
-          );
-        } else if (props.imageName === 'Spanish') {
-          return <Img fluid={data.Spanish.childImageSharp.fluid} />;
-        } else if (props.imageName === 'English') {
-          return <Img fluid={data.English.childImageSharp.fluid} />;
-        } else if (props.imageName === 'French') {
-          return <Img fluid={data.French.childImageSharp.fluid} />;
-        } else {
-          return (
-            <Img
-              fluid={data.logoExplosion.childImageSharp.fluid}
-              style={{
-                ...backgroungProjectStyle,
-              }}
-            />
-          );
+
+        switch (imageName) {
+          case 'logo':
+            return <Img fluid={logo.childImageSharp.fluid} />;
+
+          case 'logoExplosion':
+            return <Img fluid={logoExplosion.childImageSharp.fluid} />;
+
+          case 'logoExplosionNoBg':
+            return <Img fluid={logoExplosionNoBg.childImageSharp.fluid} />;
+
+          case 'trexNoBg':
+            return <Img fluid={trexNoBg.childImageSharp.fluid} />;
+
+          case 'purdeyPortraitLaptop':
+            return <Img fluid={purdeyPortraitLaptop.childImageSharp.fluid} />;
+
+          case 'purdeyPortraitStandingUpExplosions':
+            return (
+              <Img
+                fluid={purdeyPortraitStandingUpExplosions.childImageSharp.fluid}
+              />
+            );
+
+          case '404Large':
+            return <Img fluid={notFoundLarge.childImageSharp.fluid} />;
+
+          case 'trexComingSoon':
+            return <Img fluid={trexComingSoon.childImageSharp.fluid} />;
+
+          case 'Spanish':
+            return <Img fluid={Spanish.childImageSharp.fluid} />;
+
+          case 'English':
+            return <Img fluid={English.childImageSharp.fluid} />;
+
+          case 'French':
+            return <Img fluid={French.childImageSharp.fluid} />;
+
+          case 'purdeyPortrait':
+            return (
+              <Img
+                fixed={purdeyPortrait.childImageSharp.fixed}
+                style={{
+                  ...backgroundSectionStyle,
+                }}
+              />
+            );
+
+          case 'purdeyWorkingSmile':
+            return (
+              <Img
+                fluid={purdeyWorkingSmile.childImageSharp.fluid}
+                style={{
+                  ...backgroundSectionStyle,
+                }}
+              />
+            );
+
+          case 'purdeyWorkingBack':
+            return (
+              <Img
+                fluid={purdeyWorkingBack.childImageSharp.fluid}
+                style={{
+                  ...backgroundSectionStyle,
+                }}
+              />
+            );
+
+          case 'purdeyWorkingFace':
+            return (
+              <Img
+                fluid={purdeyWorkingFace.childImageSharp.fluid}
+                style={{
+                  ...backgroundSectionStyle,
+                }}
+              />
+            );
+
+          case 'deskDeco':
+            return (
+              <Img
+                fluid={purdeyWorkingBack.childImageSharp.fluid}
+                style={{
+                  ...backgroundSectionStyle,
+                }}
+              />
+            );
+
+          case 'rockPaperScissors':
+            return (
+              <Img
+                fixed={rockPaperScissors.childImageSharp.fixed}
+                imgStyle={{ objectFit: 'outside' }}
+              />
+            );
+
+          case 'kwick':
+            return (
+              <Img
+                fixed={kwick.childImageSharp.fixed}
+                imgStyle={{ objectFit: 'outside' }}
+              />
+            );
+
+          case 'HYSAJS':
+            return (
+              <Img
+                fixed={HYSAJS.childImageSharp.fixed}
+                imgStyle={{ objectFit: 'outside' }}
+              />
+            );
+
+          case 'colorGame':
+            return (
+              <Img
+                fixed={colorGame.childImageSharp.fixed}
+                imgStyle={{ objectFit: 'outside' }}
+              />
+            );
+
+          case 'haveyousin':
+            return (
+              <Img
+                fixed={haveyousin.childImageSharp.fixed}
+                imgStyle={{ objectFit: 'outside' }}
+              />
+            );
+
+          case 'legacyPortfolio':
+            return (
+              <Img
+                fixed={legacyPortfolio.childImageSharp.fixed}
+                imgStyle={{ objectFit: 'outside' }}
+              />
+            );
+
+          case 'cpu-monitor-dark-theme':
+            return (
+              <Img
+                fixed={cpuMonitor.childImageSharp.fixed}
+                imgStyle={{ objectFit: 'outside' }}
+              />
+            );
+
+          case 'portfolio':
+            return (
+              <Img
+                fixed={portfolio.childImageSharp.fixed}
+                imgStyle={{ objectFit: 'outside' }}
+              />
+            );
+
+          default:
+            return (
+              <Img
+                fluid={logoExplosion.childImageSharp.fluid}
+                style={{
+                  ...backgroundProjectStyle,
+                }}
+              />
+            );
         }
       }}
     />

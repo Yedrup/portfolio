@@ -1,12 +1,12 @@
 /* *BURGER MENU - small -medium only */
 
 div.bm-overlay[class] {
-  top: 0px;
+  top: 0;
   background: transparent !important;
 }
 
 .bm-menu-wrap {
-  top: 0px;
+  top: 0;
 }
 
 .bm-menu {
@@ -33,11 +33,13 @@ div.bm-overlay[class] {
 }
 
 .bm-burger-button {
-  width: 15px;
-  height: 15px;
+  --buttonWidth: 1rem;
+  --buttonHeight: 1rem;
   position: fixed;
-  right: 36px;
-  top: calc(var(--headerHeight) / 2 - 7.5px);
+  right: 2rem;
+  top: calc((var(--headerHeight) - var(--buttonHeight)) / 2);
+  width: var(--buttonWidth);
+  height: var(--buttonHeight);
 }
 
 .bm-menu-wrap ul {
@@ -80,7 +82,7 @@ div.bm-overlay[class] {
   }
 }
 
-.c-menu-openned::after {
+.c-menu-opened::after {
   content: url('../../images/dust4.png');
   position: relative;
   top: -6rem;
@@ -89,7 +91,7 @@ div.bm-overlay[class] {
   animation: fadeIn 0.4s ease-out;
 }
 
-.c-menu__aera-clickToClose {
+.c-menu__area-clickToClose {
   position: absolute;
   top: -1rem;
   right: 100%;
@@ -98,7 +100,7 @@ div.bm-overlay[class] {
   background: transparent;
 }
 
-.c-menu__aera-clickToClose:focus {
+.c-menu__area-clickToClose:focus {
   outline: none;
 }
 

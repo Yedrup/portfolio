@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'gatsby';
 import Image from '../utils/image';
 import cv from '../document/purdey_chambraud_cv_front_end-en.pdf';
 import Layout from '../components/layout';
@@ -16,15 +15,15 @@ let Events = Scroll.Events;
 let scroll = Scroll.animateScroll;
 let scrollSpy = Scroll.scrollSpy;
 
-const LinkOrNot = props => {
-  if (props.url) {
+const LinkOrNot = ({ url, name }) => {
+  if (url) {
     return (
-      <a href={props.url} target="_blank" className="c-link">
-        {props.name}
+      <a href={url} rel="noreferrer" target="_blank" className="c-link">
+        {name}
       </a>
     );
   } else {
-    return <span>{props.name}</span>;
+    return <span>{name}</span>;
   }
 };
 
@@ -112,7 +111,6 @@ class resumePage extends Component {
           }
         `}
         render={data => {
-          // console.log('data resume', data)
           const {
             title,
             buttonTitle,
@@ -131,6 +129,7 @@ class resumePage extends Component {
                 <a
                   href={cv}
                   target="_blank"
+                  rel="noreferrer"
                   className="c-resume__download-link c-link"
                 >
                   <IconService
@@ -142,10 +141,10 @@ class resumePage extends Component {
                 </a>
               </p>
               <div className="c-resume-scrollable">
-                <div className="c-pannel-scoll">
+                <div className="c-panel-scroll">
                   <LinkScroll
-                    activeClass="c-pannel-scroll__link--active"
-                    className="c-pannel-scroll__link"
+                    activeClass="c-panel-scroll__link--active"
+                    className="c-panel-scroll__link"
                     to="sectionJob"
                     spy={true}
                     smooth={true}
@@ -161,8 +160,8 @@ class resumePage extends Component {
                   </LinkScroll>
 
                   <LinkScroll
-                    activeClass="c-pannel-scroll__link--active"
-                    className="c-pannel-scroll__link"
+                    activeClass="c-panel-scroll__link--active"
+                    className="c-panel-scroll__link"
                     to="sectionSkills"
                     spy={true}
                     smooth={true}
@@ -178,8 +177,8 @@ class resumePage extends Component {
                   </LinkScroll>
 
                   <LinkScroll
-                    activeClass="c-pannel-scroll__link--active"
-                    className="c-pannel-scroll__link"
+                    activeClass="c-panel-scroll__link--active"
+                    className="c-panel-scroll__link"
                     to="sectionEducation"
                     spy={true}
                     smooth={true}
@@ -203,7 +202,12 @@ class resumePage extends Component {
                     {jobsSection.jobs.map(job => {
                       return (
                         <li className="c-job" key={job.name}>
-                          <a href={job.url} target="_blank" className="c-link">
+                          <a
+                            href={job.url}
+                            rel="noreferrer"
+                            target="_blank"
+                            className="c-link"
+                          >
                             {job.name}
                           </a>
                           <span className="c-resume__item__title">
@@ -288,6 +292,7 @@ class resumePage extends Component {
                 <div className="c-resume-section--button ">
                   <a
                     href={cv}
+                    rel="noreferrer"
                     target="_blank"
                     className="c-resume-button c-button"
                   >

@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import Section from '../components/section/section';
-import Image from '../utils/image';
 import { StaticQuery, graphql } from 'gatsby';
 
 const IndexPage = () => {
@@ -38,14 +36,15 @@ const IndexPage = () => {
             </div>
             <div className="c-sections">
               {sections.map((section, index) => {
+                const { name, url, description, color, img } = section;
                 return (
                   <Section
                     key={index}
-                    name={section.name}
-                    url={section.url}
-                    description={section.description}
-                    color={section.color}
-                    img={section.img}
+                    name={name}
+                    url={url}
+                    description={description}
+                    color={color}
+                    img={img}
                   />
                 );
               })}

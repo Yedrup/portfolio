@@ -11,10 +11,10 @@
 
 .c-footer__socials {
   display: flex;
-  list-style: none;
-  margin: 0;
   flex: 1;
   justify-content: flex-end;
+  margin: 0;
+  list-style: none;
   color: var(--footerSocialColor);
 }
 

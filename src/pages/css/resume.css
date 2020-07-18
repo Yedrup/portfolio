@@ -90,7 +90,7 @@
   position: relative;
 }
 
-.c-pannel-scoll {
+.c-panel-scroll {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
@@ -98,18 +98,18 @@
   right: 0;
   max-width: 50%;
   padding: 1rem;
-  background: var(--pannelScrollBackground);
+  background: var(--panelScrollBackground);
   border-radius: var(--buttonBorderRadius);
   box-shadow: var(--elevation-16);
   font-size: 1rem;
 }
 
-.c-pannel-scroll__link {
-  color: var(--pannelScrollLink);
+.c-panel-scroll__link {
+  color: var(--panelScrollLink);
 }
 
-.c-pannel-scroll__link--active {
-  color: var(--pannelScrollLinkActive);
+.c-panel-scroll__link--active {
+  color: var(--panelScrollLinkActive);
 }
 
 .c-resume__download-link {

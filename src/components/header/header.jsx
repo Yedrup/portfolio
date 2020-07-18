@@ -1,31 +1,31 @@
-import { Link, GatsbyLinkProps } from 'gatsby';
+import React from 'react';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
 import './header.css';
 import Image from '../../utils/image';
 import { StaticQuery, graphql } from 'gatsby';
 import IconService from '../../utils/IconService';
 import BubbleMenu from '../menu/menu';
 
-const ListLink = props => {
+const ListLink = ({ to, children }) => {
   return (
     <li className="c-header__li">
       <Link
         activeClassName="link_active_path c-button"
         className="c-header__link"
-        to={props.to}
+        to={to}
       >
-        {props.children}
+        {children}
       </Link>
     </li>
   );
 };
-const LinkHref = props => {
+const LinkHref = ({ url, name }) => {
   return (
     <li className="c-header__social">
-      <a href={props.url} target="_blank">
+      <a href={url} rel="noreferrer" target="_blank">
         <IconService
-          nameIcon={props.name}
+          nameIcon={name}
           iconStyleContext={{
             color: 'var(--headerSocialColor)',
           }}
@@ -69,7 +69,7 @@ const Header = ({ siteTitle }) => {
       `}
       render={data => {
         //console.log(data);
-        const socialLinks = data.dataJson.socialMedias;
+        const { navigation, socialMedias } = data.dataJson;
         return (
           <header className="c-header">
             <h1 className="c-header__title">
@@ -86,25 +86,21 @@ const Header = ({ siteTitle }) => {
             </h1>
 
             <ul className="c-header__links">
-              {data.dataJson.navigation.map((link, index) => {
+              {navigation.map((link, index) => {
+                const { url, name } = link;
                 return (
-                  <ListLink to={link.url} key={index}>
-                    {link.name}
+                  <ListLink to={url} key={index}>
+                    {name}
                   </ListLink>
                 );
               })}
             </ul>
 
-            <BubbleMenu socialLinks={socialLinks} />
+            <BubbleMenu socialLinks={socialMedias} />
             <ul className="c-header__socials">
-              {Object.values(socialLinks).map((linkheader, index) => {
-                return (
-                  <LinkHref
-                    name={linkheader.name}
-                    key={index}
-                    url={linkheader.url}
-                  />
-                );
+              {Object.values(socialMedias).map((headerLink, index) => {
+                const { url, name } = headerLink;
+                return <LinkHref name={name} key={index} url={url} />;
               })}
             </ul>
           </header>

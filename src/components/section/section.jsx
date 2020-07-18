@@ -3,18 +3,15 @@ import './section.css';
 import { Link } from 'gatsby';
 import Image from '../../utils/image';
 
-const Section = props => {
+const Section = ({ url, color, name, description, img }) => {
   return (
-    <Link className="c-section__link" to={props.url}>
-      <div
-        className="c-section--on-image"
-        style={{ backgroundColor: props.color }}
-      >
+    <Link className="c-section__link" to={url}>
+      <div className="c-section--on-image" style={{ backgroundColor: color }}>
         <div className="c-section__content">
-          <h2 className="c-section__name">{props.name}</h2>
-          <p className="">{props.description}</p>
+          <h2 className="c-section__name">{name}</h2>
+          <p className="">{description}</p>
         </div>
-        <Image className="c-section__image" imageName={props.img} />
+        <Image className="c-section__image" imageName={img} />
       </div>
     </Link>
   );

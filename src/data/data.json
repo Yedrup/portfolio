@@ -461,38 +461,10 @@
     "intro": "Here are all my public projects, they are also available on my Github!",
     "projects": [
       {
-        "name": "HaveYouSin",
-        "imgName": "haveyousin",
-        "purpose": "The main purpose of haveyousin is to receive a feed of movies about to be released or currently in movie theaters and having a toWatchlist system (archives, custom lists..). Moreover this is a kind of projects helping me to see the big picture of a project and product.",
-        "purposeTech": "I wanted to rebuild from scratch Haveyousin in React and MobX in order to experiment it. Contrary to the first version in Angularjs, I don't use the list system and account management offered by the API The movie database (The Movie Database) but instead use firebase connection system and database (it currently uses the localstorage, implementation of firebase being in wip). That's the possibility to see how works a progressive web application (PWA).",
-        "url": "https://purdeychambraud.com/haveyousin",
-        "GithubUrl": "https://github.com/Yedrup/haveyousin",
-        "technologies": [
-          {
-            "name": "React"
-          },
-          {
-            "name": "MobX"
-          },
-          {
-            "name": "Firebase (wip)"
-          },
-          {
-            "name": "HTML"
-          },
-          {
-            "name": "CSS"
-          },
-          {
-            "name": "API The Movie Database v3"
-          }
-        ]
-      },
-      {
         "name": "Color Game",
         "imgName": "colorGame",
-        "purpose": "When I started learning about colors to train myself having some colors in mind quickly, I had the idea of creating a game. This new version allows to choose between RGB, HEXA and HSL with different level of difficulty : limited time and / or hits allowed",
-        "purposeTech": "The tech purpose was to use pure Javascript and create a scoring system, evaluate user choices and manage different modes and difficulties.",
+        "purpose": "When I started learning about colors to train myself having some colors in mind quickly, I had the idea of creating a game. This new version allows to choose between RGB, HEXA and HSL with different level of difficulty : limited time and / or hits allowed.",
+        "purposeTech": "The tech purpose was to use pure JavaScript and create a scoring system, evaluate user choices and manage different modes and difficulties.",
         "url": "https://purdeychambraud.com/color-game",
         "GithubUrl": "https://github.com/Yedrup/Color-Game",
         "technologies": [
@@ -511,12 +483,56 @@
         ]
       },
       {
+        "name": "HaveYouSin",
+        "imgName": "haveyousin",
+        "purpose": "The main purpose of Haveyousin is to receive a feed of movies about to be released or currently in movie theaters and having a to Watch list system (archives, favorites...). Moreover this is a kind of projects helping me to see the big picture of a project and product.",
+        "purposeTech": "I wanted to rebuild from scratch Haveyousin in React and MobX in order to experiment it. Contrary to the first version built with Angularjs, I don't use the list system and account management offered by the API TMDB (The Movie Database) but instead use firebase connection system and database (it currently uses the localStorage, implementation of firebase being in wip). That's the possibility to see how works a progressive web application (PWA).",
+        "url": "https://purdeychambraud.com/haveyousin",
+        "GithubUrl": "https://github.com/Yedrup/haveyousin",
+        "technologies": [
+          {
+            "name": "React"
+          },
+          {
+            "name": "MobX"
+          },
+          {
+            "name": "Firebase (wip)"
+          },
+          {
+            "name": "API The Movie Database v3"
+          }
+        ]
+      },
+      {
+        "name": "CPU Load Monitor",
+        "imgName": "cpu-monitor-dark-theme",
+        "purpose": "The monitor's purpose is to display the current CPU load average with a chart and display a notification to the user in case of high load average reached during x min. The high load limit, the time needed to consider a high load / recovery time and the time window history are configurable in the code (in file src/data reducers/ConfigContext.jsx) and will be soon available in the settings panel. NB: This project is not hosted yet",
+        "purposeTech": "The tech purpose is to create an Express.js local API service and use D3 with React and discover how Material UI component Lib works. Working on Unix only.",
+        "url": null,
+        "GithubUrl": "https://github.com/Yedrup/cpu-monitor-react-node-d3",
+        "technologies": [
+          {
+            "name": "React"
+          },
+          {
+            "name": "Express.js"
+          },
+          {
+            "name": "D3"
+          },
+          {
+            "name": "Material UI"
+          }
+        ]
+      },
+      {
         "name": "Portfolio (Here!)",
         "imgName": "portfolio",
         "url": "https://purdeychambraud.com/",
         "GithubUrl": "https://github.com/Yedrup/portfolio",
-        "purpose": "My portfolio is my first playground, the former one was built with pure HTML css rendering with hard coded data inside html. Responsive pages were manually created. Recoding my portfolio allowed me to be more free regarding the way I wanted it to look, and redefine my presentation.",
-        "purposeTech": "The new version of my portfolio is made with Gatsby, I wanted to continue to use React and see how Gatsby works, how are implemented the plugins, how it uses Graphql, the management of a PWA.",
+        "purpose": "My portfolio is my first playground, building this new version allowed me to be more free regarding the way I wanted it to look, and redefine my presentation.",
+        "purposeTech": "This new version is made with Gatsby, I wanted to continue to use React and see how Gatsby works, how are implemented the plugins, how it uses Graphql, the management of a PWA etc.",
         "technologies": [
           {
             "name": "Gatsby"
@@ -560,8 +576,8 @@
       {
         "name": "kwick chat",
         "imgName": "kwick",
-        "purpose": "kwick chat is a school project to create a chat interface and reach school API.",
-        "purposeTech": "The main purpose of kwick-chat was to use an API and the authentication management it provided, getting messages in real time.",
+        "purpose": "Kwick Chat is a school project to create a chat interface and use the School API.",
+        "purposeTech": "The main purpose of Kwick Chat was to use an API and the authentication management provided by the API, display and send messages in real time .",
         "url": "https://purdeychambraud.com/Kwick-Chat",
         "GithubUrl": "https://github.com/Yedrup/kwick-chat",
         "technologies": [
@@ -576,8 +592,8 @@
       {
         "name": "Legacy - HaveYouSin",
         "imgName": "HYSAJS",
-        "purpose": "The main purpose of haveyousin is to receive a feed of movies about to be released or currently in movie theaters, and having a toWatchlist system (archives, custom lists..).",
-        "purposeTech": "The purpose to create a web app during the final exam using a framework js, I chose Angularjs because it was the one we've learnt during few months at school. For this project, I used the API themoviedatabase and its list and account management. It allowed me to understand concepts as bearer token, API, private/public pages.",
+        "purpose": "The main purpose of Haveyousin is to receive a feed of movies about to be released or currently in movie theaters, and having a to Watch list system (archives, custom lists..).",
+        "purposeTech": "The purpose to create a web app during the final exam using a framework JavaScript, I chose Angular 1.x because it was the one we've learnt during few months at school. For this project, I used the API TMDB(The Movie Database) and its list and account management. It allowed me to understand concepts as the usage of bearer token to authenticate, the usage of API, private/public pages.",
         "url": "https://purdeychambraud.com/legacy-haveyousin",
         "GithubUrl": "https://github.com/Yedrup/legacy-haveyousin",
         "technologies": [

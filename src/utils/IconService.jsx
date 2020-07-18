@@ -11,7 +11,6 @@ import {
   FaDownload,
   FaLink,
   FaEnvelope,
-  FaAngular,
 } from 'react-icons/fa';
 
 const icons = {

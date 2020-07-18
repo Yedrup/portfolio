@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import Image from '../utils/image';
 
 import Layout from '../components/layout';
@@ -21,7 +20,6 @@ const linksPage = () => {
       `}
       render={data => {
         const { title, intro } = data.dataJson.linksPage;
-        //console.log(data)
         return (
           <Layout>
             <h1 className="c-page__title">{title}</h1>
