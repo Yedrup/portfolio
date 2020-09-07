@@ -1,28 +1,29 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 module.exports = {
   siteMetadata: {
     title: 'Purdey Chambraud',
-    description:"Hi! Welcome on my portfolio! I'm an enthusiastic Front-End Developer living in Paris area!",
-    siteUrl: 'https://www.purdeychambraud.com',
-    httpEquiv: 'http-equiv'
-
-
+    description:
+      "Hi! Welcome on my portfolio/playground! I'm Purdey, a parisian Front-End Developer",
+    siteUrl: 'https://www.purdeychambraud.com/',
+    httpEquiv: 'http-equiv',
   },
   plugins: [
-    `gatsby-transformer-json`,
+    'gatsby-transformer-json',
+    'gatsby-plugin-open-graph-images',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    {resolve: `gatsby-plugin-google-fonts`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
           `Lato\:400,900`,
-          `Bubblegum Sans` // you can also specify font weights and styles
-        ]
-      }
+          `Bubblegum Sans`, // you can also specify font weights and styles
+        ],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,7 +32,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-        // {
+    // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
     //     name: `data`,
@@ -66,10 +67,10 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography.js`,
       },
-    }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
-  ]
+  ],
   // , pathPrefix: `/gatsbyreactnewfolio`
-}
+};
