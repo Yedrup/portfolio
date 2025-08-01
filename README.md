@@ -1,4 +1,4 @@
-# My portfolio
+# My portfolio (Soon to be legacy too, new one on its way!)
 
 This is the code of my new portfolio available online here : https://purdeychambraud.com
 
